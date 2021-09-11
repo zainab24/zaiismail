@@ -1,16 +1,14 @@
 import React from "react";
-import {Project} from "./components/project"
+import { Project } from "./components/project";
 
-export const Projects = ()  => {
+export const Projects = () => {
+  const projects = ["hummingbird"];
 
-  const projects = ['hummingbird'];
-  
   return (
     <div className="projects">
-       {projects.map((project, i) => (
-        <div key={"project-" + i}>
-            <Project project={project}/>
-        </div>
+      {projects.map((project, i) => (
+        <Project project={project} />
+      ))}
     </div>
-  ))})
-      };
+  );
+};
