@@ -58,7 +58,8 @@ body {
     flex-direction: row;
   }
   .box {
-    position: fixed
+    position: fixed;
+    align-self: flex-start;
   }
 }
 
