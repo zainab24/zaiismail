@@ -10,6 +10,8 @@ export default function Home() {
       </h1>
       <div className="projects">
         <Projects />
+        
+        <div className="project"><h2>publications</h2></div>
       </div>
     </div>
   );

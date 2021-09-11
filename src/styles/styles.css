@@ -84,7 +84,7 @@ h1 {
 h2 {
   color: #EF40B0;
   font-family: "Ubuntu Mono";
-   text-transform: lowercase;
+  text-transform: lowercase;
 }
 /* river */
 #box {
@@ -212,6 +212,10 @@ div.project::before {
   filter: url(#turbulence);
 }
 
+div.project::before {
+  opacity: 0.35
+}
+
 .project {
   position: relative;
   padding: 3rem;
@@ -232,16 +236,10 @@ div.project::before {
   float: left;
   margin: 1rem;
 }
-a:link {
-  color: #EF40B0;
-  text-decoration: border-bottom: 1px solid 
-}
-a:visited {
-  color: green;
-}
-a:hover {
-  color: hotpink;
-}
+a:link,
+a:visited,
+a:hover,
 a:active {
-  color: blue;
+  color: #EF40B0;
+  text-decoration: underline;
 }
