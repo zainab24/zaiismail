@@ -41,7 +41,7 @@ body {
   background-color: var(--color-bg);
   margin: 0;
   padding: 0;
-  font-size: 1.2em;
+  font-size: 2vh;
   line-height: 1.3em;
   letter-spacing: 0.5px;
 }
@@ -239,16 +239,11 @@ div.project::before {
 }
 .screenshot--portrait {
   width: 50%;
-  float: left;
+  margin: 0 auto
 }
 .screenshot--landscape {
   width: 100%;
-  margin: 0 auto 1rem auto;
-}
-div.info {
-  width: 50%;
-  float: left;
-  padding: 1rem;
+  margin: 1rem auto
 }
 a:link,
 a:visited,
