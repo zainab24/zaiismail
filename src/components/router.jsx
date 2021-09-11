@@ -18,6 +18,6 @@ export default () => (
     <Route path="/" component={Home} />
     <Route path="/about" component={About} />
     <Route path="/publications" component={Publications} />
-    <Route path="/hummingbird" component={Hummingbird} />
+    <Route path="hummingbird" component={Hummingbird} />
   </Switch>
 );

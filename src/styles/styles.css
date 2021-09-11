@@ -237,9 +237,15 @@ div.project::before {
   float: left;
   margin: 1rem;
 }
-.screenshot {
-  width: 300px;
-  float: left
+.screenshot--portrait {
+  width: 150px;
+  float: left;
+  margin: 1rem;
+}
+.screenshot--landscape {
+  width: 150px;
+  float: left;
+  margin: 1rem;
 }
 a:link,
 a:visited,
@@ -248,4 +254,5 @@ a:active {
   color: #EF40B0;
   text-decoration: underline;
   font-weight: bold;
+  font-family: 'Ubuntu Mono'
 }
