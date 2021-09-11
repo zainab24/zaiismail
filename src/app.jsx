@@ -29,10 +29,11 @@ export default function Home() {
       <main role="main" className="wrapper">
         <div className="content">
           
+          <div id="box-wrapper">
           <div id="box">
   <div class="river river--1"></div>
   <div class="river river--2"></div>
-
+</div>
   <svg>
     <filter id="turbulence" x="0" y="0">
       <feTurbulence baseFrequency="0.02 0.01"></feTurbulence>
@@ -40,6 +41,7 @@ export default function Home() {
     </filter>
   </svg>
 </div>
+            
           {/* Router specifies which component to insert here as the main content */}
           <PageRouter />
         </div>

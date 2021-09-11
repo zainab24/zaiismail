@@ -42,7 +42,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.2em;
-  line-height: 105%;
+  line-height: 2em;
 }
 .wrapper {
   min-height: var(--wrapper-height);
@@ -54,17 +54,22 @@ body {
 .content {
   display: flex;
   flex-direction: column;
+  padding: 2rem
 }
 @media (orientation: landscape) {
   .content {
     flex-direction: row;
     align-items: center;
+    width: 100vw;
   }
-  .box {
+  #box-wrapper {
     position: fixed;
+    top: 0.25rem
   }
   .page {
-    width: 75vw;
+    width: 30vw;
+    position: relative;
+    left: 50vw
   }
 }
 
@@ -85,8 +90,8 @@ h2 {
   min-width: 750px;
   min-height: 750px;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  margin: 2.5rem;
   position: relative;
-  margin: 4rem;
   overflow: hidden;
   border-radius: 50%;
   background: url("https://cdn.glitch.com/d7f5d655-bedb-46ba-b8a6-d3a4253e0b8b%2Fbackground.jpeg?v=1631378265800");
@@ -184,4 +189,20 @@ h2 {
   100% {
     background-position: 0 750px;
   }
+}
+
+
+*::-webkit-scrollbar {
+  width: 12px;
+  -webkit-appearance: none;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #EF40B0;
+  border-radius: 20px;
+  border: 3px solid #EF40B0;
 }
