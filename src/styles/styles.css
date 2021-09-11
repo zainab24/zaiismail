@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
 :root {
   --color-bg: peachpuff;
@@ -54,7 +54,7 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  padding: 2rem
+  padding: 2rem;
 }
 @media (orientation: landscape) {
   .content {
@@ -64,12 +64,12 @@ body {
   }
   #box-wrapper {
     position: fixed;
-    top: 0.25rem
+    top: 0.25rem;
   }
   .page {
     width: 40vw;
     position: relative;
-    left: 50vw
+    left: 50vw;
   }
 }
 
@@ -77,9 +77,11 @@ body {
 h1 {
   color: #EF40B0;
   font-family: monospace;
-  font-family: 'Ubuntu Mono';
+  font-family: "Ubuntu Mono";
   font-weight: bold;
   text-transform: lowercase;
+  line-height: 1.2em;
+  display: inline-block
 }
 h2 {
   color: #2800FF;
@@ -191,7 +193,6 @@ h2 {
   }
 }
 
-
 *::-webkit-scrollbar {
   width: 12px;
   -webkit-appearance: none;
@@ -211,26 +212,32 @@ h2 {
   display: inline-block;
 }
 
-
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid green; /* The typwriter cursor */
-  font-size: 1em;
+  border-right: 0.15em solid green; /* The typwriter cursor */
+  font-size: 1.2em;
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 /* The typing effect */
 @-webkit-keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* The typewriter cursor effect */
 @-webkit-keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: green; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: green;
+  }
 }
