@@ -2,7 +2,8 @@ import React from "react";
 import projects from "../../data/projects.js";
 
 export const Projects = () => {
-  return projects.map((index) => (
+  
+  return projects.map((key, index) => (
     <div key={"block-" + index}>
       <h1>
         {projects.name} {projects.date}
