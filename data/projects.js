@@ -1,4 +1,4 @@
-module.exports = {
+const projects = {
   name: "hummingbird",
   desc: "drag-n-drop poetry maker",
   URL:
@@ -21,3 +21,5 @@ module.exports = {
     "To gaze with envy on their gloomy rest."
   ]
 };
+
+export default projects;

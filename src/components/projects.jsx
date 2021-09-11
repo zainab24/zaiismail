@@ -1,19 +1,16 @@
 import React from "react";
-import * as data from "../../data/projects.js";
-
+import projects from "../../data/projects.js";
 
 export const Projects = () => {
-  return( 
-    
-    data.map((item, i) => (
-    <div key={"block-" + i}>
+  return Object.entries(prohect).forEach(([key, value]) => {
+    <div key={"block-" + key}>
       <h1>
-        {data.name} {data.date}
+        {key.name} {key.date}
       </h1>
-      <img src={data.URL} alt={data.name} />
-      {data.lines.map((line, i) => (
-        <div key={"line-" + i}>{line}</div>
+      <img src={key.URL} alt={key.name} />
+      {key.lines.map((line, index) => (
+        <div key={"line-" + index}>{line}</div>
       ))}
     </div>
-  )));
+  });
 };
