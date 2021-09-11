@@ -10,7 +10,7 @@ export default function Hummingbird() {
 
         <p>
           This was my first real foray into creating a React web app,
-          experimenting with the <a href="http://poetrydb.org">poetrydb API</a>{" "}
+          experimenting with the <a href="http://poetrydb.org">poetrydb</a> API
           and developing my responsive design skills.
         </p>
       </div>
