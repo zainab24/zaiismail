@@ -43,7 +43,7 @@ body {
   padding: 0;
   font-size: 1.2em;
   line-height: 1.3em;
-  letter-spacing: 0.5px
+  letter-spacing: 0.5px;
 }
 .wrapper {
   min-height: var(--wrapper-height);
@@ -238,14 +238,17 @@ div.project::before {
   margin: 1rem;
 }
 .screenshot--portrait {
-  width: 150px;
+  width: 50%;
   float: left;
-  margin: 1rem;
 }
 .screenshot--landscape {
-  width: 150px;
+  width: 100%;
+  margin: 0 auto 1rem auto;
+}
+div.info {
+  width: 50%;
   float: left;
-  margin: 1rem;
+  padding: 1rem;
 }
 a:link,
 a:visited,
@@ -254,5 +257,5 @@ a:active {
   color: #EF40B0;
   text-decoration: underline;
   font-weight: bold;
-  font-family: 'Ubuntu Mono'
+  font-family: "Ubuntu Mono";
 }
