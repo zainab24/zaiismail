@@ -2,15 +2,15 @@ import React from "react";
 import projects from "../../data/projects.js";
 
 export const Projects = () => {
-  return Object.entries(prohect).forEach(([key, value]) => {
-    <div key={"block-" + key}>
+  return projects.map((index) => (
+    <div key={"block-" + index}>
       <h1>
-        {key.name} {key.date}
+        {projects.name} {projects.date}
       </h1>
-      <img src={key.URL} alt={key.name} />
-      {key.lines.map((line, index) => (
-        <div key={"line-" + index}>{line}</div>
+      <img src={projects.URL} alt={projects.name} />
+      {projects.lines.map((line, i) => (
+        <div key={"line-" + i}>{line}</div>
       ))}
     </div>
-  });
+  ));
 };

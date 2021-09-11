@@ -1,4 +1,4 @@
-const projects = {
+const projects = [{
   name: "hummingbird",
   desc: "drag-n-drop poetry maker",
   URL:
@@ -19,7 +19,7 @@ const projects = {
     "They hear the warring elements no more:",
     "While I am doom'd—by life's long storm opprest,",
     "To gaze with envy on their gloomy rest."
-  ]
-};
+    },
+];
 
 export default projects;
