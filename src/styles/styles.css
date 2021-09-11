@@ -41,8 +41,8 @@ body {
   background-color: var(--color-bg);
   margin: 0;
   padding: 0;
-  font-size: calc(14px + 1vh);
-  line-height: 1.5em;
+  font-size: calc(1em + 1vh);
+  line-height: calc(1.2em + 1vh);
   letter-spacing: 0.5px;
 }
 .wrapper {
@@ -81,7 +81,7 @@ h1 {
   font-weight: bold;
   text-transform: lowercase;
   font-size: 1.5em;
-  line-height: 1.2
+  line-height: 1.2;
 }
 h2 {
   color: #EF40B0;
@@ -240,11 +240,11 @@ div.project::before {
 }
 .screenshot--portrait {
   width: 50%;
-  margin: 0 auto
+  margin: 0 auto;
 }
 .screenshot--landscape {
   width: 100%;
-  margin: 1rem auto
+  margin: 1rem auto;
 }
 a:link,
 a:visited,
