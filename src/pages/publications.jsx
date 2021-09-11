@@ -4,12 +4,20 @@ import print from "../../data/print.js";
 import collections from "../../data/collections.js";
 
 export default function Publications() {
-  return 
-<div className="project">
-  {print.map((item, i) => (
-    item.title in 
-  ))};
-
-    </div>  
-  
-};
+  return (
+    <div>
+      {print.map((item, i) => {
+        return (
+          <>
+            <p key={"item" + i}>
+              <a href={item.URL}>
+                {item.title} in <i>{item.publication}</i>
+              </a>
+            </p>
+            <p>{item.date}</p>
+          </>
+        );
+      })}
+    </div>
+  );
+}
