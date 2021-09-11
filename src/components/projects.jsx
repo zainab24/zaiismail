@@ -1,12 +1,11 @@
 import React from "react";
-import json from "../../data/projects.json";
+import * as data from "../../data/projects.js";
 
-const data = JSON.parse(JSON.stringify(json));
 
 export const Projects = () => {
   return( 
     
-     Object.keys(data).map((item, i) => (
+    data.map((item, i) => (
     <div key={"block-" + i}>
       <h1>
         {data.name} {data.date}
