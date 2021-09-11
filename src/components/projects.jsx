@@ -1,10 +1,9 @@
 import React from "react";
-import * as data from "../../data/projects.json";
+import json from "../../data/projects.json";
+
+const data = JSON.parse(JSON.stringify(json));
 
 export const Projects = () => {
-  
-  const { data } = data; 
-  
   return( 
     
      Object.keys(data).map((item, i) => (
