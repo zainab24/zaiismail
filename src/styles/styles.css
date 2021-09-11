@@ -60,14 +60,14 @@ body {
   .content {
     flex-direction: row;
     align-items: center;
-    width: 100vw;
+    width: 95vw;
   }
   #box-wrapper {
     position: fixed;
     top: 0.25rem
   }
   .page {
-    width: 30vw;
+    width: 40vw;
     position: relative;
     left: 50vw
   }
