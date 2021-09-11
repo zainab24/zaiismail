@@ -1,5 +1,5 @@
 import React from "react";
-import { Project } from "./components/project";
+import { Project } from "./project";
 
 export const Projects = () => {
   const projects = ["hummingbird"];
