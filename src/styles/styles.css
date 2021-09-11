@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
 :root {
   --color-bg: peachpuff;
   --color-text-main: #000000;
@@ -39,8 +41,8 @@ body {
   background-color: var(--color-bg);
   margin: 0;
   padding: 0;
-  font-size: calc(15px + 1vh);
-  line-height: 1.2em;
+  font-size: 1.2em;
+  line-height: 105%;
 }
 .wrapper {
   min-height: var(--wrapper-height);
@@ -68,12 +70,11 @@ body {
 
 /* Page titles */
 h1 {
-  color: #2800FF;
-  font-family: HK Grotesk;
-  font-style: normal;
+  color: #EF40B0;
+  font-family: monospace;
+  font-family: 'Ubuntu Mono';
   font-weight: bold;
-  font-size: 100px;
-  line-height: 105%;
+  text-transform: lowercase;
 }
 h2 {
   color: #2800FF;

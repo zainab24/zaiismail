@@ -3,6 +3,6 @@ import { Link } from "wouter";
 
 export default function Home() {
   return <div className="page">
-    Hey!
+    <h1>Hey! 👋🏽 I'm Zainab Ismail, a poet and software engineer from London.</h1>
     </div>;
 }
