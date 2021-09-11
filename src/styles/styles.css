@@ -38,7 +38,10 @@ body {
   font-family: HK Grotesk;
   background-color: var(--color-bg);
   margin: 0;
-  padding: 0
+  padding: 0;
+  font-size: calc(15px + 1vh);
+  line-height: 1.2em;
+  text-align: left;
 }
 .wrapper {
   min-height: var(--wrapper-height);
@@ -61,6 +64,9 @@ body {
     position: fixed;
     align-self: flex-start;
   }
+  .page {
+    width: 75vw;
+  }
 }
 
 /* Page titles */
@@ -76,16 +82,16 @@ h2 {
   color: #2800FF;
 }
 
-/* river */ 
+/* river */
 #box {
- min-width: 750px;
-  min-height:  750px;
-   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  min-width: 750px;
+  min-height: 750px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   position: relative;
   margin: 4rem;
   overflow: hidden;
   border-radius: 50%;
-  background: url('https://cdn.glitch.com/d7f5d655-bedb-46ba-b8a6-d3a4253e0b8b%2Fbackground.jpeg?v=1631378265800');
+  background: url("https://cdn.glitch.com/d7f5d655-bedb-46ba-b8a6-d3a4253e0b8b%2Fbackground.jpeg?v=1631378265800");
 }
 
 .river {
@@ -99,51 +105,51 @@ h2 {
       )
       0 0,
     radial-gradient(
-        1.5em 6.28571em at -0.45em,
-        rgba(255, 255, 255, 0) 50%,
-        rgba(255, 255, 255, 0.25) 50%,
-        rgba(255, 255, 255, 0.25) 55%,
-        rgba(255, 255, 255, 0) 55%
-      )
-      1.5em 5.5em,
-    radial-gradient(
-        2.3em 4.57143em at 2.99em,
-        rgba(255, 255, 255, 0) 50%,
-        rgba(255, 255, 255, 0.3) 50%,
-        rgba(255, 255, 255, 0.3) 55%,
-        rgba(255, 255, 255, 0) 55%
-      )
-      0 0,
-    radial-gradient(
-        2.3em 4.57143em at -0.69em,
-        rgba(255, 255, 255, 0) 50%,
-        rgba(255, 255, 255, 0.3) 50%,
-        rgba(255, 255, 255, 0.3) 55%,
-        rgba(255, 255, 255, 0) 55%
-      )
-      2.3em 4em,
-    radial-gradient(
-        3.5em 6.28571em at 4.55em,
-        rgba(255, 255, 255, 0) 50%,
-        rgba(255, 255, 255, 0.25) 50%,
-        rgba(255, 255, 255, 0.25) 55%,
-        rgba(255, 255, 255, 0) 55%
-      )
-      0 0,
-    radial-gradient(
-        3.5em 6.28571em at -1.05em,
-        rgba(255, 255, 255, 0) 50%,
-        rgba(255, 255, 255, 0.25) 50%,
-        rgba(255, 255, 255, 0.25) 55%,
-        rgba(255, 255, 255, 0) 55%
-      )
-      3.5em 5.5em,
-    radial-gradient(#15ffa5, #00ced1);
+          1.5em 6.28571em at -0.45em,
+          rgba(255, 255, 255, 0) 50%,
+          rgba(255, 255, 255, 0.25) 50%,
+          rgba(255, 255, 255, 0.25) 55%,
+          rgba(255, 255, 255, 0) 55%
+        )
+        1.5em 5.5em,
+      radial-gradient(
+            2.3em 4.57143em at 2.99em,
+            rgba(255, 255, 255, 0) 50%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 255, 255, 0.3) 55%,
+            rgba(255, 255, 255, 0) 55%
+          )
+          0 0,
+        radial-gradient(
+              2.3em 4.57143em at -0.69em,
+              rgba(255, 255, 255, 0) 50%,
+              rgba(255, 255, 255, 0.3) 50%,
+              rgba(255, 255, 255, 0.3) 55%,
+              rgba(255, 255, 255, 0) 55%
+            )
+            2.3em 4em,
+          radial-gradient(
+                3.5em 6.28571em at 4.55em,
+                rgba(255, 255, 255, 0) 50%,
+                rgba(255, 255, 255, 0.25) 50%,
+                rgba(255, 255, 255, 0.25) 55%,
+                rgba(255, 255, 255, 0) 55%
+              )
+              0 0,
+            radial-gradient(
+                  3.5em 6.28571em at -1.05em,
+                  rgba(255, 255, 255, 0) 50%,
+                  rgba(255, 255, 255, 0.25) 50%,
+                  rgba(255, 255, 255, 0.25) 55%,
+                  rgba(255, 255, 255, 0) 55%
+                )
+                3.5em 5.5em,
+              radial-gradient(#15ffa5, #00ced1);
   background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em,
     3.5em 11em, 100% 100%;
   background-repeat: repeat;
   position: absolute;
-  opacity: 0.75
+  opacity: 0.75;
 }
 .river--1 {
   width: 5%;
@@ -153,7 +159,7 @@ h2 {
   transform: rotate(-52deg);
   -webkit-animation: flow 5s infinite linear;
   animation: flow 5s infinite linear;
-  mix-blend-mode: luminosity
+  mix-blend-mode: luminosity;
 }
 .river--2 {
   width: 7.5%;
@@ -163,7 +169,7 @@ h2 {
   transform: rotate(-80deg);
   -webkit-animation: flow 5s infinite linear;
   animation: flow 5s infinite linear;
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 @-webkit-keyframes flow {
   0% {
