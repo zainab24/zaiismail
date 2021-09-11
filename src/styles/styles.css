@@ -81,7 +81,6 @@ h1 {
   font-weight: bold;
   text-transform: lowercase;
   line-height: 1.2em;
-  display: inline-block
 }
 h2 {
   color: #2800FF;
@@ -208,17 +207,18 @@ h2 {
   border: 3px solid #EF40B0;
 }
 
-.typewriter {
-  display: inline-block;
+.typewriter, .hey {
+  display: inline;
 }
 
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid green; /* The typwriter cursor */
-  font-size: 1.2em;
+  font-size: 2em;
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  display: inline
 }
 
 /* The typing effect */
