@@ -8,7 +8,7 @@ to this section's matching END comment to see page-specific styles.
 ******************************************************************************/
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #FFFFA0;
+  --color-bg: peachpuff;
   --color-text-main: #000000;
   --color-primary: #AFECE0;
   --wrapper-height: 85vh;
@@ -38,65 +38,7 @@ to this section's matching END comment to see page-specific styles.
     format("opentype");
 }
 
-/* Our remix on glitch button */
-.btn--remix {
-  font-family: HK Grotesk;
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  font-weight: 500;
-  height: 2.75rem;
-  align-items: center;
-  cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-  margin-left: auto;
-}
-.btn--remix img {
-  margin-right: 0.5rem;
-}
-.btn--remix:hover {
-  background-color: #D0FFF1;
-}
-
-/* Navigation grid */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 1rem 0 0.75rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  border-top: 4px solid #fff;
-}
-
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #000;
-  text-decoration: none;
-  border-style: none;
-}
-.footer a:hover {
-  background: var(--color-primary);
-}
-
-.footer .links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
-}
-
-.divider {
-  padding: 0 1rem;
-}
+/
 /******************************************************************************
 END Glitch hello-app default styles
 ******************************************************************************/
@@ -105,6 +47,8 @@ END Glitch hello-app default styles
 body {
   font-family: HK Grotesk;
   background-color: var(--color-bg);
+  margin: 0;
+  padding: 0
 }
 .wrapper {
   min-height: var(--wrapper-height);
@@ -129,65 +73,19 @@ h1 {
   font-size: 100px;
   line-height: 105%;
 }
-.page h1 {
-  font-size: 48px;
-}
-
-.page p {
-  line-height: 1.5;
-}
-
-.page a {
-  color: #000;
-}
-
-.page a:hover {
-  text-decoration: none;
-}
-
-/* The React image and "click me" text */
-.btn--click-me {
-  user-select: none;
-  cursor: pointer;
-  white-space: nowrap;
-}
-.btn--click-me:hover {
-  text-decoration: underline;
-}
-
-/* Very light scaling for our illustration */
-.illustration {
-  max-width: 100%;
-  max-height: var(--image-max-width);
-  cursor: pointer;
-  padding-left: 3.5rem;
-}
-
-/* Instructions */
-.instructions {
-  margin: 1rem auto 0;
-}
-.instructions p {
-  font-size: 1rem;
-}
 h2 {
   color: #2800FF;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: peachpuff;
-}
-
 #box {
-  width: 888px;
+ width: 888px;
   height:  888px;
+   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
   position: relative;
   margin: auto;
   overflow: hidden;
   border-radius: 50%;
-  background: url(https://images.unsplash.com/photo-1585129891066-83969119de8c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=932&q=80);
+  background: url('https://cdn.glitch.com/d7f5d655-bedb-46ba-b8a6-d3a4253e0b8b%2Fbackground.jpeg?v=1631378265800');
 }
 
 .river {
@@ -248,20 +146,20 @@ body {
   opacity: 0.75
 }
 .river--1 {
-  width: 7.5%;
-  left: 51%;
-  top: 26.5%;
-  height: 13.75%;
+  width: 3.5%;
+  left: 24%;
+  top: 28%;
+  height: 12.75%;
   transform: rotate(-52deg);
   -webkit-animation: flow 5s infinite linear;
   animation: flow 5s infinite linear;
   mix-blend-mode: luminosity
 }
 .river--2 {
-  width: 15%;
-  left: 20%;
-  top: 39%;
-  height: 90%;
+  width: 7.5%;
+  left: 25%;
+  top: 50%;
+  height: 75%;
   transform: rotate(-70deg);
   -webkit-animation: flow 5s infinite linear;
   animation: flow 5s infinite linear;
@@ -281,5 +179,10 @@ body {
   }
   100% {
     background-position: 0 750px;
+  }
+}
+@media (orientation: landscape) {
+  .content {
+    flex-direction: row;
   }
 }
