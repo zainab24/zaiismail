@@ -8,7 +8,6 @@ export default function Home() {
       <h1>
         Hey! 👋🏽 I'm Zainab Ismail, a London-based poet and software engineer.
       </h1>
-
       <div className="projects">
         <Projects />
       </div>

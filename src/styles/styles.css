@@ -76,16 +76,16 @@ body {
 /* Page titles */
 h1 {
   color: #EF40B0;
-  font-family: monospace;
   font-family: "Ubuntu Mono";
   font-weight: bold;
   text-transform: lowercase;
   line-height: 1.2em;
 }
 h2 {
-  color: #2800FF;
+  color: #EF40B0;
+  font-family: "Ubuntu Mono";
+   text-transform: lowercase;
 }
-
 /* river */
 #box {
   min-width: 750px;
@@ -215,7 +215,7 @@ div.project::before {
 .project {
   position: relative;
   padding: 3rem;
-  margin-bottom: 3rem
+  margin-bottom: 3rem;
 }
 .project::before {
   content: "";
@@ -227,5 +227,21 @@ div.project::before {
   z-index: -1;
 }
 .project img {
-  width: 50%
+  width: 192px;
+  height: 192px;
+  float: left;
+  margin: 1rem;
+}
+a:link {
+  color: #EF40B0;
+  text-decoration: border-bottom: 1px solid 
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: hotpink;
+}
+a:active {
+  color: blue;
 }
