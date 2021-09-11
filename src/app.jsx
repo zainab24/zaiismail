@@ -41,13 +41,7 @@ export default function Home() {
     </filter>
   </svg>
             
-            
-   <svg>
-    <filter id="text" x="0" y="0">
-      <feTurbulence baseFrequency="0.02 0.01"></feTurbulence>
-      <feDisplacementMap scale="45" in="SourceGraphic"></feDisplacementMap>
-    </filter>
-  </svg>
+          
 </div>
             
           {/* Router specifies which component to insert here as the main content */}

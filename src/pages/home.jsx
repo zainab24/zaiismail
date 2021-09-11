@@ -5,8 +5,13 @@ import { Projects } from "../components/projects";
 export default function Home() {
   return (
     <div className="page">
-      <h1>Hey! 👋🏽 I'm Zainab Ismail, a London-based poet and software engineer.</h1>
-      <Projects/>
+      <h1>
+        Hey! 👋🏽 I'm Zainab Ismail, a London-based poet and software engineer.
+      </h1>
+
+      <div className="projects">
+        <Projects />
+      </div>
     </div>
   );
 }

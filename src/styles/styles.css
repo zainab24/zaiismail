@@ -98,7 +98,8 @@ h2 {
   background: url("https://cdn.glitch.com/d7f5d655-bedb-46ba-b8a6-d3a4253e0b8b%2Fbackground.jpeg?v=1631378265800");
 }
 
-.river, div.project {
+.river,
+div.project::before {
   background: radial-gradient(
         1.5em 6.28571em at 1.95em,
         rgba(255, 255, 255, 0) 50%,
@@ -206,9 +207,25 @@ h2 {
   border: 3px solid #EF40B0;
 }
 
-.river {
+.river,
+div.project::before {
   filter: url(#turbulence);
 }
-div.project {
-  
+
+.project {
+  position: relative;
+  padding: 3rem;
+  margin-bottom: 3rem
+}
+.project::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.project img {
+  width: 50%
 }
