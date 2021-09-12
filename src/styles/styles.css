@@ -234,7 +234,7 @@ div.project::before {
 .project img {
   width: 40%;
   float: left;
-  margin: 1rem;
+  margin: 1.5rem;
 }
 .screenshot--portrait {
   width: 50%;
