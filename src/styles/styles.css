@@ -74,7 +74,7 @@ body {
     top: 0;
   }
 }
-@media screen and (max-width: 768px) and (orientation: landscape) {
+@media screen and (max-width: 767px) and (orientation: landscape) {
   .content {
     flex-direction: column;
     width: 100vw;
@@ -84,7 +84,6 @@ body {
   }
   .page {
     padding: 7%;
-    width: 100vw;
     position: absolute;
     left: 0;
     top: 0;
