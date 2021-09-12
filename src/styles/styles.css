@@ -213,7 +213,7 @@ div.project::before {
 }
 
 *::-webkit-scrollbar-track {
-  background: transparent;
+  background: peachpuff;
 }
 
 *::-webkit-scrollbar-thumb {
