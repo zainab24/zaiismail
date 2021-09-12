@@ -90,7 +90,7 @@ h2 {
 /* river */
 #box {
   min-width: 750px;
-  min-height: 750px;
+  min-height: 750;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   margin: 2.5rem;
   position: relative;
@@ -159,8 +159,8 @@ div.project::before {
 .river--1 {
   width: 5%;
   left: 25%;
-  top: 35%;
-  height: 15%;
+  top: 32%;
+  height: 14%;
   transform: rotate(-52deg);
   -webkit-animation: flow 5s infinite linear;
   animation: flow 5s infinite linear;
