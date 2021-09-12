@@ -55,7 +55,7 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  padding: 2rem
+  padding: 2rem;
 }
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .content {
@@ -71,8 +71,8 @@ body {
     width: 40vw;
     position: absolute;
     left: 50vw;
-    top: 0
-}
+    top: 0;
+  }
 }
 
 /* Page titles */
@@ -252,4 +252,8 @@ a:active {
   text-decoration: underline;
   font-weight: bold;
   font-family: "Ubuntu Mono";
+}
+a[target="_blank"]::after {
+  content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIpJREFUeNqEkIEJwCAMBGPpEs7hHK6hY+gauoZr6Bo6RtqEWkxb6EMQnuM/USEirIoxSmOKwDkhBEwp4VPkb4801Xun9xW4e+9FldYarLUvkBPPOp4JGWOgtSaSt6VWQKUU9nPOEiSIgAmNMdadFTjn7utqrXwh6fLvH9nXhamW5ksMnpfDnw4BBgBfunO056MmqAAAAABJRU5ErkJggg==");
+  padding-right: 1em;
 }
