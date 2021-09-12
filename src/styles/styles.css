@@ -232,7 +232,7 @@ div.project::before {
   z-index: -1;
 }
 .project img {
-  width: 40%;
+  width: 33%;
   float: left;
   margin: 1.5rem;
 }

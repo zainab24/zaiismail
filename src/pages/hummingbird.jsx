@@ -27,7 +27,7 @@ export default function Hummingbird() {
         </p>
       </div>
         <img
-          src="https://cdn.glitch.com/d7f5d655-bedb-46ba-b8a6-d3a4253e0b8b%2Fhummingbird.jpeg?v=1631386834026"
+          src="https://cdn.glitch.com/d7f5d655-bedb-46ba-b8a6-d3a4253e0b8b%2Fhummingbird-portrait.png?v=1631434824085"
           className="screenshot--portrait"
         />
         <img
