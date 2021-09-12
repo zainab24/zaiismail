@@ -67,13 +67,11 @@ body {
     top: 0.25rem;
   }
   .page {
+    padding-top: 7%;
     width: 40vw;
     position: absolute;
     left: 50vw;
     top: 0;
-    flex-direction: column;
-    display: flex;
-    justify-items: center;
   }
 }
 
