@@ -55,9 +55,9 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2rem
 }
-  @media screen and (min-width: 768px)and (orientation: landscape) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   .content {
     flex-direction: row;
     align-items: center;
@@ -69,9 +69,10 @@ body {
   }
   .page {
     width: 40vw;
-    position: relative;
+    position: absolute;
     left: 50vw;
-  }
+    top: 0
+}
 }
 
 /* Page titles */
@@ -163,8 +164,7 @@ div.project::before {
   height: 15%;
   transform: rotate(-52deg);
   -webkit-animation: flow 5s infinite linear;
-  animation: flow 5s infinite linear
-
+  animation: flow 5s infinite linear;
 }
 .river--2 {
   width: 7.5%;
