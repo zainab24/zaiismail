@@ -1,10 +1,9 @@
 import { defineConfig } from "vite";
 import reactRefresh from "@vitejs/plugin-react-refresh";
-import { ViteFaviconsPlugin } from "vite-plugin-favicon";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [reactRefresh(), ViteFaviconsPlugin()],
+  plugins: [reactRefresh()],
   build: {
     outDir: "build"
   },
