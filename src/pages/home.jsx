@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="page">
       <h1>
-        Hey! 👋🏽 I'm Zainab Ismail, a poet and software engineer based in London.
+        Hey! 👋🏽 I'm Zainab Ismail, a software engineer and poet based in London.
       </h1>
       <div className="projects">
         <Projects />

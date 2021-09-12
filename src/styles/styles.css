@@ -74,13 +74,13 @@ body {
     top: 0;
   }
 }
-@media screen and (mi-width: 768px) and (orientation: landscape) {
+@media screen and (max-width: 768px) and (orientation: landscape) {
   .content {
     flex-direction: column;
-    width: 100vw
+    width: 100vw;
   }
   #box-wrapper {
-   display: none
+    display: none;
   }
   .page {
     padding: 7%;
