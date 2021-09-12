@@ -5,7 +5,7 @@
 
     <title>zai ismail</title>
     <meta charset="UTF-8" />
-  
+
     <meta name="msapplication-TileColor" content="#ffdab9" />
     <link
       rel="apple-touch-icon"
@@ -28,6 +28,13 @@
     <meta
       content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=0"
     />
+    <script>
+      if (location.protocol != "https:" || !location.protocol) {
+        location.href =
+          "https:" +
+          window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
