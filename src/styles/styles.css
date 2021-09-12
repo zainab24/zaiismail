@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
   --color-bg: peachpuff;
@@ -6,8 +7,8 @@
   --color-primary: #AFECE0;
   --wrapper-height: 85vh;
   --image-max-width: 320px;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+  --font-family: "Lato";
+  --font-family-header: "Lato";
 }
 
 /* Basic page style resets */
@@ -18,26 +19,13 @@
   display: none !important;
 }
 
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
-}
-
 /******************************************************************************
 END Glitch hello-app default styles
 ******************************************************************************/
 
 /* Page structure */
 body {
-  font-family: HK Grotesk;
+  font-family: Lato;
   background-color: var(--color-bg);
   margin: 0;
   padding: 0;
@@ -111,7 +99,7 @@ h2 {
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  background: url("https://cdn.glitch.com/d7f5d655-bedb-46ba-b8a6-d3a4253e0b8b%2Fbackground.jpeg?v=1631378265800");
+  background: url("../assets/site/background.jpeg");
 }
 
 .river,
