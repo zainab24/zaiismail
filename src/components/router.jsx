@@ -4,6 +4,7 @@ import Home from "../pages/home";
 import About from "../pages/about";
 import Publications from "../pages/publications";
 import Hummingbird from "../pages/hummingbird";
+import Contact from "../pages/contact";
 
 /**
  * The router is imported in app.jsx
@@ -19,5 +20,6 @@ export default () => (
     <Route path="/about" component={About} />
     <Route path="/publications" component={Publications} />
     <Route path="hummingbird" component={Hummingbird} />
+    <Route path="/contact" component={Contact} />
   </Switch>
 );
