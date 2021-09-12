@@ -70,11 +70,26 @@ body {
     padding-top: 7%;
     width: 40vw;
     position: absolute;
-    left: 50vw;
+    left: 950px;
     top: 0;
   }
 }
-
+@media screen and (mi-width: 768px) and (orientation: landscape) {
+  .content {
+    flex-direction: column;
+    width: 100vw
+  }
+  #box-wrapper {
+   display: none
+  }
+  .page {
+    padding: 7%;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
 /* Page titles */
 h1 {
   color: #EF40B0;
@@ -232,7 +247,7 @@ div.project::before {
   z-index: -1;
 }
 .project img {
-  width: 33%;
+  width: 25%;
   float: left;
   margin: 1.5rem;
 }
