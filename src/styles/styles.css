@@ -70,11 +70,10 @@ body {
     padding-top: 7%;
     width: 40vw;
     position: absolute;
-    left: 50vw;
+    left: 950px;
     top: 0;
   }
 }
-
 /* Page titles */
 h1 {
   color: #EF40B0;
