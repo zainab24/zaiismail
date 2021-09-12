@@ -1,4 +1,7 @@
 import React from "react";
+import landscape from  '../assets/hummingbird/landscape.png';
+import portrait from  '../assets/hummingbird/portrait.png';
+
 
 export default function Hummingbird() {
   return (
@@ -27,11 +30,11 @@ export default function Hummingbird() {
         </p>
       </div>
         <img
-          src="../assets/projects/hummingbird/portrait.png"
+          src={portrait}
           className="screenshot--portrait"
         />
         <img
-          src="../assets/projects/hummingbird/landscape.png"
+          src={landscape}
           className="screenshot--landscape"
         />
     </div>

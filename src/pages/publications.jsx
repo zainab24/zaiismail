@@ -1,8 +1,8 @@
 import React from "react";
-import digital from "../../data/digital.js";
-import print from "../../data/print.js";
-import collections from "../../data/collections.js";
-import anthologies from "../../data/anthologies.js";
+import digital from "../data/digital.js";
+import print from "../data/print.js";
+import collections from "../data/collections.js";
+import anthologies from "../data/anthologies.js";
 
 export default function Publications() {
   return (

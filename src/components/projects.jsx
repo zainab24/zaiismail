@@ -1,5 +1,5 @@
 import React from "react";
-import projects from "../../data/projects.js";
+import projects from "../data/projects.js";
 import { Link } from "wouter";
 
 export const Projects = () => {
