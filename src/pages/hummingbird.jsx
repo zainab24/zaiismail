@@ -9,9 +9,16 @@ export default function Hummingbird() {
         </h1>
 
         <p>
-          This was my first real foray into creating a React web app,
-          experimenting with the <a href="http://poetrydb.org">poetrydb</a> API
-          and <a target="_blank" rel="noreferrer" href="https://github.com/peterh32/react-drag-drop-container">react-drag-drop-container</a>, and developing my responsive design skills.
+          This was my first foray into creating a React web app. I experimented
+          with the <a href="http://poetrydb.org">poetrydb</a> API and{" "}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/peterh32/react-drag-drop-container"
+          >
+            react-drag-drop-container
+          </a>
+          , and developed my responsive design skills.
         </p>
       </div>
       <a href="http://hummingbird.zaiismail.net">
