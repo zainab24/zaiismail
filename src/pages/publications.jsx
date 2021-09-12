@@ -2,6 +2,7 @@ import React from "react";
 import digital from "../../data/digital.js";
 import print from "../../data/print.js";
 import collections from "../../data/collections.js";
+import anthologies from "../../data/anthologies.js";
 
 export default function Publications() {
   return (
@@ -14,6 +15,22 @@ export default function Publications() {
               <p key={"collection" + i}>
                 <a href={item.URL}>
                   {item.title} with <i>{item.publisher}</i>
+                </a>
+              </p>
+              <p>{item.date}</p>
+            </>
+          );
+        })}
+      </div>
+
+      <div className="project">
+        <h2>anthologies</h2>
+        {anthologies.map((item, i) => {
+          return (
+            <>
+              <p key={"anthologies" + i}>
+                <a href={item.URL}>
+                  {item.title} in <i>{item.publication}</i>
                 </a>
               </p>
               <p>{item.date}</p>
