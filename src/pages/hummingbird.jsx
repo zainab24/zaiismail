@@ -7,10 +7,10 @@ export default function Hummingbird() {
   return (
     <div className="page">
       <div className="river-box">
-        <h1>
+        <h2>
           <a href="http://hummingbird.zaiismail.net" target="_blank"
             rel="noreferrer">hummingbird</a>
-        </h1>
+        </h2>
 
         <p>
           This was my first foray into creating a React web app. I experimented

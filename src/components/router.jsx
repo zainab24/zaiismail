@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Switch, Route, Router } from "wouter";
 import Home from "../pages/home";
-import About from "../pages/about";
+import Contact from "../pages/contact";
 import Publications from "../pages/publications";
 import Hummingbird from "../pages/hummingbird";
 
@@ -16,7 +16,7 @@ import Hummingbird from "../pages/hummingbird";
 export default () => (
   <Switch>
     <Route path="/" component={Home} />
-    <Route path="/about" component={About} />
+    <Route path="/contact" component={Contact} />
     <Route path="/publications" component={Publications} />
     <Route path="hummingbird" component={Hummingbird} />
   </Switch>

@@ -39,11 +39,11 @@ export default function Home() {
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav>
                     <Nav.Link as={Link} href="/">home</Nav.Link>
-                    <Nav.Link as={Link} href="/about">about</Nav.Link>
                     <Nav.Link as={Link} href="/publications">publications</Nav.Link>
                     <NavDropdown title="projects" id="basic-nav-dropdown">
                       <NavDropdown.Item as={Link} href="hummingbird">hummingbird</NavDropdown.Item>
                     </NavDropdown>
+                    <Nav.Link as={Link} href="/contact">contact</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
               </Container>
