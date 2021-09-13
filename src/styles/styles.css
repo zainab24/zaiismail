@@ -270,3 +270,6 @@ a[target="_blank"]::after {
   color: #000;
   border-color: #000;
 }
+.navbar-toggler {
+  transform: scale(2)
+}
