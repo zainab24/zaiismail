@@ -23,12 +23,12 @@ END Glitch hello-app default styles
 body {
   font-family: var(--font-family) !important;
   background-color: var(--color-bg) !important;
-  font-size: calc(1.25em + 0.5vh) !important;
+  font-size: calc(1em + 1vh) !important;
   line-height: 1.3;
   letter-spacing: 1px;
 }
 .dropdown-menu {
-  font-size: calc(calc(1.25em + 0.5vh) * 0.75) !important;
+  font-size: calc(calc(1em + 1vh) * 0.75) !important;
 }
 .wrapper {
   min-height: var(--wrapper-height);
@@ -272,5 +272,5 @@ a[target="_blank"]::after {
 }
 .navbar-toggler {
   transform: scale(2);
-  margin-bottom: 1em
+  margin-bottom: 2em
 }
