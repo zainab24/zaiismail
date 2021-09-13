@@ -11,9 +11,9 @@ export default function Home() {
       <div className="projects">
         <Projects />
         
-        <div className="project"><h2><Link href="/publications">publications</Link> ✍🏽</h2></div>
+        <div className="project"><h2><Link href="/publications">publications</Link></h2></div>
 
-        <div className="project"><h2><Link href="/contact">contact me</Link> 📝</h2></div>
+       contact me at zainabismail024@gmail.com
       </div>
     </div>
   );
