@@ -14,7 +14,7 @@ export default function Hummingbird() {
         </h2>
 
         <p>
-          This was my first foray into creating a React web app. I experimented
+          This was my first foray into creating React web apps. I experimented
           with the{" "}
           <a href="http://poetrydb.org" target="_blank" rel="noreferrer">
             poetrydb
