@@ -4,7 +4,7 @@ const digital = [
     publication: "Streetcake",
     URL:
       "https://www.streetcakemagazine.com/uploads/2/4/7/1/24713274/issue_68_part2_option__4_.pdf",
-    date: "August 2020"
+    date: "August 2020 (issue 68 part 2)"
   },
   {
     title: "Two villanelles, ‘Otherworld’ and ‘Pipette’",
