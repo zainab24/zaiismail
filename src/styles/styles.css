@@ -161,8 +161,15 @@ div.river-box::before,
   background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em,
     3.5em 11em, 100% 100%;
   background-repeat: repeat;
-  opacity: 0.75;
 } 
+.river,
+div.river-box::before {
+opacity: 0.75;
+}
+.navbar-toggler,
+.dropdown-item {
+  opacity: 1;
+}
 .dropdown-menu {
   background-color: transparent !important;
   padding: 0 !important;
