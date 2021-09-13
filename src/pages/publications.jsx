@@ -14,7 +14,7 @@ export default function Publications() {
             <>
               <p key={"collection" + i}>
                 <a href={item.URL}>
-                  {item.title} with <i>{item.publisher}</i>
+                  {item.title} with {item.publisher}
                 </a>
               </p>
               <p>{item.date}</p>
