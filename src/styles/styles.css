@@ -26,10 +26,10 @@ body {
   line-height: 1.3;
   letter-spacing: 1px;
 }
-h2, body {
+body {
   font-size: calc(1em + 1vh) !important;
 }
-.dropdown-menu {
+.dropdown-menu, h2 {
   font-size: calc(calc(1em + 1vh) * 0.75) !important;
 }
 .wrapper {
