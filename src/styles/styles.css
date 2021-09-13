@@ -3,12 +3,8 @@
 
 :root {
   --color-bg: peachpuff;
-  --color-text-main: #000000;
-  --color-primary: #AFECE0;
   --wrapper-height: 85vh;
-  --image-max-width: 320px;
   --font-family: "Lato";
-  --font-family-header: "Lato";
 }
 
 /* Basic page style resets */
@@ -25,8 +21,8 @@ END Glitch hello-app default styles
 
 /* Page structure */
 body {
-  font-family: Lato;
-  background-color: var(--color-bg);
+  font-family: var(--font-family) !important;
+  background-color: var(--color-bg) !important;
   margin: 0;
   padding: 0;
   font-size: calc(0.75em + 0.5vh);
@@ -83,8 +79,7 @@ h1 {
   font-family: "Ubuntu Mono";
   font-weight: bold;
   text-transform: lowercase;
-  font-size: 1.5em;
-  letter-spacing: 0.5px
+  letter-spacing: 0.5px;
 }
 h2 {
   color: #EF40B0;
@@ -105,7 +100,9 @@ h2 {
 }
 
 .river,
-div.project::before {
+div.river-box::before,
+.navbar-toggler,
+.dropdown-item {
   background: radial-gradient(
         1.5em 6.28571em at 1.95em,
         rgba(255, 255, 255, 0) 50%,
@@ -158,8 +155,11 @@ div.project::before {
   background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em,
     3.5em 11em, 100% 100%;
   background-repeat: repeat;
-  position: absolute;
   opacity: 0.75;
+} 
+.dropdown-menu {
+  background-color: transparent !important;
+  padding: 0 !important;
 }
 .river--1 {
   width: 5%;
@@ -213,20 +213,21 @@ div.project::before {
 }
 
 .river,
-div.project::before {
+div.river-box::before {
   filter: url(#turbulence);
+  position: absolute;
 }
 
-div.project::before {
+div.river-box::before {
   opacity: 0.35;
 }
 
-.project {
+.river-box {
   position: relative;
   padding: 3rem;
   margin-bottom: 3rem;
 }
-.project::before {
+.river-box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -235,7 +236,7 @@ div.project::before {
   height: 100%;
   z-index: -1;
 }
-.project img {
+.river-box img.project {
   width: 25%;
   float: left;
   margin: 1.5rem;
@@ -251,12 +252,17 @@ div.project::before {
 a:link,
 a:visited,
 a:hover,
-a:active {
-  color: #EF40B0;
+a:active,
+.nav-link {
+  color: #EF40B0 !important;
   text-decoration: underline;
   font-weight: bold;
   font-family: "Ubuntu Mono";
 }
 a[target="_blank"]::after {
   content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAYAAABSx2cSAAAAAXNSR0IArs4c6QAAAIRJREFUOE9jZMAB3jts+I8sJXgggBFdKSM+Re8d1icwMDDOB2nCqRmbBELj/0SQAURrRtYoeCBwAch1RGlG14grTEDiYD/DTH3vsF6BgYHxPgPD/0SQjfg0YmgGCYAMEDwQ+ACmEZeTsWpGt422mgn5DVtIg51NSCPe0B7VTFoIjMTQBgBaplgVz4gtywAAAABJRU5ErkJggg==");
+}
+.navbar-light .navbar-toggler {
+  color: #000;
+  border-color: #000;
 }

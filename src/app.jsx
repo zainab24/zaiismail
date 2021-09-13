@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Router, Link } from "wouter";
 
 /**
@@ -21,6 +21,9 @@ import useHashLocation from "./hooks/wouter-hash";
 // The component that adds our Meta tags to the page
 import Seo from "./components/seo.jsx";
 
+import {Navbar, Container, Nav, NavDropdown} from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // Home function that is reflected across the site
 export default function Home() {
   return (
@@ -28,14 +31,30 @@ export default function Home() {
       <Seo />
       <main role="main" className="wrapper">
         <div className="content">
-          <Link href="/">
             <div id="box-wrapper">
+
+            <Navbar expand="lg">
+              <Container>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                  <Nav>
+                    <Nav.Link as={Link} href="/">home</Nav.Link>
+                    <Nav.Link as={Link} href="/about">about</Nav.Link>
+                    <Nav.Link as={Link} href="/publications">publications</Nav.Link>
+                    <NavDropdown title="projects" id="basic-nav-dropdown">
+                      <NavDropdown.Item as={Link} href="hummingbird">hummingbird</NavDropdown.Item>
+                    </NavDropdown>
+                  </Nav>
+                </Navbar.Collapse>
+              </Container>
+            </Navbar>
+            <Link href="/">
               <div id="box">
                 <div class="river river--1"></div>
                 <div class="river river--2"></div>
-              </div>
+              </div>  
+            </Link>
             </div>
-          </Link>
           <svg>
             <filter id="turbulence" x="0" y="0">
               <feTurbulence baseFrequency="0.02 0.01"></feTurbulence>

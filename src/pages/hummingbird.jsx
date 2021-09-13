@@ -6,7 +6,7 @@ import portrait from  '../assets/hummingbird/portrait.png';
 export default function Hummingbird() {
   return (
     <div className="page">
-      <div className="project">
+      <div className="river-box">
         <h1>
           <a href="http://hummingbird.zaiismail.net" target="_blank"
             rel="noreferrer">hummingbird</a>
