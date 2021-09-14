@@ -13,7 +13,8 @@ export default function Publications() {
           return (
             <>
               <p key={"collection" + i}>
-                <a href={item.URL}>
+                <a href={item.URL} target="_blank"
+            rel="noreferrer">
                   {item.title} with {item.publisher}
                 </a>
               </p>
@@ -29,7 +30,8 @@ export default function Publications() {
           return (
             <>
               <p key={"anthologies" + i}>
-                <a href={item.URL}>
+                <a href={item.URL} target="_blank"
+            rel="noreferrer">
                   {item.title} in <i>{item.publication}</i>
                 </a>
               </p>
@@ -45,7 +47,8 @@ export default function Publications() {
           return (
             <>
               <p key={"print" + i}>
-                <a href={item.URL}>
+                <a href={item.URL} target="_blank"
+            rel="noreferrer">
                   {item.title} in <i>{item.publication}</i>
                 </a>
               </p>
@@ -61,7 +64,8 @@ export default function Publications() {
           return (
             <>
               <p key={"digital" + i}>
-                <a href={item.URL}>
+                <a href={item.URL} target="_blank"
+            rel="noreferrer">
                   {item.title} in <i>{item.publication}</i>
                 </a>
               </p>
