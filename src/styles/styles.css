@@ -23,13 +23,12 @@ END Glitch hello-app default styles
 body {
   font-family: var(--font-family) !important;
   background-color: var(--color-bg) !important;
-  line-height: 1.3;
   letter-spacing: 1px;
 }
 body {
   font-size: calc(1em + 1vh) !important;
 }
-.dropdown-menu, h2 {
+.dropdown-menu, h2, .nav-link {
   font-size: calc(calc(1em + 1vh) * 0.75) !important;
 }
 .wrapper {
