@@ -26,10 +26,10 @@ body {
   letter-spacing: 1px;
 }
 body {
-  font-size: calc(1em + 1vh) !important;
+  font-size: calc(12px + 1vh)!important;
 }
 .dropdown-menu, h2, .nav-link {
-  font-size: calc(calc(1em + 1vh) * 0.75) !important;
+  font-size: calc(12px + 2vh) !important;
 }
 .wrapper {
   min-height: var(--wrapper-height);
