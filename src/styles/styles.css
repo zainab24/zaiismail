@@ -28,7 +28,7 @@ body {
 body {
   font-size: calc(11px + 1vh)!important;
 }
-.dropdown-menu, h2, .nav-link {
+.dropdown-menu, .nav-link {
   font-size: calc(11px + 2vh) !important;
 }
 .wrapper {
