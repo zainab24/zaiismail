@@ -267,8 +267,8 @@ a:hover,
 a:active,
 .nav-link {
   color: #EF40B0 !important;
-  text-decoration: underline;
   font-weight: bold;
+  text-decoration: none;
   font-family: "Ubuntu Mono";
 }
 a[target="_blank"]::after {
