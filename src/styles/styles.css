@@ -104,7 +104,10 @@ div.nav-bar li {
   justify-content: center;
   align-items: center;
 }
-
+.hey {
+  font-size: calc(13px + 2vh);
+  color: #fff
+}
 @media only screen and (min-device-width: 481px) and (orientation: landscape) {
   body {
     display: flex;
@@ -134,9 +137,7 @@ div.nav-bar li {
     padding: 0 0 6rem 0
   }
   .hey {
-    font-size: 2em;
     padding-top: 20%;
-    color: #fff;
   }
   .page {
     left: 40%;
