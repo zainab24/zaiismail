@@ -12,8 +12,7 @@ import { Router, Link } from "wouter";
 
 // Import and apply CSS stylesheet
 import "./styles/styles.css";
-import './styles/dark-theme.css';
-import './styles/light-theme.css';
+
 // Where all of our pages come from
 import PageRouter from "./components/router.jsx";
 import useHashLocation from "./hooks/wouter-hash";

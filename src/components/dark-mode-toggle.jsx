@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react';
+import '../styles/dark-theme.css';
+import '../styles/light-theme.css';
 
 export const DarkModeToggle = () => {
 const [isDark, setIsDark] = useState(localStorage.getItem("theme") === "dark" ? true : false);
   useEffect(() => {
     document
     .getElementsByTagName("HTML")[0]
-    .setAttribute("data-theme", localStorage.getItem("theme"));
+    .setAttribute("data-theme", localStorage.getItem("theme") || light);
   },[]);
 
   const toggleThemeChange = () => {
