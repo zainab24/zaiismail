@@ -194,15 +194,14 @@ div.river-box::before {
 }
 
 .river--1 {
-  width: 5%;
-  left: 15%;
-  top: 4%;
-  height: 39%;
-  transform: rotate(
-70deg);
-  -webkit-animation: flow 5s infinite linear;
-  animation: flow 5s infinite linear;
-  opacity: 0.8
+  width: var(--river-width);
+  left: var(--river-left);
+  top: var(--river-left);
+  height: var(--river-height);
+  transform: var(--river-transform);
+  -webkit-animation: var(--river-animation);
+  animation: var(--river-animation);
+  opacity: var(--river-opacity)
 }
 .river--2 {
   width: 7.5%;
@@ -214,7 +213,8 @@ div.river-box::before {
   -webkit-animation: flow 5s infinite linear;
   animation: flow 5s infinite linear;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  opacity: 0.8
+  opacity: 0.8;
+  display: var(--river-display)
 }
 .river--3 {
   width: 9.5%;
@@ -226,7 +226,8 @@ div.river-box::before {
   -webkit-animation: flow 5s infinite linear;
   animation: flow 5s infinite linear;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  opacity: 1
+  opacity: 1;
+  display: var(--river-display)  
 }
 @-webkit-keyframes flow {
   0% {
