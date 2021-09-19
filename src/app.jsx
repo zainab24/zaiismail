@@ -54,7 +54,7 @@ export default function Home() {
   return (
     <Router hook={useHashLocation}>
       <Seo />
-      <input type="checkbox" id="theme-toggle" defaultChecked={!isDark}
+      <input type="checkbox" id="theme-toggle" defaultChecked={isDark}
         onChange={() => toggleThemeChange()} />
       <label for="theme-toggle"></label>
       <main role="main" className="wrapper">
