@@ -73,7 +73,6 @@ body {
   letter-spacing: 1px;
   color: var(--font-color)!important;
   overflow-x: hidden;
-  padding-bottom: 10vh
 }
 body {
   font-size: calc(11.5px + 1vh) !important;
