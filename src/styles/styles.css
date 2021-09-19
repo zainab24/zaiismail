@@ -34,8 +34,8 @@ END Glitch hello-app default styles
 
 #theme-toggle:not(:checked) + label {
   background: #fffc00; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #fffc00, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #fffc00, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to bottom, #fffc00, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #fffc00, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #theme-toggle:checked + label {
@@ -58,13 +58,17 @@ END Glitch hello-app default styles
   background-size: 100% 100%;
   width: 75vw;
   height: 75vw;
-  left: 10vw;
+  top: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
 }
-h1.title {  font-family: Shrikhand;
+h1.title a {  
+  font-family: Shrikhand !important;
   color: var(--title);
-  font-size: 2em;
+  font-size: calc(15px + 3vh);
   margin: 3rem;
   letter-spacing: 1px;
+  font-size: calc(15px + 3.5vh)
 }
 h2 {
   font-size: 1.5em !important;
@@ -83,7 +87,9 @@ body {
 section.main {
   background-color: var(--main-bg);
   min-height: 75vh;
-  padding: 40vh 0 10vh 3rem;
+  padding: 30vh 3rem 10vh 3rem;
+  position: relative;
+  top: 15vh;
 }
 .river-box {
   width: 90%;
@@ -104,6 +110,9 @@ div.nav-bar li {
   justify-content: center;
   align-items: center;
 }
+.nav-bar a {
+  font-size: 1.5em
+}
 .hey {
   font-size: calc(13px + 2.75vh);
 }
@@ -123,7 +132,9 @@ div.nav-bar li {
   #box {
     width: 40vw;
     height: 40vw;
-    left: 0
+    left: 0;
+    top: 0;
+    transform: none
   }
 /* river */
 
@@ -152,10 +163,7 @@ div.nav-bar li {
     justify-content: center;
     display: flex
   }
-  .nav-bar a:link,
-  .nav-bar a:visited,
-  .nav-bar a:hover,
-  .nav-bar a:active {
+  .nav-bar a {
     list-style-type: none;
     font-family: Lilita One;
     font-size: 1.5em;
@@ -250,7 +258,7 @@ div.nav-bar li {
 .river-box img.project {
   width: 25%;
   float: left;
-  margin: 1.5rem;
+  margin: 2rem;
 }
 .screenshot--portrait {
   width: 50%;

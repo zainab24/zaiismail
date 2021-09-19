@@ -6,7 +6,7 @@ const projects = [
     desc: "drag & drop poetry maker",
     thumbnail:
       hummingbird,
-    date: "September 2021"
+    date: "September 2021",
   }
 ];
 
