@@ -37,6 +37,7 @@ export default function Home() {
               <div id="box">
                 <div class="river river--1"></div>
                 <div class="river river--2"></div>
+                <div class="river river--3"></div>
               </div>  
             </Link>
             </div>

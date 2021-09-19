@@ -202,16 +202,31 @@ div.river-box::before {
 55deg);
   -webkit-animation: flow 5s infinite linear;
   animation: flow 5s infinite linear;
+  opacity: 0.3
 }
 .river--2 {
-  width: 9.5%;
-  left: 32%;
+  width: 7.5%;
+  left: 15%;
   top: 28%;
-  height: 100%;
-  transform: rotate(-80deg);
+  height: 48%;
+  transform: rotate(
+-83deg);
   -webkit-animation: flow 5s infinite linear;
   animation: flow 5s infinite linear;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  opacity: 0.6
+}
+.river--3 {
+  width: 9.5%;
+  left: 49%;
+  top: 47%;
+  height: 54%;
+  transform: rotate(
+-39deg);
+  -webkit-animation: flow 5s infinite linear;
+  animation: flow 5s infinite linear;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  opacity: 1
 }
 @-webkit-keyframes flow {
   0% {
