@@ -3,7 +3,7 @@ import '../styles/dark-theme.css';
 import '../styles/light-theme.css';
 
 export const DarkModeToggle = () => {
-const [isDark, setIsDark] = useState(localStorage.getItem("theme") === "dark" ? true : false);
+const [isDark, setIsDark] = useState(localStorage.getItem("theme") === "dark");
   useEffect(() => {
     if (!localStorage.getItem("theme")) {
         document
