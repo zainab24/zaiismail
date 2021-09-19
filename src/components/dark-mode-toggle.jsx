@@ -5,14 +5,15 @@ import '../styles/light-theme.css';
 export const DarkModeToggle = () => {
 const [isDark, setIsDark] = useState(localStorage.getItem("theme") === "dark" ? true : false);
   useEffect(() => {
-    if (localStorage.getItem("theme") === undefined) {
+    if (!localStorage.getItem("theme")) {
         document
+        .getElementsByTagName("HTML")[0]
         .setAttribute("data-theme", "light");
     }
     else {
-    document
-    .getElementsByTagName("HTML")[0]
-    .setAttribute("data-theme", localStorage.getItem("theme"));
+        document
+        .getElementsByTagName("HTML")[0]
+        .setAttribute("data-theme", localStorage.getItem("theme"));
     }
   },[]);
 
