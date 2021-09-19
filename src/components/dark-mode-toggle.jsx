@@ -3,32 +3,32 @@ import '../styles/dark-theme.css';
 import '../styles/light-theme.css';
 
 export const DarkModeToggle = () => {
-  const [checked, setChecked] = useState(localStorage.getItem("theme") === "dark" ? true : false);
+  const [isDark, setIsDark] = useState(localStorage.getItem("theme") === "dark");
   useEffect(() => {
     document
     .getElementsByTagName("HTML")[0]
     .setAttribute("data-theme", localStorage.getItem("theme"));
   },[]);
 
-  const toggleThemeChange = () => {;
-    if (checked === false) {
+  const toggleThemeChange = () => {
+    if (isDark === false) {
       localStorage.setItem("theme", "dark");
       document
         .getElementsByTagName("HTML")[0]
         .setAttribute("data-theme", localStorage.getItem("theme"));
-      setChecked(true);
+        setIsDark(true);
     } else {
       localStorage.setItem("theme", "light");
       document
         .getElementsByTagName("HTML")[0]
         .setAttribute("data-theme", localStorage.getItem("theme"));
-      setChecked(false);
+        setIsDark(false);
     }
   }
 
   return (
       <>
-      <input type="checkbox" id="theme-toggle" defaultChecked={!checked}
+      <input type="checkbox" id="theme-toggle" defaultChecked={isDark}
         onChange={() => toggleThemeChange()} />
       <label for="theme-toggle"></label>
       </>
