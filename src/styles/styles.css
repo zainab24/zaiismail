@@ -72,7 +72,8 @@ body {
   background-color: var(--body-color)!important;
   letter-spacing: 1px;
   color: var(--font-color)!important;
-  overflow-x: hidden
+  overflow-x: hidden;
+  margin-bottom: 10vh
 }
 body {
   font-size: calc(11.5px + 1vh) !important;
