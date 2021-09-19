@@ -80,7 +80,7 @@ body {
 section.main {
   background-color: var(--main-bg);
   min-height: 100vh;
-  padding: 50vh 0 0 3rem
+  padding: 45vh 0 0 3rem
 }
 .river-box {
   width: 90%;
