@@ -199,7 +199,7 @@ div.river-box::before {
   top: 5%;
   height: 39%;
   transform: rotate(
-55deg);
+70deg);
   -webkit-animation: flow 5s infinite linear;
   animation: flow 5s infinite linear;
   opacity: 0.3
