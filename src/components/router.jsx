@@ -3,6 +3,7 @@ import { Switch, Route, Router } from "wouter";
 import Home from "../pages/home";
 import Contact from "../pages/contact";
 import Publications from "../pages/publications";
+import Projects from "../pages/projects";
 import Hummingbird from "../pages/hummingbird";
 
 /**
@@ -18,6 +19,7 @@ export default () => (
     <Route path="/" component={Home} />
     <Route path="/contact" component={Contact} />
     <Route path="/publications" component={Publications} />
+    <Route path="/projects" component={Projects} />
     <Route path="hummingbird" component={Hummingbird} />
   </Switch>
 );

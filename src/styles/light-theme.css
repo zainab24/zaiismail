@@ -1,0 +1,58 @@
+html[data-theme="light"]  {
+  --font-color: #363636;
+  --body-color: peachpuff;
+  --main-bg: #5ebdae;
+  --title: #ef40b0;
+  --bg-img: url("../assets/light.jpeg");
+  --river-bg:  radial-gradient(
+    1.5em 6.28571em at 1.95em,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.25) 55%,
+    rgba(255, 255, 255, 0) 55%
+  )
+  0 0,
+radial-gradient(
+    1.5em 6.28571em at -0.45em,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.25) 55%,
+    rgba(255, 255, 255, 0) 55%
+  )
+  1.5em 5.5em,
+radial-gradient(
+    2.3em 4.57143em at 2.99em,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.3) 55%,
+    rgba(255, 255, 255, 0) 55%
+  )
+  0 0,
+radial-gradient(
+    2.3em 4.57143em at -0.69em,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.3) 55%,
+    rgba(255, 255, 255, 0) 55%
+  )
+  2.3em 4em,
+radial-gradient(
+    3.5em 6.28571em at 4.55em,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.25) 55%,
+    rgba(255, 255, 255, 0) 55%
+  )
+  0 0,
+radial-gradient(
+    3.5em 6.28571em at -1.05em,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.25) 55%,
+    rgba(255, 255, 255, 0) 55%
+  )
+  3.5em 5.5em,
+radial-gradient(#15ffa5, #00ced1);
+--nav-bg: #15ffa5;
+--blank: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAYAAABSx2cSAAAAAXNSR0IArs4c6QAAAIRJREFUOE9jZMAB3jts+I8sJXgggBFdKSM+Re8d1icwMDDOB2nCqRmbBELj/0SQAURrRtYoeCBwAch1RGlG14grTEDiYD/DTH3vsF6BgYHxPgPD/0SQjfg0YmgGCYAMEDwQ+ACmEZeTsWpGt422mgn5DVtIg51NSCPe0B7VTFoIjMTQBgBaplgVz4gtywAAAABJRU5ErkJggg==")
+}

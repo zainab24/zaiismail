@@ -1,0 +1,10 @@
+html[data-theme="dark"]  {
+  --font-color: #fff;
+  --body-color: #664062;
+  --main-bg: #000;
+  --title: #fff;
+  --bg-img: url("../assets/dark.png");
+  --river-bg: none;
+  --nav-bg: #664062;
+  --blank: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAYAAABSx2cSAAAAAXNSR0IArs4c6QAAAHVJREFUOE/t0ssNgCAQBNCZTixNKtPOtJMxS2KyARbw4Ek5wr79BSI4kuSfSLIMZS9I0gpgMxTi1oODyRJMYw9J7tbdFC5htJM8is8qaQFwAEhWsQcrbBeWgOR5w6jlJi6rvYuHszU+SG57BLvb/vGzDXxx2xfdBVQVlt1v3wAAAABJRU5ErkJggg==);
+}
