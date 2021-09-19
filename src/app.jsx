@@ -32,18 +32,18 @@ export default function Home() {
       <DarkModeToggle/>
       <main role="main" className="wrapper">
         <h1 className="title"><Link href="/">zainab ismail</Link></h1>
+          <Link href="/">
             <div id="box-wrapper">
-            <Link href="/">
               <div id="box">
                 <div class="river river--1"></div>
                 <div class="river river--2"></div>
                 <div class="river river--3"></div>
               </div>  
-            </Link>
             </div>
+            </Link>
           <svg>
             <filter id="turbulence" x="0" y="0">
-              <feTurbulence baseFrequency="0.02 0.01"></feTurbulence>
+              <feTurbulence baseFrequency="0.025 0.01"></feTurbulence>
               <feDisplacementMap
                 scale="45"
                 in="SourceGraphic"
