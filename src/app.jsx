@@ -80,7 +80,7 @@ export default function Home() {
           <section className="main">
           <div className="nav-bar"><ul><li><Link href="/publications">writing ✍🏽</Link></li>
           <li><Link href="/projects">coding 💻</Link></li>
-          <li><Link href="/contact">contact</Link></li></ul>
+          <li><Link href="/contact">contact ✉️</Link></li></ul>
           </div>
         
             <PageRouter />
