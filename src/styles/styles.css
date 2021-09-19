@@ -218,9 +218,9 @@ div.river-box::before {
 }
 .river--3 {
   width: 9.5%;
-  left: 49%;
-  top: 47%;
-  height: 54%;
+  left: 50%;
+  top: 46%;
+  height: 55%;
   transform: rotate(
 -39deg);
   -webkit-animation: flow 5s infinite linear;
