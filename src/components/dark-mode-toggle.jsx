@@ -3,7 +3,7 @@ import '../styles/dark-theme.css';
 import '../styles/light-theme.css';
 
 export const DarkModeToggle = () => {
-  const [isDark, setIsDark] = useState(localStorage.getItem("theme") === "dark");
+const [isDark, setIsDark] = useState(localStorage.getItem("theme") === "dark" ? true : false);
   useEffect(() => {
     document
     .getElementsByTagName("HTML")[0]
@@ -28,7 +28,7 @@ export const DarkModeToggle = () => {
 
   return (
       <>
-      <input type="checkbox" id="theme-toggle" defaultChecked={isDark}
+      <input type="checkbox" id="theme-toggle" defaultChecked={!isDark}
         onChange={() => toggleThemeChange()} />
       <label for="theme-toggle"></label>
       </>
