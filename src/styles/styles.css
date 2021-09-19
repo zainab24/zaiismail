@@ -155,7 +155,6 @@ div.nav-bar li {
     font-size: 1.5em;
     letter-spacing: 1px;
     font-weight: normal !important;
-    color: #fff !important;
   }
 }
 
@@ -252,7 +251,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  color: var(--title) !important;
+  color: var(--link) !important;
   text-decoration: none;
   font-family: "Lilita One";
 }
