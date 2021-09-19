@@ -105,7 +105,7 @@ div.nav-bar li {
   align-items: center;
 }
 .hey {
-  font-size: calc(13px + 2vh);
+  font-size: calc(13px + 2.75vh);
   color: #fff
 }
 @media only screen and (min-device-width: 481px) and (orientation: landscape) {
