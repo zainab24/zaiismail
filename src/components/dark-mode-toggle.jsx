@@ -7,7 +7,13 @@ const [isDark, setIsDark] = useState(localStorage.getItem("theme") === "dark" ? 
   useEffect(() => {
     document
     .getElementsByTagName("HTML")[0]
-    .setAttribute("data-theme", localStorage.getItem("theme") || light);
+    .setAttribute("data-theme", localStorage.getItem("theme"));
+
+    var preference = localStorage.getItem("theme");
+    if(null === preference)
+    {
+    preference = "light";
+    }
   },[]);
 
   const toggleThemeChange = () => {
