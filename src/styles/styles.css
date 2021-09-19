@@ -106,7 +106,6 @@ div.nav-bar li {
 }
 .hey {
   font-size: calc(13px + 2.75vh);
-  color: #fff
 }
 @media only screen and (min-device-width: 481px) and (orientation: landscape) {
   body {
@@ -168,8 +167,7 @@ div.nav-bar li {
   }
 }
 
-.river,
-div.river-box::before {
+.river {
   background: var(--river-bg);
   background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em,
     3.5em 11em, 100% 100%;
@@ -178,21 +176,9 @@ div.river-box::before {
   position: absolute;
 }
 .river-box {
-  position: relative;
-  padding: 3rem;
-  z-index: 1;
-  margin-bottom: 3rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
-.river-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-}
-
 .river--1 {
   width: var(--river-width);
   left: var(--river-left);

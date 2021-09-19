@@ -1,9 +1,9 @@
 html[data-theme="light"]  {
   --font-color: #363636;
   --body-color: peachpuff;
-  --main-bg: #5ebdae;
-  --title: #870758;
-  --link: #870758;
+  --main-bg: #bceee6;
+  --title: #a7327c;
+  --link: #a7327c;
   --bg-img: url("../assets/light.jpeg");
   --river-bg:  radial-gradient(
     1.5em 6.28571em at 1.95em,
