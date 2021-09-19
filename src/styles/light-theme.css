@@ -56,4 +56,5 @@ radial-gradient(
 radial-gradient(#59f7ba, #2ce5e8);
 --nav-bg: #fff;
 --blank: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAYAAABSx2cSAAAAAXNSR0IArs4c6QAAAIRJREFUOE9jZMAB2tkj/iNLVf5cwYiulBGfonaOiASG/wzzQZpwasYmAdfIyJAIMoBozcgaK3+sWAByHVGa0TXiChOQONjPMFPbOSIUGP4z3GdgZEgE2YhPI4ZmkADIgMofKx7ANOJyMlbN6LbRVjMhv2ELabCzCWnEG9qjmkkLgZEY2gBJWloVgKsjqAAAAABJRU5ErkJggg==");
+--arrows: invert(100%)
 }

@@ -73,7 +73,7 @@ body {
   letter-spacing: 1px;
   color: var(--font-color)!important;
   overflow-x: hidden;
-  margin-bottom: 10vh
+  padding-bottom: 10vh
 }
 body {
   font-size: calc(11.5px + 1vh) !important;
@@ -81,7 +81,7 @@ body {
 section.main {
   background-color: var(--main-bg);
   min-height: 100vh;
-  padding: 45vh 0 0 3rem
+  padding: 45vh 0 10vh 3rem
 }
 .river-box {
   width: 90%;
@@ -185,16 +185,17 @@ div.river-box::before {
 }
 
 .river--1 {
-  width: 7%;
-  left: -1%;
-  top: 37%;
-  height: 28%;
-  transform: rotate(-52deg);
+  width: 5%;
+  left: 15%;
+  top: 5%;
+  height: 39%;
+  transform: rotate(
+55deg);
   -webkit-animation: flow 5s infinite linear;
   animation: flow 5s infinite linear;
 }
 .river--2 {
-  width: 7.5%;
+  width: 9.5%;
   left: 32%;
   top: 28%;
   height: 100%;
@@ -261,5 +262,5 @@ a[target="_blank"]::after {
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(100%);
+  filter: var(--arrows)
 }
