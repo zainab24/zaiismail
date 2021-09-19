@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import { Router, Link } from "wouter";
 /**
  * This code defines the react app
@@ -12,8 +12,6 @@ import { Router, Link } from "wouter";
 
 // Import and apply CSS stylesheet
 import "./styles/styles.css";
-import "./styles/light-theme.css";
-import "./styles/dark-theme.css";
 
 // Where all of our pages come from
 import PageRouter from "./components/router.jsx";
@@ -21,42 +19,17 @@ import useHashLocation from "./hooks/wouter-hash";
 
 // The component that adds our Meta tags to the page
 import Seo from "./components/seo.jsx";
+import { DarkModeToggle } from './components/dark-mode-toggle'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Home function that is reflected across the site
 export default function Home() {
 
-  const [isDark, setIsDark] = useState(localStorage.getItem("theme") === "dark")
-
-  useEffect(() => {
-    document
-    .getElementsByTagName("HTML")[0]
-    .setAttribute("data-theme", localStorage.getItem("theme"));
-  },[]);
-
-  const toggleThemeChange = () => {
-    if (isDark === false) {
-      localStorage.setItem("theme", "dark");
-      document
-        .getElementsByTagName("HTML")[0]
-        .setAttribute("data-theme", localStorage.getItem("theme"));
-        setIsDark(true);
-    } else {
-      localStorage.setItem("theme", "light");
-      document
-        .getElementsByTagName("HTML")[0]
-        .setAttribute("data-theme", localStorage.getItem("theme"));
-        setIsDark(false);
-    }
-  }
-
   return (
     <Router hook={useHashLocation}>
       <Seo />
-      <input type="checkbox" id="theme-toggle" defaultChecked={isDark}
-        onChange={() => toggleThemeChange()} />
-      <label for="theme-toggle"></label>
+      <DarkModeToggle/>
       <main role="main" className="wrapper">
         <h1 className="title"><Link href="/">zainab ismail</Link></h1>
             <div id="box-wrapper">
