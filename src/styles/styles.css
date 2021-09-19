@@ -214,7 +214,7 @@ div.river-box::before {
   -webkit-animation: flow 5s infinite linear;
   animation: flow 5s infinite linear;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  opacity: 0.6
+  opacity: 0.8
 }
 .river--3 {
   width: 9.5%;
