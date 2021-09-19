@@ -50,8 +50,9 @@ END Glitch hello-app default styles
   overflow: hidden;
   border-radius: 50%;
   background: var(--bg-img);
-}
-#box {
+  background-size: 100% 100%;
+  width: 75vw;
+  height: 75vw;
   background-size: 100% 100%;
   width: 75vw;
   height: 75vw;
@@ -79,8 +80,8 @@ body {
 }
 section.main {
   background-color: var(--main-bg);
-  min-height: 100vh;
-  padding: 45vh 0 10vh 3rem
+  min-height: 75vh;
+  padding: 40vh 0 10vh 3rem;
 }
 .river-box {
   width: 90%;
