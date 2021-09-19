@@ -9,6 +9,9 @@ const [isDark, setIsDark] = useState(localStorage.getItem("theme") === "dark");
         document
         .getElementsByTagName("HTML")[0]
         .setAttribute("data-theme", "light");
+        document
+        .querySelector('meta[name="theme-color"]')
+        .setAttribute('content', '#ffdab9')
     }
     else {
         document
@@ -23,6 +26,9 @@ const [isDark, setIsDark] = useState(localStorage.getItem("theme") === "dark");
       document
         .getElementsByTagName("HTML")[0]
         .setAttribute("data-theme", localStorage.getItem("theme"));
+        document
+        .querySelector('meta[name="theme-color"]')
+        .setAttribute('content', '#664062')
         setIsDark(true);
     } else {
       localStorage.setItem("theme", "light");
