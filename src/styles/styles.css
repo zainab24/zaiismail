@@ -251,7 +251,7 @@ div.river-box::before {
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--body-color);
+  background: var(--main-bg);
 }
 
 *::-webkit-scrollbar-thumb {
