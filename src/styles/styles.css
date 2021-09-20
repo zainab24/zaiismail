@@ -125,9 +125,8 @@ div.nav-bar li {
   }
   #box-wrapper {
     position: fixed;
-    width: 40vw;
     top: 10%;
-    left: 20%;
+    left: 12vw;
     z-index: 10
   }
   #box {
@@ -140,10 +139,10 @@ div.nav-bar li {
 /* river */
 
   section.main {
-    width: 60vw;
+    width: 63vw;
     position: absolute;
     min-height: 100vh;
-    left: 40vw;
+    left: 37vw;
     top: 0;
     padding: 0 0 6rem 0
   }
