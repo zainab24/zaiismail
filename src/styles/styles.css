@@ -189,38 +189,12 @@ div.nav-bar li {
 .river--1 {
   width: var(--river-width);
   left: var(--river-left);
-  top: var(--river-left);
+  top: var(--river-top);
   height: var(--river-height);
   transform: var(--river-transform);
   -webkit-animation: var(--river-animation);
   animation: var(--river-animation);
   opacity: var(--river-opacity)
-}
-.river--2 {
-  width: 7.5%;
-  left: 8%;
-  top: 28%;
-  height: 50%;
-  transform: rotate(
--83deg);
-  -webkit-animation: flow 5s infinite linear;
-  animation: flow 5s infinite linear;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  opacity: 0.8;
-  display: var(--river-display)
-}
-.river--3 {
-  width: 9.5%;
-  left: 47%;
-  top: 45%;
-  height: 60%;
-  transform: rotate(
--39deg);
-  -webkit-animation: flow 5s infinite linear;
-  animation: flow 5s infinite linear;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  opacity: 1;
-  display: var(--river-display)  
 }
 @-webkit-keyframes flow {
   0% {
