@@ -53,7 +53,7 @@ html[data-theme="light"] {
         rgba(255, 255, 255, 0) 55%
       )
       3.5em 5.5em,
-    radial-gradient(#1f5166, #4b7474, #2ce5e8);
+    radial-gradient(#2ce5e8, #4b7474, #1f5166);
   --nav-bg: peachpuff;
   --blank: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAYAAABSx2cSAAAAAXNSR0IArs4c6QAAAIRJREFUOE9jZMAB2tkj/iNLVf5cwYiulBGfonaOiASG/wzzQZpwasYmAdfIyJAIMoBozcgaK3+sWAByHVGa0TXiChOQONjPMFPbOSIUGP4z3GdgZEgE2YhPI4ZmkADIgMofKx7ANOJyMlbN6LbRVjMhv2ELabCzCWnEG9qjmkkLgZEY2gBJWloVgKsjqAAAAABJRU5ErkJggg==");
   --arrows: invert(100%);
