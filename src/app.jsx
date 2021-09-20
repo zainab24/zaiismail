@@ -43,7 +43,7 @@ export default function Home() {
             </Link>
           <svg>
             <filter id="turbulence" x="0" y="0">
-              <feTurbulence baseFrequency="0.025 0.01"></feTurbulence>
+              <feTurbulence baseFrequency="0.01 0.01"></feTurbulence>
               <feDisplacementMap
                 scale="45"
                 in="SourceGraphic"

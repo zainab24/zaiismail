@@ -198,7 +198,7 @@ div.nav-bar li {
 }
 .river--2 {
   width: 7.5%;
-  left: 11%;
+  left: 8%;
   top: 28%;
   height: 50%;
   transform: rotate(
@@ -211,9 +211,9 @@ div.nav-bar li {
 }
 .river--3 {
   width: 9.5%;
-  left: 49%;
-  top: 47%;
-  height: 55%;
+  left: 47%;
+  top: 45%;
+  height: 60%;
   transform: rotate(
 -39deg);
   -webkit-animation: flow 5s infinite linear;
