@@ -56,11 +56,7 @@ html[data-theme="dark"] {
   --nav-bg: #664062;
   --blank: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAYAAABSx2cSAAAAAXNSR0IArs4c6QAAAHVJREFUOE/t0ssNgCAQBNCZTixNKtPOtJMxS2KyARbw4Ek5wr79BSI4kuSfSLIMZS9I0gpgMxTi1oODyRJMYw9J7tbdFC5htJM8is8qaQFwAEhWsQcrbBeWgOR5w6jlJi6rvYuHszU+SG57BLvb/vGzDXxx2xfdBVQVlt1v3wAAAABJRU5ErkJggg==);
   --link: #fff;
-  --river-width: 43%;
-  --river-left: 12%;
-  --river-top: 0%;
-  --river-height: 161%;
-  --river-transform: rotate(-88deg);
   --river-opacity: 0.9;
-  --river-animation: flow 10s infinite linear
+  --river-top: 0%;
+  --river-height: 162%;
 }

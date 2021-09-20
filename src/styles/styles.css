@@ -185,13 +185,13 @@ div.nav-bar li {
   margin-bottom: 2rem;
 }
 .river--1 {
-  width: var(--river-width);
-  left: var(--river-left);
+  width: 43%;
+  left: 12%;
   top: var(--river-top);
   height: var(--river-height);
-  transform: var(--river-transform);
-  -webkit-animation: var(--river-animation);
-  animation: var(--river-animation);
+  transform: rotate(-88deg);
+  -webkit-animation: flow 10s infinite linear;
+  animation: flow 10s infinite linear;
   opacity: var(--river-opacity)
 }
 @-webkit-keyframes flow {

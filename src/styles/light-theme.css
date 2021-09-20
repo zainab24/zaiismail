@@ -57,11 +57,7 @@ html[data-theme="light"] {
   --nav-bg: peachpuff;
   --blank: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAYAAABSx2cSAAAAAXNSR0IArs4c6QAAAIRJREFUOE9jZMAB2tkj/iNLVf5cwYiulBGfonaOiASG/wzzQZpwasYmAdfIyJAIMoBozcgaK3+sWAByHVGa0TXiChOQONjPMFPbOSIUGP4z3GdgZEgE2YhPI4ZmkADIgMofKx7ANOJyMlbN6LbRVjMhv2ELabCzCWnEG9qjmkkLgZEY2gBJWloVgKsjqAAAAABJRU5ErkJggg==");
   --arrows: invert(100%);
-  --river-width: 9%;
-  --river-left: 51%;
-  --river-top: 38%;
-  --river-height: 70%;
-  --river-transform: rotate(-37deg);
-  --river-opacity: 0.8;
-  --river-animation: flow 5s infinite linear;
+  --river-opacity: 1;
+  --river-top: 20%;
+  --river-height: 158%;
 }
