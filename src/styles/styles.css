@@ -87,7 +87,7 @@ body {
 section.main {
   background-color: var(--main-bg);
   min-height: 65vh;
-  padding: 20vh 3rem 10vh 3rem;
+  padding: 30vh 3rem 10vh 3rem;
   position: relative;
   top: 15vh;
 }
