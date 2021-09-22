@@ -26,8 +26,8 @@ END Glitch hello-app default styles
   content: "";
   display: inline-block;
   cursor: pointer;
-  height: 80px;
-  width: 80px;
+  height: 4em;
+  width: 4em;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
   z-index: 5
@@ -67,10 +67,9 @@ END Glitch hello-app default styles
 h1.title a {  
   font-family: Shrikhand !important;
   color: var(--title);
-  font-size: calc(15px + 3vh);
+  font-size: 1.2em;
   margin: 3rem;
   letter-spacing: 1px;
-  font-size: calc(15px + 3.5vh)
 }
 h2 {
   font-size: 1.5em !important;
@@ -82,9 +81,6 @@ body {
   letter-spacing: 1px;
   color: var(--font-color)!important;
   overflow-x: hidden;
-}
-body {
-  font-size: calc(11.5px + 1vh) !important;
 }
 section.main {
   background-color: var(--main-bg);
@@ -112,10 +108,10 @@ div.nav-bar li {
   border-top: 2px solid var(--font-color)
 }
 .nav-bar a {
-  font-size: 1.5em
+  font-size: 1.75em
 }
-.hey {
-  font-size: calc(13px + 2.75vh);
+.hey { 
+  font-size: 2em;
 }
 
 @media (min-width: 481px) and (orientation: landscape) {
@@ -140,10 +136,10 @@ div.nav-bar li {
 /* river */
 
   section.main {
-    width: 63vw;
+    width: 68vw;
     position: absolute;
     min-height: 100vh;
-    left: 37vw;
+    left: 32vw;
     top: 0;
     padding: 0 0 6rem 0
   }
@@ -167,13 +163,12 @@ div.nav-bar li {
   .nav-bar a {
     list-style-type: none;
     font-family: Lilita One;
-    font-size: 1.5em;
     letter-spacing: 1px;
     font-weight: normal !important;
   }
   h1.title {
     position: fixed;
-    z-index:2
+    z-index: 2
   }
 }
 
