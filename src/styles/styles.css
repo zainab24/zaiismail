@@ -26,11 +26,11 @@ END Glitch hello-app default styles
   content: "";
   display: inline-block;
   cursor: pointer;
-  height: 4em;
-  width: 4em;
+  height: 4.75em;
+  width: 4.75em;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
-  z-index: 5
+  z-index: 2
 }
 
 #theme-toggle:not(:checked) + label {
@@ -92,7 +92,7 @@ section.main {
 
 div.nav-bar li {
   display: inline-block;
-  margin: 0.5rem;
+  margin: 30px
 }
 .nav-bar {
   background-color: var(--nav-bg); 
@@ -101,7 +101,7 @@ div.nav-bar li {
   width: 100vw;
   height: 10vh;
   list-style-type: none;
-  z-index: 6;
+  z-index: 2;
   left: 0;
   display: flex;
   justify-content: center;
@@ -120,19 +120,19 @@ div.nav-bar li {
     display: flex;
     flex-direction: row;
     position: relative;
+    z-index: 1 
   }
   #box-wrapper {
     position: fixed;
     top: 10%;
     left: 12vw;
-    z-index: 10
   }
   #box {
     width: 40vw !important;
     height: 40vw !important;
     left: 0;
     top: 0;
-    transform: none
+    transform: none;
   }
 /* river */
 
@@ -163,11 +163,11 @@ div.nav-bar li {
   .nav-bar a {
     font-family: Lilita One;
     letter-spacing: 1px;
-    margin-left: 3rem;
     font-size: calc(1em + .75vh);
   }
   h1.title {
     position: fixed;
+    z-index: 2;
   }
 }
 
