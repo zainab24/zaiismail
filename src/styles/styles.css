@@ -67,7 +67,7 @@ END Glitch hello-app default styles
 h1.title a {  
   font-family: Shrikhand !important;
   color: var(--title);
-  font-size: calc(1em + 0.5vw);
+  font-size: calc(1em + 0.65vw);
   margin: 3rem;
   letter-spacing: 1px;
 }
@@ -85,9 +85,9 @@ body {
 section.main {
   background-color: var(--main-bg);
   min-height: 65vh;
-  padding: 25vh 3rem 20vh 3rem;
+  padding: 35vh 3rem 20vh 3rem;
   position: relative;
-  top: 15vh;
+  top: 0;
 }
 
 div.nav-bar li {
@@ -112,7 +112,7 @@ div.nav-bar li {
   font-size: calc(1em + .25vh);
 }
 .hey { 
-  font-size: 1.75em;
+  font-size: 1.65em;
 }
 
 @media (min-width: 481px) and (orientation: landscape) {
