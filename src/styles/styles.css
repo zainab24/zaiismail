@@ -92,7 +92,7 @@ section.main {
 
 div.nav-bar li {
   display: inline-block;
-  margin: 30px
+  margin: 2vw
 }
 .nav-bar {
   background-color: var(--nav-bg); 
