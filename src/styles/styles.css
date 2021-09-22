@@ -78,7 +78,7 @@ h2 {
 body {
   font-family: "Signika Negative" !important;
   background-color: var(--body-color)!important;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: var(--font-color)!important;
   overflow-x: hidden;
 }
