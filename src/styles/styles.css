@@ -70,6 +70,7 @@ h1.title a {
   font-size: calc(1em + 0.5vw);
   margin: 3rem;
   letter-spacing: 1px;
+  z-index: 10
 }
 h2 {
   font-size: 1.5em !important;
@@ -167,7 +168,6 @@ div.nav-bar li {
   }
   h1.title {
     position: fixed;
-    z-index: 2
   }
 }
 
