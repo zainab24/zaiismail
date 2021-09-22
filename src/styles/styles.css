@@ -85,7 +85,7 @@ body {
 section.main {
   background-color: var(--main-bg);
   min-height: 65vh;
-  padding: 25vh 3rem 10vh 3rem;
+  padding: 25vh 3rem 20vh 3rem;
   position: relative;
   top: 15vh;
 }
@@ -112,7 +112,7 @@ div.nav-bar li {
   font-size: calc(1em + .25vh);
 }
 .hey { 
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
 @media (min-width: 481px) and (orientation: landscape) {
