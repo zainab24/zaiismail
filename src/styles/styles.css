@@ -26,8 +26,8 @@ END Glitch hello-app default styles
   content: "";
   display: inline-block;
   cursor: pointer;
-  height: 4.75em;
-  width: 4.75em;
+  height: 4em;
+  width: 4em;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
   z-index: 2
