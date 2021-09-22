@@ -115,7 +115,7 @@ div.nav-bar li {
 .hey {
   font-size: calc(13px + 2.75vh);
 }
-@media only screen and (min-device-width: 481px) and (orientation: landscape) {
+@media only screen and (min-device-width: 481px) {
   body {
     display: flex;
     flex-direction: row;
