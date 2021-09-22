@@ -45,6 +45,8 @@ END Glitch hello-app default styles
 }
 /* Page structure */
 #box {
+  width: 40vh !important;
+  height: 40vh !important;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   position: absolute;
   z-index: 1;
@@ -115,6 +117,7 @@ div.nav-bar li {
 .hey {
   font-size: calc(13px + 2.75vh);
 }
+
 @media (min-width: 481px) and (orientation: landscape) {
   body {
     display: flex;
@@ -128,8 +131,8 @@ div.nav-bar li {
     z-index: 10
   }
   #box {
-    width: 40vw;
-    height: 40vw;
+    width: 40vw !important;
+    height: 40vw !important;
     left: 0;
     top: 5vh;
     transform: none
@@ -169,7 +172,8 @@ div.nav-bar li {
     font-weight: normal !important;
   }
   h1.title {
-    position: fixed
+    position: fixed;
+    z-index:2
   }
 }
 
