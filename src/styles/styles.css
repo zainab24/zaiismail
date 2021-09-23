@@ -93,6 +93,7 @@ div.nav-bar li {
 .nav-bar {
   background-color: var(--nav-bg); 
   position: fixed;
+  z-index: 2;
   bottom: 0;
   width: 100vw;
   height: 10vh;
