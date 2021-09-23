@@ -55,9 +55,7 @@ END Glitch hello-app default styles
   background: var(--bg-img);
   background-size: 100% 100%;
   background-size: 100% 100%;
-  width: 75vw;
-  height: 75vw;
-  top: 20vh;
+  top: 25vh;
   left: 50%;
   transform: translateX(-50%);
   border: 2px solid var(--font-color)
@@ -65,11 +63,9 @@ END Glitch hello-app default styles
 h1.title a {  
   font-family: Shrikhand !important;
   color: var(--title);
-  font-size: calc(1em + 0.65vw);
+  font-size: calc(1em + 0.5vw);
   margin: 3rem;
   letter-spacing: 1px;
-  position: relative;
-  top: 1em
 }
 h2 {
   font-size: 1.5em !important;
@@ -85,9 +81,9 @@ body {
 section.main {
   background-color: var(--main-bg);
   min-height: 65vh;
-  padding: 35vh 3rem 20vh 3rem;
+  padding: 20vh 3rem 20vh 3rem;
   position: relative;
-  top: 0;
+  top: 10vh;
 }
 
 div.nav-bar li {
@@ -277,4 +273,15 @@ a[target="_blank"]::after {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: green; }
+}
+
+/* ipads */
+
+@media (max-width: 1024px) and (max-height: 1366px) {
+  #box {
+    top: 8vh
+  }
+  section.main {
+    padding-top: 25vh
+  }
 }
