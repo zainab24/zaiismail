@@ -256,7 +256,7 @@ a[target="_blank"]::after {
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: 
-    typing 1s steps(10, end),
+    typing 0.875s steps(10, end),
     blink-caret .75s step-end infinite;
   font-family: 'Ubuntu Mono';
   color: green;
@@ -266,7 +266,7 @@ a[target="_blank"]::after {
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 50% }
+  to { width: 30% }
 }
 
 /* The typewriter cursor effect */
