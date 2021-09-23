@@ -93,12 +93,11 @@ div.nav-bar li {
 .nav-bar {
   background-color: var(--nav-bg); 
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   bottom: 0;
   width: 100vw;
   height: 10vh;
   list-style-type: none;
-  z-index: 2;
   left: 0;
   display: flex;
   justify-content: center;
@@ -151,7 +150,7 @@ div.nav-bar li {
     width: 30vw;
   }
   .nav-bar {
-    position: static;
+    position: relative;
     border-top: none;
     background: transparent;
     margin: 3rem auto;
