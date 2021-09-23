@@ -54,12 +54,10 @@ END Glitch hello-app default styles
   border-radius: 50%;
   background: var(--bg-img);
   background-size: 100% 100%;
-  width: 75vw;
-  height: 75vw;
   background-size: 100% 100%;
   width: 75vw;
   height: 75vw;
-  top: 15vh;
+  top: 20vh;
   left: 50%;
   transform: translateX(-50%);
   border: 2px solid var(--font-color)
@@ -70,6 +68,8 @@ h1.title a {
   font-size: calc(1em + 0.65vw);
   margin: 3rem;
   letter-spacing: 1px;
+  position: relative;
+  top: 1em
 }
 h2 {
   font-size: 1.5em !important;
