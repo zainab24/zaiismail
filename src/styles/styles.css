@@ -76,6 +76,7 @@ body {
   background-color: var(--body-color)!important;
   letter-spacing: 0.5px;
   color: var(--font-color)!important;
+  overflow-x: hidden
 }
 section.main {
   background-color: var(--main-bg);
