@@ -3,9 +3,9 @@ import { Projects } from "../components/projects";
 
 export default function Home() {
   return (
-    <div className="page">
+    <section className="page-1">
 
         <Projects />
-    </div>
+    </section>
     );
 }

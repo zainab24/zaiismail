@@ -31,7 +31,7 @@ export default function Home() {
       <Seo />
       <DarkModeToggle/>
       <main role="main" className="wrapper">
-        <h1 className="title"><Link href="/">zainab ismail</Link></h1>
+        <div className="main-wrapper">
           <Link href="/">
             <div id="box-wrapper">
               <div id="box">
@@ -54,9 +54,10 @@ export default function Home() {
           <li><Link href="/projects">coding 💻</Link></li>
           <li><Link href="/contact">contact ✉️</Link></li></ul>
           </div>
-        
+          </section>
             <PageRouter />
-        </section>
+    
+        </div>
       </main>
     </Router>
   );

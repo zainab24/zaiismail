@@ -6,7 +6,7 @@ import { Carousel } from "react-bootstrap"
 
 export default function Hummingbird() {
   return (
-    <div className="page">
+    <section className="page-1">
       <div className="river-box">
         <h2>
           <a href="http://hummingbird.zaiismail.net" target="_blank"
@@ -48,6 +48,6 @@ export default function Hummingbird() {
         </Carousel.Item>
       </Carousel>
 
-    </div>
+    </section>
   );
 }

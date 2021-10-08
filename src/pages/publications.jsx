@@ -6,7 +6,7 @@ import anthologies from "../data/anthologies.js";
 
 export default function Publications() {
   return (
-    <div className="page">
+    <section className="page-1">
       <div className="river-box">
         <h2>collections</h2>
         {collections.map((item, i) => {
@@ -70,6 +70,6 @@ export default function Publications() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }
