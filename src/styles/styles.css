@@ -27,6 +27,9 @@ body {
 [hidden] {
   display: none !important;
 }
+.main-wrapper {
+  position: relative
+}
 ol, ul {
   padding-left: 0 !important;
 }
@@ -66,9 +69,9 @@ section.main {
 section.page-1 {
   background-color: var(--main-bg);
   padding: 30vh 5vh 20vh;
-  top: 0;
-  position: relative;
-  width: 100vw
+  top: 30vh;
+  position: absolute;
+  width: 100vw;
 }
 section.page-2 {
   background-color: var(--page-2-bg);
@@ -83,6 +86,11 @@ section.page-3 {
 /* Flowing river */
 #box-wrapper, #box {
   z-index: 10000
+}
+#box-wrapper {
+  top: 15vh;
+  position: absolute;
+  left: 50vw;
 }
 #box {
   width: 40vh !important;
@@ -233,6 +241,7 @@ h1.title {
   #box-wrapper {
     top: 10vh;
     position: relative;
+    left: 0;
   }
   section.page-1 {
     padding: 35vh 10vh;
@@ -261,18 +270,9 @@ h1.title {
   top: -7.5vh !important
 }
 }
-@media (min-width: 400px) {
-  #box-wrapper {
-    top: 20vh;
-    position: relative
-  }
-}
 /* Main landscape layout switch */
 @media (min-width: 1010px) and (orientation: landscape) {
   /* Sections */
-  div.main-wrapper {
-    position: relative;
-  }
   section.main {
     width: 68vw;
     position: absolute;
@@ -282,7 +282,7 @@ h1.title {
     background-color: var(--main-bg);
   }
   section.page-1 {
-    padding: 15vh 10vw 5vh 25vw;
+    padding: 0 10vw 5vh 25vw;
     width: 68vw;
     position: relative;
     left: 32vw;
