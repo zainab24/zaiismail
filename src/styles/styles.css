@@ -97,6 +97,9 @@ h2 {
   margin-bottom: 7.5vh !important;
   text-transform: lowercase
 }
+.project-info h2 {
+  margin-bottom: 0.5em !important
+}
 body {
   font-family: "Ubuntu" !important;
   background-color: var(--body-color) !important;
@@ -358,8 +361,5 @@ a[target="_blank"]::after {
     flex-direction: column;
     margin-left: 2.5vw;
     width: 100%
-  }
-  .project-info h2 {
-    margin-bottom: 0.5em !important
   }
 }
