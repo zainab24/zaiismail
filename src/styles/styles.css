@@ -84,9 +84,11 @@ h1.title {
   display: inline-block
 }
 h2 {
+  font-family: 'Lilita One' !important;
   font-size: 1.5em !important;
-  text-transform: lowercase;
-  font-weight: bold !important;
+  color: var(--title);
+  text-align: center;
+  margin-bottom: 7.5vh !important
 }
 body {
   font-family: "Ubuntu" !important;
@@ -104,6 +106,11 @@ section.page-1 {
 }
 section.page-2 {
   background-color: var(--page-2-bg);
+  padding: 5vh 5vh 15vh 5vh;
+  width: 100vw
+}
+section.page-3 {
+  background-color: var(--page-3-bg);
   padding: 5vh 5vh 15vh 5vh;
   width: 100vw
 }
@@ -181,13 +188,13 @@ div.nav-bar li {
   }
 
   section.page-1 {
-    padding: 20vh 10vw 5vh 25vw;
+    padding: 15vh 10vw 5vh 25vw;
     width: 68vw;
     position: relative;
     left: 32vw;
     min-height: 100vh;
   }
-  section.page-2 {
+  section.page-2, section.page-3 {
     padding: 5vh 10vw 10vh 25vw;
     width: 68vw;
     left: 32vw;
@@ -258,12 +265,17 @@ div.nav-bar li {
 }
 a:link,
 a:visited,
-a:hover,
 a:active {
   color: var(--link) !important;
   text-decoration: none;
   font-family: "Lilita One";
-  font-weight: normal
+  font-weight: normal;
+}
+a:hover {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #fff;
+  text-underline-offset: 0.25em;
 }
 a[target="_blank"]::after {
   content: var(--blank);
@@ -309,10 +321,6 @@ a[target="_blank"]::after {
   text-align: center;
   padding: 1em;
 }
-.on-earth h2 {
-  text-align: center;
-  padding-bottom: 2rem;
-}
 .on-earth img {
   max-width: 100%;
 }
@@ -324,7 +332,7 @@ a[target="_blank"]::after {
   section.page-1 {
     padding: 35vh 10vh;
   }
-  section.page-2 {
+  section.page-2, section.page-3 {
     padding: 10vh;
   }
 }

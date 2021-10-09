@@ -4,6 +4,7 @@ import gif2 from  '../assets/on-earth/OnEarth2.gif';
 import gif3 from  '../assets/on-earth/OnEarth3.gif';
 import gif4 from  '../assets/on-earth/OnEarth4.gif';
 import gif5 from  '../assets/on-earth/OnEarth5.gif';
+import { Projects } from "../components/projects";
 
 export default function Home() {
   return (<>
@@ -12,7 +13,12 @@ export default function Home() {
         <h1 className="title">Hey! 👋🏽</h1> I'm Zainab Ismail, a <span>web developer</span> and poet based in London. I love exploring the intersections between technology, art and poetry.
       </div>
       </section>
-    <section className="page-2">
+      <section className="page-2">
+
+  <h2>Projects</h2>
+        <Projects/>
+      </section>
+    <section className="page-3">
       <div className="on-earth">
       <h2>On Earth</h2>
       <img src={gif1} alt="The rain reminds me of my roots on Earth / A holy hush settles absolute on Earth"/>
