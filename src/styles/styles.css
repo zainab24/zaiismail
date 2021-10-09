@@ -58,8 +58,8 @@ section.main {
   box-shadow: inset -18px -16px 1px 1px #fff;
 }
 .river-box img.project {
-  width: 50vw;
-  margin: auto;
+  width: 30vw;
+  margin: 2.5em auto;
   display: block;
 }
 #box {
@@ -99,6 +99,8 @@ body {
   background-color: var(--body-color) !important;
   letter-spacing: 0.5px;
   color: var(--font-color) !important;
+}
+#root {
   overflow-x: hidden;
 }
 section.page-1 {
@@ -323,6 +325,7 @@ a[target="_blank"]::after {
 }
 .on-earth img {
   max-width: 100%;
+  margin: 0 
 }
 @media (min-width: 768px) and (max-width: 1024px) and (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
   #box-wrapper {
