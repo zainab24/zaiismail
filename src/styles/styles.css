@@ -261,7 +261,7 @@ h1.title {
   top: -7.5vh !important
 }
 }
-@media (orientation: portrait) {
+@media (min-width: 400px) {
   #box-wrapper {
     top: 20vh;
     position: relative
