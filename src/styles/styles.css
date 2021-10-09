@@ -10,6 +10,11 @@ body {
   letter-spacing: 0.5px;
   color: var(--font-color) !important;
 }
+button, input, optgroup, select, textarea {
+  background-color: transparent;
+  color: var(--font-color);
+  letter-spacing: 0.5px
+}
 #root {
   overflow-x: hidden;
 }
@@ -38,7 +43,7 @@ h2 {
   font-size: 1.5em !important;
   color: var(--title);
   text-align: center;
-  margin-bottom: 7.5vh !important;
+  margin: 2vh 0 7.5vh 0 !important;
   text-transform: lowercase
 }
 /* Links */
@@ -64,14 +69,14 @@ section.main {
   padding: 10vh;
 }
 section.page-1 {
-  background-color: var(--main-bg);
+  background-image: linear-gradient(var(--main-bg), var(--page-2-bg));
   padding: 30vh 5vh 20vh;
   top: 0;
   position: relative;
   width: 100vw
 }
 section.page-2 {
-  background-color: var(--page-2-bg);
+  background-image: linear-gradient(var(--page-2-bg), var(--page-3-bg));
   padding: 5vh 5vh 15vh 5vh;
   width: 100vw
 }
