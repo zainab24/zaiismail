@@ -109,7 +109,7 @@ section.page-2 {
 }
 div.nav-bar li {
   display: inline-block;
-  margin: 2vw;
+  margin-left: 2.5vw;
 }
 .nav-bar {
   background-color: var(--nav-bg);
@@ -149,7 +149,6 @@ div.nav-bar li {
     background-color: var(--main-bg);
   }
   .river-box img.project {
-    width: 15vw;
     float: left;
     margin-right: 2vw;
   }
@@ -319,7 +318,7 @@ a[target="_blank"]::after {
 }
 @media (min-width: 768px) and (max-width: 1024px) and (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
   #box-wrapper {
-    top: -10vh;
+    top: 10vh;
     position: relative;
   }
   section.page-1 {
@@ -328,20 +327,9 @@ a[target="_blank"]::after {
   section.page-2 {
     padding: 10vh;
   }
+}
+@media (min-width: 500px) {
   .river-box img.project {
-    width: 25vw;
+    width: 250px;
 }
-}
-@media (min-width: 768px) and (max-width: 1024px) and (max-width: 1024px) and (max-height: 1366px) and (orientation: landscape) {
-  #box-wrapper {
-    top: 25vh;
-    position: fixed;
-  }
-  section.main {
-    padding-top: 0vh;
-  }
-  section.page-1,  section.page-2{
-    padding: 10vh 10vw 10vh 25vw;
-    min-height: 100vh;
-  }
 }
