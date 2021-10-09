@@ -7,7 +7,7 @@ import anthologies from "../data/anthologies.js";
 export default function Publications() {
   return (
     <section className="page-1">
-      <div className="river-box">
+      <div>
         <h2>collections</h2>
         {collections.map((item, i) => {
           return (
@@ -23,7 +23,7 @@ export default function Publications() {
         })}
       </div>
 
-      <div className="river-box">
+      <div>
         <h2>anthologies</h2>
         {anthologies.map((item, i) => {
           return (
@@ -39,7 +39,7 @@ export default function Publications() {
         })}
       </div>
 
-      <div className="river-box">
+      <div>
         <h2>print magazines</h2>
         {print.map((item, i) => {
           return (
@@ -55,7 +55,7 @@ export default function Publications() {
         })}
       </div>
 
-      <div className="river-box">
+      <div>
         <h2>digital magazines</h2>
         {digital.map((item, i) => {
           return (

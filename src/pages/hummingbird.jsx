@@ -7,7 +7,6 @@ import { Carousel } from "react-bootstrap"
 export default function Hummingbird() {
   return (
     <section className="page-1">
-      <div className="river-box">
         <h2>
           <a href="http://hummingbird.zaiismail.net" target="_blank"
             rel="noreferrer">hummingbird</a>
@@ -29,7 +28,6 @@ export default function Hummingbird() {
           </a>
           , and developed my responsive design skills.
         </p>
-      </div>
 
       <Carousel nextLabel={null} prevLabel={null}>
         <Carousel.Item>

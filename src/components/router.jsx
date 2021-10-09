@@ -5,6 +5,7 @@ import Contact from "../pages/contact";
 import Publications from "../pages/publications";
 import Projects from "../pages/projects";
 import Hummingbird from "../pages/hummingbird";
+import Tajweed from "../pages/tajweed";
 
 /**
  * The router is imported in app.jsx
@@ -21,5 +22,6 @@ export default () => (
     <Route path="/publications" component={Publications} />
     <Route path="/projects" component={Projects} />
     <Route path="hummingbird" component={Hummingbird} />
+    <Route path="tajweed" component={Tajweed} />
   </Switch>
 );

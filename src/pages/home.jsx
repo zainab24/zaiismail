@@ -10,7 +10,7 @@ export default function Home() {
   return (<>
     <section className="page-1">
       <div className="hey">
-        <h1 className="title">Hey! 👋🏽</h1> I'm Zainab Ismail, a <span>web developer</span> and poet based in London. I love exploring the intersections between technology, art and poetry.
+        <p><h1 className="title">Hey! 👋🏽</h1> I'm Zainab Ismail, a <span>web developer</span> and poet based in London. I love to explore where tech, art and poetry intersect.</p>
       </div>
       </section>
       <section className="page-2">
