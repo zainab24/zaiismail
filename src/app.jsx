@@ -48,7 +48,6 @@ export default function Home() {
               ></feDisplacementMap>
             </filter>
           </svg>
-          {/* Router specifies which component to insert here as the main content */}
           <section className="main">
           <div className="nav-bar"><ul><li><Link href="/publications">writing ✍🏽</Link></li>
           <li><Link href="/projects">coding 💻</Link></li>
@@ -56,7 +55,7 @@ export default function Home() {
           </div>
           </section>
             <PageRouter />
-    
+  
         </div>
       </main>
     </Router>

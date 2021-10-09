@@ -27,9 +27,6 @@ body {
 [hidden] {
   display: none !important;
 }
-.main-wrapper {
-  position: relative
-}
 ol, ul {
   padding-left: 0 !important;
 }
@@ -69,9 +66,9 @@ section.main {
 section.page-1 {
   background-color: var(--main-bg);
   padding: 30vh 5vh 20vh;
-  top: 30vh;
-  position: absolute;
-  width: 100vw;
+  top: 0;
+  position: relative;
+  width: 100vw
 }
 section.page-2 {
   background-color: var(--page-2-bg);
@@ -87,11 +84,6 @@ section.page-3 {
 #box-wrapper, #box {
   z-index: 10000
 }
-#box-wrapper {
-  top: 15vh;
-  position: absolute;
-  left: 50vw;
-}
 #box {
   width: 40vh !important;
   height: 40vh !important;
@@ -105,6 +97,7 @@ section.page-3 {
   left: 50%;
   transform: translateX(-50%);
   border: 2px solid var(--font-color);
+  top: 20vh
 }
 /* Dark mode toggle */
 #theme-toggle {
@@ -238,10 +231,8 @@ h1.title {
 }
 /* iPads */
 @media (min-width: 768px) and (max-width: 1024px) and (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
-  #box-wrapper {
-    top: 10vh;
-    position: relative;
-    left: 0;
+  #box {
+    top: 10vh
   }
   section.page-1 {
     padding: 35vh 10vh;
@@ -273,6 +264,9 @@ h1.title {
 /* Main landscape layout switch */
 @media (min-width: 1010px) and (orientation: landscape) {
   /* Sections */
+  div.main-wrapper {
+    position: relative;
+  }
   section.main {
     width: 68vw;
     position: absolute;
@@ -282,7 +276,7 @@ h1.title {
     background-color: var(--main-bg);
   }
   section.page-1 {
-    padding: 0 10vw 5vh 25vw;
+    padding: 15vh 10vw 5vh 25vw;
     width: 68vw;
     position: relative;
     left: 32vw;
