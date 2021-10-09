@@ -10,7 +10,7 @@ export default function Tajweed() {
         </h2>
         
         <p>
-          To help students of Arabic, I created a study reference as a progressive web app which collects notes, sound files, diagrams and a voice recorder for comparison in one place. The app can be added to the home screen and also used offline.
+          To help students of Arabic, I created a study reference as a progressive web app in React. It collects notes, sound files, diagrams and a voice recorder for comparison in one place. The app can be added to the home screen and also used offline.
         </p>
 
      
