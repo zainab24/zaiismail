@@ -7,7 +7,7 @@ export const Projects = () => {
     <>
   {projects.map((item, i) => (
     <div className="river-box" key={"item" + i}>
-      <a href="http://hummingbird.zaiismail.net">
+      <a href={item.link}>
      <img className="project" src={item.thumbnail} alt={item.name}/></a>
      <div className="project-info">
       <h2><a href="http://hummingbird.zaiismail.net" target="_blank" rel="noreferrer">{item.name}</a></h2>

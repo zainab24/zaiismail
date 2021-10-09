@@ -9,12 +9,14 @@ const projects = [
     thumbnail:
       tajweed,
     date: "October 2021",
+    link: "http://tajweed.zaiismail.net"
   },{
     name: "hummingbird",
     desc: "Drag & drop poetry maker",
     thumbnail:
       hummingbird,
     date: "September 2021",
+    link: "http://hummingbird.zaiismail.net"
   }
 ];
 
