@@ -43,8 +43,12 @@ h2 {
   font-size: 1.5em !important;
   color: var(--title);
   text-align: center;
-  margin: 0 0 7.5vh 0 !important;
-  text-transform: lowercase
+  text-transform: lowercase;
+  margin-bottom: 2rem !important;
+  margin-top: 2rem  !important;
+}
+h2:nth-of-type(1) {
+  margin-top: 0 !important
 }
 /* Links */
 a:link,
@@ -324,14 +328,15 @@ h1.title {
 /* River styling */
 .river {
   background: var(--river-bg);
-  background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em,
-    3.5em 11em, 100% 100%;
+  background-size: 24px 176px, 25px 176px, 37px 128px, 37px 128px, 56px 176px,
+    56px 176px, 100% 100%;
   background-repeat: repeat;
   filter: url(#turbulence);
   position: absolute;
 }
 .river-box {
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 .river--1 {
   width: 43%;
