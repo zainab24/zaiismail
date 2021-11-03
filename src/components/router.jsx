@@ -3,7 +3,7 @@ import { Switch, Route } from "wouter";
 import Home from "../pages/home";
 import Publications from "../pages/publications";
 import Projects from "../pages/projects";
-import Writing from "../pages/Writing";
+import Writing from "../pages/writing";
 
 /**
  * The router is imported in app.jsx
