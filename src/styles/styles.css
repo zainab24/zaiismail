@@ -46,7 +46,7 @@ a:active {
   font-family: 'Ubuntu' !important;
   font-weight: bold;
 }
-a:hover {
+a:hover:not(.navbar-toggler-icon:after:hover):not(a.nav-link:hover) {
   text-decoration-line: underline;
   text-decoration-style: wavy;
   text-decoration-color: var(--link);
@@ -80,12 +80,13 @@ div.dark-mode-toggle {
 }
 .navbar-toggler-icon:after, a.nav-link {
   font-size: 1.75em !important;
-  color: var(--link) !important;
+  color: #b41ac2 !important;
   font-family: Shrikhand !important;
   content: 'MENU';
   padding: 0.5em !important;
   text-transform: uppercase;
-  font-weight: normal
+  font-weight: normal;
+  text-shadow: var(--rainbow)
 }
 .navbar-toggler-icon {
   width: initial !important;

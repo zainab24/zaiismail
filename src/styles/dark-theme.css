@@ -2,4 +2,5 @@ html[data-theme="dark"] {
   --font-color: #fff;
   --body-bg: #111;
   --link: #fff;
+  --rainbow: none
 }

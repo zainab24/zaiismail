@@ -64,7 +64,7 @@ texting you in a fit of repeating rain.</p>
 
 <p>The streetlights paint lemon parallelograms on the platform,
 sketch some kind of sanctuary for me in the dark.</p>
-        <p><b>Read more of my writing on <a href="http://instagram.com/zai._i">instagram</a>.</b></p>
+        <p><b><a href="http://instagram.com/zai._i">Read more of my writing on instagram.</a></b></p>
       </div>
       </>
   );
