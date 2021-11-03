@@ -2,16 +2,16 @@ html[data-theme="light"] {
   --font-color: #b41ac2;
   --body-bg: #c9ebed;
   --link: #b41ac2;
-  --rainbow: 1px 1px 2px #edb2f2, 
-  2px 2px 2px #f1b3cd, 
-  3px 3px 2px #f1bdb3,
-  4px 4px 2px #f2d5b4,
-  5px 5px 2px #f1f1b1,
-  6px 6px 2px #cbf3b1,
-  7px 7px 2px #87f1ba,
-  8px 8px 2px #6fead7,
-  9px 9px 2px #87d9e2,
-  10px 10px 2px #a7cee4,
-  11px 11px 2px #a7b9e5,
-  12px 12px 2px #a8a7e6;
+  --rainbow: 1px 1px #edb2f2, 
+  2px 2px #f1b3cd, 
+  3px 3px #f1bdb3,
+  4px 4px #f2d5b4,
+  5px 5px #f1f1b1,
+  6px 6px #cbf3b1,
+  7px 7px #87f1ba,
+  8px 8px #6fead7,
+  9px 9px #87d9e2,
+  10px 10px #a7cee4,
+  11px 11px #a7b9e5,
+  12px 12px #a8a7e6;
 }
