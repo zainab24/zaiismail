@@ -100,5 +100,5 @@ div.dark-mode-toggle {
   border: none !important
 }
 .navbar-toggler:focus {
-  box-shadow: 0 !important
+  box-shadow: none !important
 }
