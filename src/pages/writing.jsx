@@ -14,6 +14,8 @@ export default function Writing() {
         <p>A floral fog births echoing promises.<br/>The echoing promises run loose on Earth.</p>
 
         <p>A round cradle sustains me. The rain reins me<br/>back to this perfect truth on Earth.</p>
+
+        <p>read more on my <a href="http://instagram.com/zai._i">instagram</a>.</p>
       </div>
       </>
   );
