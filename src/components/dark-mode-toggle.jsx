@@ -35,7 +35,7 @@ const [isDark, setIsDark] = useState(localStorage.getItem("theme") === "dark");
 
   return (
       <div className="dark-mode-toggle">
-      <input type="checkbox" id="theme-toggle" defaultChecked={!isDark}
+      <input type="checkbox" id="theme-toggle" defaultChecked={isDark}
         onChange={() => toggleThemeChange()} />
       <label for="theme-toggle"></label>
       </div>
