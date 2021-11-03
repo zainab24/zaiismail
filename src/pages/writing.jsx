@@ -15,7 +15,56 @@ export default function Writing() {
 
         <p>A round cradle sustains me. The rain reins me<br/>back to this perfect truth on Earth.</p>
 
-        <p>read more on my <a href="http://instagram.com/zai._i">instagram</a>.</p>
+
+<h2>train in the rain / autumn’s departure</h2>
+
+
+<p>Train in the rain;<br/>
+cherish the quiet swelling</p>
+
+<p>as I breathe up<br/>
+tracks to immediate London.</p>
+
+<p>Mind the gap<br/>
+fills my brain,
+each
+<br/>
+<br/>
+<br/>
+drop.</p>
+
+<p>Blind concrete routes<br/>
+polluted, I pine as I<br/>
+fall…</p>
+
+<p>come home?</p>
+
+<p>In an abstract sense<br/>
+I am a pine tree<br/>
+rooted in failure.</p>
+
+<p>Autumn<br/>
+leaves.</p>
+
+        <h2>musings standing at a station</h2>
+
+        <p>Light and shade, colours overlapping until the end of time when
+the train might decide to blur in and out.</p>
+
+<p>Maybe our eyes are made for this express purpose, to quantify 
+each passing cloud, focused on its geometric beauty.</p>
+
+<p>Maybe each leaf that beseeches the London sky has sworn to 
+dance in the drizzle, the golden ratio an abstract anthem tracing 
+around its form. And maybe I should dissect summer’s colours 
+slowly under my thumb rather than stay comfortably numb, 
+texting you in a fit of repeating rain.</p> 
+
+<p>Sunset collapses in on itself. I yawn at your reply.</p>
+
+<p>The streetlights paint lemon parallelograms on the platform,
+sketch some kind of sanctuary for me in the dark.</p>
+        <p>(Read more of my work on <a href="http://instagram.com/zai._i">instagram</a>.)</p>
       </div>
       </>
   );
