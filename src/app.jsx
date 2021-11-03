@@ -1,5 +1,5 @@
 import React from "react";
-import { Router, Link } from "wouter";
+import { Router } from "wouter";
 /**
  * This code defines the react app
  *
@@ -22,6 +22,7 @@ import Seo from "./components/seo.jsx";
 import { DarkModeToggle } from './components/dark-mode-toggle'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Nav, Container } from 'react-bootstrap'
 
 // Home function that is reflected across the site
 export default function Home() {
@@ -29,34 +30,25 @@ export default function Home() {
   return (
     <Router hook={useHashLocation}>
       <Seo />
-      <DarkModeToggle/>
+<DarkModeToggle/>
+
+      <Navbar expand="lg">
+  <Container>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="me-auto">
+        <Nav.Link href="/">Home</Nav.Link>
+        <Nav.Link href="#projects">Projects</Nav.Link>
+        <Nav.Link href="#publications">Publications</Nav.Link>
+        <Nav.Link href="#writing">Writing</Nav.Link>
+      </Nav>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
       <main role="main" className="wrapper">
-        <div className="main-wrapper">
-          <Link href="/">
-            <div id="box-wrapper">
-              <div id="box">
-                <div class="river river--1"></div>
-              </div>  
-            </div>
-            </Link>
-          <svg>
-            <filter id="turbulence" x="0" y="0">
-              <feTurbulence baseFrequency="0.015 0.015"></feTurbulence>
-              <feDisplacementMap
-                scale="45"
-                in="SourceGraphic"
-              ></feDisplacementMap>
-            </filter>
-          </svg>
-          <section className="main">
-          <div className="nav-bar"><ul><li><Link href="/publications">writing ✍🏽</Link></li>
-          <li><Link href="/projects">coding 💻</Link></li>
-          <li><Link href="/contact">contact ✉️</Link></li></ul>
-          </div>
-          </section>
-            <PageRouter />
-  
-        </div>
+    
+<PageRouter/>
+
       </main>
     </Router>
   );

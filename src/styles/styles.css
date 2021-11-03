@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&family=Ubuntu&display=swap");
 
 /* General rules */
 * {
@@ -6,27 +6,22 @@
 }
 body {
   font-family: "Ubuntu" !important;
-  background-color: var(--body-color) !important;
+  background-color: var(--body-bg) !important;
   letter-spacing: 0.5px;
   color: var(--font-color) !important;
 }
-button, input, optgroup, select, textarea {
-  background-color: transparent;
-  color: var(--font-color);
-  letter-spacing: 0.5px
-}
-#root {
-  overflow-x: hidden;
+main.wrapper {
+  padding: 7%
 }
 *::-webkit-scrollbar {
   width: 12px;
   -webkit-appearance: none;
 }
 *::-webkit-scrollbar-track {
-  background: var(--main-bg);
+  background: var(--body-bg);
 }
 *::-webkit-scrollbar-thumb {
-  background-color: var(--title);
+  background-color: var(--font-color);
   border-radius: 20px;
 }
 [hidden] {
@@ -39,16 +34,8 @@ img {
   margin: 2.5em
 }
 h2 {
-  font-family: 'Lilita One' !important;
-  font-size: 1.5em !important;
-  color: var(--title);
-  text-align: center;
-  text-transform: lowercase;
-  margin-bottom: 2rem !important;
-  margin-top: 2rem  !important;
-}
-h2:nth-of-type(1) {
-  margin-top: 0 !important
+  font-family: Shrikhand !important;
+  font-size: 1.75em !important;
 }
 /* Links */
 a:link,
@@ -56,8 +43,8 @@ a:visited,
 a:active {
   color: var(--link) !important;
   text-decoration: none;
-  font-family: "Lilita One";
-  font-weight: normal;
+  font-family: 'Ubuntu' !important;
+  font-weight: bold;
 }
 a:hover {
   text-decoration-line: underline;
@@ -65,302 +52,48 @@ a:hover {
   text-decoration-color: var(--link);
   text-underline-offset: 0.25em;
 }
-a[target="_blank"]::after {
-  content: var(--blank);
-}
-/* Section layout */
-section.main {
-  padding: 10vh;
-}
-section.page-1 {
-  background-image: linear-gradient(var(--main-bg), var(--page-2-bg));
-  padding: 30vh 5vh 20vh;
-  top: 0;
-  position: relative;
-  width: 100vw
-}
-section.page-2 {
-  background-color: var(--page-2-bg);
-  padding: 5vh 5vh 15vh 5vh;
-  width: 100vw
-}
-section.page-3 {
-  background-image: linear-gradient(var(--page-2-bg), var(--page-3-bg));
-  padding: 5vh 5vh 15vh 5vh;
-  width: 100vw
-}
-/* Flowing river */
-#box-wrapper, #box {
-  z-index: 10000
-}
-#box {
-  width: 40vh !important;
-  height: 40vh !important;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  position: absolute;
-  overflow: hidden;
-  border-radius: 50%;
-  background: var(--bg-img);
-  background-size: 100% 100%;
-  background-size: 100% 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 2px solid var(--font-color);
-  top: 20vh
-}
 /* Dark mode toggle */
+div.dark-mode-toggle {
+  display: flex;
+  flex-direction: row-reverse
+}
 #theme-toggle {
   visibility: hidden;
 }
 #theme-toggle + label {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
   content: "";
   display: inline-block;
   cursor: pointer;
   height: 80px;
   width: 80px;
+  margin: 2em;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
   z-index: 10000
 }
 #theme-toggle:not(:checked) + label {
-  background: #fffc00; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #fffc00,
-    #ffffff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #fffc00,
-    #ffffff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #fffc00;
 }
 #theme-toggle:checked + label {
   background-color: transparent;
   box-shadow: inset -18px -16px 1px 1px #fff;
 }
-/* Nav */
-.nav-bar {
-  background-color: var(--nav-bg);
-  position: fixed;
-  z-index: 10000;
-  bottom: 0;
-  width: 100vw;
-  height: 12.5vh;
-  list-style-type: none;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 2px solid var(--font-color);
+.navbar-toggler-icon:after, a.nav-link {
+  font-size: 1.75em !important;
+  color: var(--link) !important;
+  font-family: Shrikhand !important;
+  content: 'MENU';
+  padding: 0.5em !important;
+  text-transform: uppercase;
+  font-weight: normal
 }
-.nav-bar a {
-  font-size: calc(1em + 0.25vh);
+.navbar-toggler-icon {
+  width: initial !important;
+  height: initial !important;
+  background-image: none!important;
 }
-div.nav-bar li {
-  display: inline-block;
-  margin-left: 2.5vw;
-}
-div.nav-bar li:first-of-type {
-  margin-left: 0
-}
-/* Content adjustments */
-
-.screenshot--portrait {
-  width: 50%;
-  margin: 0 auto;
-}
-.screenshot--landscape {
-  width: 100%;
-  margin: 1rem auto;
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: var(--arrows);
-}
-.on-earth {
-  text-align: center;
-  padding: 1em;
-}
-.on-earth img {
-  max-width: 100%;
-  margin: 0 
-}
-h1.title {
-  font-family: 'Lilita One' !important;
-  color: var(--title);
-  font-size: calc(1em + 0.5vw);
-  letter-spacing: 1px;
-  display: inline-block
-}
-.project-info h2 {
-  margin-bottom: 0.5em !important
-}
-.river-box img.project {
-  width: 30vw;
-  margin: 2.5em auto;
-  display: block;
-}
-.hey {
-  font-size: calc(1em + 0.5vh);
-}
-/* The typing effect */
-.hey span {
-  display: inline-grid;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid green; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  animation: typing 1.25s steps(15, end), blink-caret 0.75s step-end infinite;
-  font-family: "Ubuntu";
-  color: green;
-  font-weight: bold;
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 30%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: green;
-  }
-}
-/* iPads */
-@media (min-width: 768px) and (max-width: 1024px) and (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
-  #box {
-    top: 10vh
-  }
-  section.page-1 {
-    padding: 35vh 10vh;
-  }
-  section.page-2, section.page-3 {
-    padding: 10vh;
-  }
-}
-@media (min-width: 500px) {
-  .river-box img.project {
-    width: 150px;
-}
-  .river-box {
-    display: flex;
-    flex-direction: row
-  }
-  .project-info {
-    display: flex;
-    flex-direction: column;
-    margin-left: 2.5vw;
-    width: 100%
-  }
-}
-@media (min-width: 1629px) and (orientation: landscape) {
-  #box {
-  top: -7.5vh !important
-}
-}
-/* Main landscape layout switch */
-@media (min-width: 1010px) and (orientation: landscape) {
-  /* Sections */
-  div.main-wrapper {
-    position: relative;
-  }
-  section.main {
-    width: 68vw;
-    position: absolute;
-    left: 32vw;
-    top: -10vh;
-    height: 100vh;
-    background-color: var(--main-bg);
-  }
-  section.page-1 {
-    padding: 15vh 10vw 5vh 25vw;
-    width: 68vw;
-    position: relative;
-    left: 32vw;
-    min-height: 100vh;
-  }
-  section.page-2, section.page-3 {
-    padding: 5vh 10vw 10vh 25vw;
-    width: 68vw;
-    left: 32vw;
-    position: relative;
-    min-height: 100vh;
-  }
-  /* River */
-  #box-wrapper {
-    position: fixed;
-    top: 15vh;
-    left: 14.5vw;
-  }
-  #box {
-    width: 35vw !important;
-    height: 35vw !important;
-    left: 0;
-    top: 0;
-    transform: none;
-  }
-  /* Nav */
-  .nav-bar {
-    position: relative;
-    border-top: none;
-    background: transparent;
-    padding: 15vh 0 10vh 15vh;
-    width: 100%;
-  }
-  .nav-bar a {
-    font-family: Lilita One;
-    letter-spacing: 1px;
-    font-size: calc(1em + 0.75vh);
-  }
-}
-/* River styling */
-.river {
-  background: var(--river-bg);
-  background-size: 24px 176px, 25px 176px, 37px 128px, 37px 128px, 56px 176px,
-    56px 176px, 100% 100%;
-  background-repeat: repeat;
-  filter: url(#turbulence);
-  position: absolute;
-}
-.river-box {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-.river--1 {
-  width: 43%;
-  left: 12%;
-  top: var(--river-top);
-  height: var(--river-height);
-  transform: rotate(-88deg);
-  -webkit-animation: flow 10s infinite linear;
-  animation: flow 10s infinite linear;
-  opacity: var(--river-opacity);
-}
-@-webkit-keyframes flow {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 750px;
-  }
-}
-@keyframes flow {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 750px;
-  }
+.navbar-toggler {
+  padding: 0 !important;
+  font-size: initial !important;
+  border: none !important
 }

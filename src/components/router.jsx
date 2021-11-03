@@ -1,11 +1,9 @@
 import * as React from "react";
-import { Switch, Route, Router } from "wouter";
+import { Switch, Route } from "wouter";
 import Home from "../pages/home";
-import Contact from "../pages/contact";
 import Publications from "../pages/publications";
 import Projects from "../pages/projects";
-import Hummingbird from "../pages/hummingbird";
-import Tajweed from "../pages/tajweed";
+import Writing from "../pages/Writing";
 
 /**
  * The router is imported in app.jsx
@@ -18,10 +16,8 @@ import Tajweed from "../pages/tajweed";
 export default () => (
   <Switch>
     <Route path="/" component={Home} />
-    <Route path="/contact" component={Contact} />
-    <Route path="/publications" component={Publications} />
-    <Route path="/projects" component={Projects} />
-    <Route path="hummingbird" component={Hummingbird} />
-    <Route path="tajweed" component={Tajweed} />
+    <Route path="publications" component={Publications} />
+    <Route path="projects" component={Projects} />
+    <Route path="writing" component={Writing} />
   </Switch>
 );
