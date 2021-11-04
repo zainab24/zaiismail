@@ -48,10 +48,7 @@ a:active {
   font-weight: bold;
 }
 a:hover, .button button:hover {
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: var(--link-color);
-  text-underline-offset: 0.25em;
+  text-decoration: none
 }
 /* Dark mode toggle */
 div.dark-mode-toggle {
