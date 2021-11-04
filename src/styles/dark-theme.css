@@ -4,15 +4,15 @@ html[data-theme="dark"] {
   --header-color: #fff;
   --body-bg: #111;
   --header-bg: #a8a7e6;
-  --red: #fff;
-  --orange: #fff;
-  --orange-yellow: #fff;
-  --yellow: #fff;
-  --yellow-green: #fff;
-  --green: #fff;
-  --green-blue: #fff;
-  --blue: #fff;
-  --blue-purple: #fff;
-  --purple: #fff;
-  --darker-purple: #fff
+  --red: #f3d5d5;
+  --orange: #f3d5d5;
+  --orange-yellow: #f3d5d5;
+  --yellow: #f3d5d5;
+  --yellow-green: #f3d5d5;
+  --green: #f3d5d5;
+  --green-blue: #f3d5d5;
+  --blue: #f3d5d5;
+  --blue-purple: #f3d5d5;
+  --purple: #f3d5d5;
+  --darker-purple: #f3d5d5
 }
