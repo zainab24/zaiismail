@@ -1,6 +1,7 @@
 html[data-theme="dark"] {
   --font-color: #fff;
   --link-color: #fff;
+  --header-color: #fff;
   --body-bg: #111;
   --header-bg: #a8a7e6;
   --red: #fff;
