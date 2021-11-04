@@ -11,7 +11,7 @@ body {
   color: var(--font-color) !important;
 }
 main.wrapper {
-  padding: 12.5% 7% 7% 7%
+  padding: 12% 7%
 }
 *::-webkit-scrollbar {
   width: 12px;
@@ -35,8 +35,8 @@ img {
 }
 h2 {
   font-family: Karla !important;
-  font-size: 1.75em !important;
-  font-weight: bold !important
+  font-weight: bold !important;
+  font-size: 1.5em !important
 }
 /* Links */
 a:link,
@@ -57,12 +57,13 @@ a:hover, .button button:hover {
 div.dark-mode-toggle {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end
 }
-div.zainab {
-  font-family: Karla;
+div.zainab a {
+  font-family: Shrikhand !important;
   font-size: 1.5em;
-  padding: 1em 0 1em 1em;
+  font-weight: normal !important;
+  padding: 0 0 0 7%;
   font-weight: bold;
   color: var(--font-color);
 }
@@ -148,14 +149,15 @@ svg {
   margin: 1em 1em 0 0 ;
 }
 .offcanvas {
-background-color:  #a8a7e6 !important;
+background-color:  #b41ac2 !important;
 z-index: 1000
 }
 .offcanvas-body a {
   font-size: 2em;
   font-family: Shrikhand !important;
   font-weight: normal !important;
-  display: block
+  display: block;
+  color: #fff !important
 }
 .offcanvas-header {
 justify-content: right !important
