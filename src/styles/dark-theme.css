@@ -1,6 +1,17 @@
 html[data-theme="dark"] {
   --font-color: #fff;
+  --link-color: #fff;
   --body-bg: #111;
-  --link: #fff;
-  --rainbow: none
+  --header-bg: #a8a7e6;
+  --red: #fff;
+  --orange: #fff;
+  --orange-yellow: #fff;
+  --yellow: #fff;
+  --yellow-green: #fff;
+  --green: #fff;
+  --green-blue: #fff;
+  --blue: #fff;
+  --blue-purple: #fff;
+  --purple: #fff;
+  --darker-purple: #fff
 }
