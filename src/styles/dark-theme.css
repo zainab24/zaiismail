@@ -1,18 +1,17 @@
 html[data-theme="dark"] {
   --font-color: #fff;
   --link-color: #fff;
-  --header-color: #fff;
+  --scrollbar-color: #d8d6f7;
   --body-bg: #111;
-  --header-bg: #a8a7e6;
-  --red: #f3d5d5;
-  --orange: #f3d5d5;
-  --orange-yellow: #f3d5d5;
-  --yellow: #f3d5d5;
-  --yellow-green: #f3d5d5;
-  --green: #f3d5d5;
-  --green-blue: #f3d5d5;
-  --blue: #f3d5d5;
-  --blue-purple: #f3d5d5;
-  --purple: #f3d5d5;
-  --darker-purple: #f3d5d5
+  --red: #d8d6f7;
+  --orange: #d8d6f7;
+  --orange-yellow: #d8d6f7;
+  --yellow: #d8d6f7;
+  --yellow-green: #d8d6f7;
+  --green: #d8d6f7;
+  --green-blue: #d8d6f7;
+  --blue: #d8d6f7;
+  --blue-purple: #d8d6f7;
+  --purple: #d8d6f7;
+  --darker-purple: #d8d6f7;
 }

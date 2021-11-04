@@ -1,9 +1,8 @@
 html[data-theme="light"] {
   --font-color: #111;
   --link-color: #b41ac2;
-  --header-color: #b41ac2;
-  --body-bg: #f3d5d5;
-  --header-bg: var(--darker-purple);
+  --scrollbar-color: #b41ac2;
+  --body-bg: #d8d6f7;
   --red: #f1b3cd;
   --orange: #f1bdb3;
   --orange-yellow: #f2d5b4;
