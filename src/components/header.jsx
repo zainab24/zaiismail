@@ -82,7 +82,14 @@ const [isDark, setIsDark] = useState(localStorage.getItem("theme") === "dark");
       </div>
 
       <div className="zainab"> <Link href="/">Zainab Ismail</Link>
+
+      <div className="nav">          <Link href="/">HOME</Link>
+
+<Link href="#projects">PROJECTS</Link> 
+<Link href="#publications">PUBLICATIONS</Link> 
+<Link href="#writing">WRITING</Link></div>
         </div>
+        
       </>
   )
 }
