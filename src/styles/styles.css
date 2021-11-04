@@ -62,7 +62,7 @@ div.dark-mode-toggle {
 div.zainab {
   font-family: Karla;
   font-size: 1.5em;
-  padding: 3.5% 0 3.5% 3.5%;
+  padding: 1em 0 1em 1em;
   font-weight: bold;
   color: #b41ac2;
 }
@@ -73,9 +73,9 @@ div.zainab {
   content: "";
   display: inline-block;
   cursor: pointer;
-  height: 80px;
-  width: 80px;
-  margin: 2em;
+  height: 40px;
+  width: 40px;
+  margin: 2em 0.5em 0 0;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
   z-index: 999
@@ -85,7 +85,7 @@ div.zainab {
 }
 #theme-toggle:checked + label {
   background-color: transparent;
-  box-shadow: inset -18px -16px 1px 1px #fff;
+  box-shadow: inset -9px -8px 1px 1px #fff;
 }
 div.box h2 {
   padding: 10px;
