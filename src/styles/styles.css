@@ -181,6 +181,13 @@ span.pipe {
 div.nav {
   display: none;
 }
+.btn-close {
+  opacity: 1 !important;
+  filter: invert(100%);
+}
+.btn-close:focus {
+  box-shadow: initial !important;
+}
 @media (orientation: landscape) {
   div.button {
     display: none
