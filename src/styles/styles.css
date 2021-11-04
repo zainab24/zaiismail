@@ -64,7 +64,7 @@ div.zainab {
   font-size: 1.5em;
   padding: 1em 0 1em 1em;
   font-weight: bold;
-  color: #111;
+  color: var(--header-color);
 }
 #theme-toggle {
   visibility: hidden;
