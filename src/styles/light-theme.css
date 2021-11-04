@@ -1,7 +1,7 @@
 html[data-theme="light"] {
   --font-color: #111;
   --link-color: #b41ac2;
-  --header-color: #111;
+  --header-color: #b41ac2;
   --body-bg: #f3d5d5;
   --header-bg: var(--darker-purple);
   --red: #f1b3cd;

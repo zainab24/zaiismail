@@ -70,7 +70,7 @@ const [isDark, setIsDark] = useState(localStorage.getItem("theme") === "dark");
 </svg>
       <div className="dark-mode-toggle">
  
-      <div className="zainab">Zainab Ismail
+      <div className="zainab"> <Link href="/">Zainab Ismail</Link>
         </div>
 
 <div className="menu">
