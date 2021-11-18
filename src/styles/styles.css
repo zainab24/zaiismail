@@ -192,4 +192,9 @@ div.nav {
   div.nav {
     display: block;
   }
+  main.wrapper {
+    padding-top: 7%;
+    width: 50%;
+    margin: 0 auto
+  }
 }
