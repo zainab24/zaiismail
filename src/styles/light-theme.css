@@ -1,17 +1,6 @@
 html[data-theme="light"] {
   --font-color: #111;
-  --link-color: #b41ac2;
-  --scrollbar-color: #b41ac2;
-  --body-bg: #d8d6f7;
-  --red: linear-gradient(to right, #f1b3cd, #d8d6f7);
-  --orange: linear-gradient(to right, #f1bdb3, #d8d6f7);
-  --orange-yellow: linear-gradient(to right, #f2d5b4, #d8d6f7);
-  --yellow: linear-gradient(to right, #f1f1b1, #d8d6f7);
-  --yellow-green: linear-gradient(to right,#cbf3b1, #d8d6f7); 
-  --green: linear-gradient(to right, #87f1ba, #d8d6f7);
-  --green-blue: linear-gradient(to right, #6fead7, #d8d6f7);
-  --blue: linear-gradient(to right, #87d9e2, #d8d6f7);
-  --blue-purple: linear-gradient(to right, #a7cee4, #d8d6f7);
-  --purple: linear-gradient(to right, #a7b9e5, #d8d6f7); 
-  --darker-purple: linear-gradient(to right, #a8a7e6, #d8d6f7);
+  --link-color: #e81cda;
+  --scrollbar-color: #e81cda;
+  --body-bg: fixed linear-gradient(#f3b989, #fff);
 }

@@ -19,8 +19,8 @@ import useHashLocation from "./hooks/wouter-hash";
 
 // The component that adds our Meta tags to the page
 import Seo from "./components/seo.jsx";
-import { Header } from './components/header'
 
+import { ThemeToggle } from "./components/theme-toggle";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Home function that is reflected across the site
@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <Router hook={useHashLocation}>
       <Seo />
-<Header/>
+      <ThemeToggle/>
       <main role="main" className="wrapper">
     
 <PageRouter/>

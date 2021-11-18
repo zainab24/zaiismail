@@ -4,9 +4,14 @@ import print from "../data/print.js";
 import collections from "../data/collections.js";
 import anthologies from "../data/anthologies.js";
 
+import {Link} from 'wouter';
+
 export default function Publications() {
   return (
-    <>
+    
+  <div className="page">
+
+<h2><Link href="publications">Publications</Link> <span className="pipe">|</span> <Link href="/">back</Link></h2>
       <div className="box">
         <h2>collections</h2>
         {collections.map((item, i) => {
@@ -70,6 +75,6 @@ export default function Publications() {
           );
         })}
       </div>
-      </>
+      </div>
   );
 }
