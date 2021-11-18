@@ -117,3 +117,6 @@ div.page {
 .box {
   margin: 2rem 0
 }
+.box h2 {
+  font-weight: normal !important
+}
