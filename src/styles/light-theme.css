@@ -1,14 +1,5 @@
 html[data-theme="light"] {
   --font-color: #111;
   --link-color: #111;
-  --body-bg: fixed
-    linear-gradient(
-      #a7b9e5,
-      #a7cee4,
-      #87d9e2,
-      #6fead7,
-      #87f1ba,
-      #cbf3b1,
-      #f1f1b1
-    )
+  --body-bg: fixed url('/images/bg.png') repeat;
 }
