@@ -1,7 +1,6 @@
 html[data-theme="light"] {
   --font-color: #111;
-  --link-color: #e81cda;
-  --scrollbar-color: #e81cda;
+  --link-color: #111;
   --body-bg: fixed
     linear-gradient(
       #a7b9e5,

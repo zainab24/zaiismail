@@ -1,6 +1,5 @@
 html[data-theme="dark"] {
   --font-color: #fff;
   --link-color: #fff;
-  --scrollbar-color: #d8d6f7;
   --body-bg: fixed linear-gradient(#111, #1c1949);
 }
