@@ -9,6 +9,7 @@ html, body {
   font-family: Karla !important;
   background: var(--body-bg) !important;
   color: var(--font-color) !important;
+  min-height: 100vh;
 }
 [hidden] {
   display: none !important;
