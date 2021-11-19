@@ -2,5 +2,5 @@ html[data-theme="light"] {
   --font-color: #111;
   --link-color: #e81cda;
   --scrollbar-color: #e81cda;
-  --body-bg: fixed linear-gradient(#b7dde3, #fff);
+  --body-bg: fixed linear-gradient(#ec9de4, #b7dde3);
 }

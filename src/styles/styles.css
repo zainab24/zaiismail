@@ -14,17 +14,6 @@ body {
   background: var(--body-bg) !important;
   color: var(--font-color) !important;
 }
-*::-webkit-scrollbar {
-  width: 12px;
-  -webkit-appearance: none;
-}
-*::-webkit-scrollbar-track {
-  background: var(--body-bg);
-}
-*::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-color);
-  border-radius: 20px;
-}
 [hidden] {
   display: none !important;
 }
