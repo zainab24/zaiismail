@@ -5,9 +5,11 @@
   box-sizing: border-box;
   letter-spacing: 0.8px;
 }
+html {
+  background: var(--body-bg) !important;
+}
 body {
   font-family: Karla !important;
-  background: var(--body-bg) !important;
   color: var(--font-color) !important;
 }
 [hidden] {
