@@ -11,7 +11,7 @@ export default function Publications() {
     
   <div className="page">
 
-<h2><Link href="publications">Publications</Link> <span className="pipe">|</span> <Link href="/">back</Link></h2>
+<h2><span className="publications"><Link href="publications">Publications</Link> <span className="pipe">|</span> <Link href="/">back</Link></span></h2>
       <div className="box">
         <h2>collections</h2>
         {collections.map((item, i) => {

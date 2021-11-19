@@ -105,3 +105,12 @@ div.page {
 .box h2 {
   font-weight: normal !important
 }
+h2 span.projects a {
+  color:#fa5a16 !important
+}
+h2 span.publications a {
+  color: #19b099 !important;
+}
+h2 span.writing a {
+  color: #4c38b3 !important;
+}
