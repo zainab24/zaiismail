@@ -5,10 +5,6 @@
   box-sizing: border-box;
   letter-spacing: 0.8px;
 }
-main.wrapper {
-  width: 95%;
-  margin: auto;
-}
 body {
   font-family: Karla !important;
   background: var(--body-bg) !important;
