@@ -3,7 +3,7 @@ import {Link} from 'wouter';
 
 export default function Home() {
   return (
-  <div className="home">
+  <div className="home page">
   <h1>Zainab Ismail</h1><h2><Link href="projects">Projects</Link> <span className="pipe">|</span> <Link href="publications">Publications</Link> <span className="pipe">|</span> <Link href="writing">Writing</Link></h2>
   
   <img className="me" src="/images/portrait.png"/>
