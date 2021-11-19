@@ -9,12 +9,21 @@ html, body {
   background: var(--body-bg) !important;
   color: var(--font-color) !important;
 }
-h1, h2, h1 a, h2 a {
+h1, h2, h2 a {
   letter-spacing: 0.5px !important
 }
 p {
   font-family: Spectral;
   font-size: 1.2em
+}
+h1, h1 a {
+  font-family: Spectral;
+  font-size: calc(2.375rem + 1.5vw) !important;
+  font-weight: normal !important;
+  color: var(--link-color) !important;
+}
+p.intro {
+  font-size: calc(1em + 0.5vw);
 }
 [hidden] {
   display: none !important;
@@ -78,6 +87,7 @@ span.pipe {
     color: #e81cda;
     transform: rotate(-25deg) !important;
     display: inline-block;
+    font-weight: bold
 }
 img.me {
   width: 50%;
@@ -86,12 +96,8 @@ img.me {
 }
 @media (orientation: landscape) {
   img.me {
-    width: 20%;
+    width: 15%;
   }
-}
-h1, h1 a {
-  color: var(--link-color) !important;
-  font-weight: bold !important
 }
 h2 a {
   color: var(--link-color) !important;
