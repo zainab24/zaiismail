@@ -1,5 +1,5 @@
 html[data-theme="light"] {
   --font-color: #111;
   --link-color: #111;
-  --body-bg: honeydew
+  --body-bg: fixed linear-gradient(honeydew, #f9f6e2)
 }
