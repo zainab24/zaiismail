@@ -4,7 +4,7 @@ import {Link} from 'wouter';
 export default function Home() {
   return (
   <div className="home page">
-  <h1>Zainab Ismail</h1><h2><span className="projects"><Link href="projects">Projects</Link></span> <span className="pipe">|</span> <span className="publications"><Link href="publications">Publications</Link></span> <span className="pipe">|</span> <span className="writing"><Link href="writing">Writing</Link></span></h2>
+  <h1>zainab ismail</h1><h2><span className="projects"><Link href="projects">Projects</Link></span> <span className="pipe">|</span> <span className="publications"><Link href="publications">Publications</Link></span> <span className="pipe">|</span> <span className="writing"><Link href="writing">Writing</Link></span></h2>
   
   <img className="me" src="/images/portrait.png"/>
   <p className="intro">Hey, I’m Zainab Ismail, a London-based software engineer and poet.</p>
