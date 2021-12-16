@@ -8,7 +8,7 @@ export default function Writing() {
   <div className="page">
      <h2><span className="writing"><Link href="writing">Writing</Link> <span className="pipe">|</span> <Link href="/">back</Link></span></h2>
   <div className="box">
-        <h2>on earth (ghazal)</h2>
+        <h2>on earth</h2>
         <p>The rain reminds me of my roots on Earth.<br/>A holy hush settles absolute on Earth.</p>
 
         <p>Clouds heave in their heavenly bellies<br/>mute rain destined to shoot on Earth.</p>
@@ -71,7 +71,7 @@ texting you in a fit of repeating rain.</p>
 sketch some kind of sanctuary for me in the dark.</p>
       </div>
       
-      <p><b><a href="http://instagram.com/zai._i">— Read more of my writing on instagram.</a></b></p>
+      <p><a href="http://instagram.com/zai._i">Read more of my writing on instagram.</a></p>
       </div>
   );
 }
