@@ -29,7 +29,7 @@ img {
 }
 h2 {
   font-family: 'Karla' !important;
-  font-size: 1.5em !important;
+  font-size: 1.25em !important;
   font-weight: bold !important;
 }
 /* Links */
@@ -79,7 +79,8 @@ span.pipe {
     color: #e81cda;
     transform: rotate(-25deg) !important;
     display: inline-block;
-    font-weight: bold
+    font-weight: bold;
+    margin: 0.25em
 }
 img.me {
   width: 50%;
