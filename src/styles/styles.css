@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla&family=Spectral");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Ma+Shan+Zheng&family=Pacifico&family=Karla");
 
 /* General rules */
 * {
   box-sizing: border-box;
 }
 html, body {
-  font-family: Karla !important;
+  font-family: 'Courier Prime' !important;
   background: var(--body-bg) !important;
   color: var(--font-color) !important;
 }
@@ -13,11 +13,11 @@ h1, h2, h2 a {
   letter-spacing: 0.5px !important
 }
 p {
-  font-family: Spectral;
+  font-family: 'Courier Prime';
   font-size: 1.2em
 }
 h1, h1 a {
-  font-family: Spectral;
+  font-family: 'Karla';
   font-size: calc(2.375rem + 1.5vw) !important;
   font-weight: normal !important;
   color: var(--link-color) !important;
@@ -35,8 +35,7 @@ img {
   margin: 2.5em
 }
 h2 {
-  font-family: Karla !important;
-  font-weight: bold !important;
+  font-family: 'Karla' !important;
   font-size: 1.5em !important;
   transform: skew(
     -10deg);
@@ -45,8 +44,9 @@ h2 {
 a {
   color: var(--link-color) !important;
   text-decoration: none !important;
-  font-family: Karla !important;
-  font-weight: bold;
+  font-family: 'Pacifico' !important;
+  letter-spacing: 1px;
+  font-size: 1.2em
 }
 a:hover {
   text-decoration: none
@@ -101,7 +101,6 @@ img.me {
 }
 h2 a {
   color: var(--link-color) !important;
-  font-weight: bold !important;
   margin-bottom: 2rem
 }
 div.home {

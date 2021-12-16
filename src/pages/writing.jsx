@@ -20,7 +20,7 @@ export default function Writing() {
         <p>A round cradle sustains me. The rain reins me<br/>back to this perfect truth on Earth.</p>
 </div>
 <div className="box">
-<h2>train in the rain / autumn’s departure</h2>
+<h2>train in the rain / departure</h2>
 
 
 <p>Train in the rain;<br/>
