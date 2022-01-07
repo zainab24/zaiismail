@@ -35,7 +35,7 @@ export default function Home() {
       <div className="header">
 
       <div className="header_content">
-      <h1><Link href="/">Zainab Ismail</Link></h1>
+      <h1><Link href="/">zainab</Link></h1>
 
       <h2><span className="projects"><Link href="projects">Projects</Link></span>   <span className="publications"><Link href="publications">Publications</Link></span>   <span className="writing"><Link href="writing">Writing</Link></span></h2>
       </div>

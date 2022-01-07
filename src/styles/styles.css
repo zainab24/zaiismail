@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Karla");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Karla&family=Pacifico");
 
 /* General rules */
 * {
@@ -13,13 +13,12 @@ html, body {
 div.page {
   padding-top: 13em
 }
-@media (min-width: 768px) and (orientation: landscape) {
+@media (orientation: landscape) {
   div.page {
     width: 60% !important;
     margin: auto;
   }
-  .header {height: 22vh}
-  .header h1 a, .header h2 a {line-height: 22vh !important}
+  .header {height: 22vh !important}
   .header_content {display: flex; flex-direction: row}
   .header h1 a { margin-right: 1em}
 }
@@ -55,6 +54,7 @@ a {
   text-decoration: none !important;
   font-family: 'Courier Prime' !important;
   letter-spacing: 0.5px;
+  font-weight: bold !important
 }
 a:hover {
   text-decoration: none;
@@ -71,12 +71,13 @@ a:hover {
   padding: 2em 1em 1em 3em;
 }
 .header h1 a {
-  font-family: Karla !important;
+  font-family: Pacifico !important;
   color: var(--font-color)  !important;
-  word-break: break-all;
+  font-weight: normal !important
 }
 .header h2 a {
-  margin-right: 1em
+  margin-right: 1em;
+  font-weight: bold !important
 }
 /* Dark mode toggle */
 div.dark-mode-toggle {
