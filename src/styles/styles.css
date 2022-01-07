@@ -16,7 +16,7 @@ div.page {
 @media (orientation: landscape) {
   div.page {
     width: 60% !important;
-    margin: auto;
+    margin: auto; padding-top: 22vh
   }
   .header {height: 22vh !important}
   .header_content {display: flex; flex-direction: row}
