@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Ma+Shan+Zheng&family=Pacifico&family=Karla");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Karla");
 
 /* General rules */
 * {
@@ -10,20 +10,28 @@ html, body {
   color: var(--font-color) !important;
   margin-bottom: 3% !important
 }
+div.page {
+  padding-top: 13em
+}
 @media (min-width: 768px) and (orientation: landscape) {
   div.page {
     width: 60% !important;
-    margin: auto
+    margin: auto;
   }
+  .header {height: 22vh}
+  .header h1 a, .header h2 a {line-height: 22vh !important}
+  .header_content {display: flex; flex-direction: row}
+  .header h1 a { margin-right: 1em}
 }
 p {
   font-family: 'Courier Prime';
+  letter-spacing: 0.5px;
 }
 div.home h1 a {
   font-family: 'Karla' !important;
   font-size: calc(2.375rem + 1.5vw) !important;
   font-weight: bold !important;
-  color: var(--link-color) !important;
+  color: var(--font-color) !important;
   letter-spacing: normal !important
 }
 [hidden] {
@@ -39,23 +47,40 @@ h2 {
   font-family: 'Karla' !important;
   font-size: 1.25em !important;
   font-weight: bold !important;
+  letter-spacing: 1px !important
 }
 /* Links */
 a {
   color: var(--link-color) !important;
   text-decoration: none !important;
-  font-family: 'Pacifico' !important;
-  letter-spacing: 1px;
-  font-size: 1.2em
+  font-family: 'Courier Prime' !important;
+  letter-spacing: 0.5px;
 }
 a:hover {
-  text-decoration: none
+  text-decoration: none;
+  opacity: 0.8
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: var(--header-bg);
+  height: 13em;
+  padding: 2em 1em 1em 3em;
+}
+.header h1 a {
+  font-family: Karla !important;
+  color: var(--font-color)  !important;
+  word-break: break-all;
+}
+.header h2 a {
+  margin-right: 1em
 }
 /* Dark mode toggle */
 div.dark-mode-toggle {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end
+  margin-left: auto
 }
 #theme-toggle {
   visibility: hidden;
@@ -66,7 +91,7 @@ div.dark-mode-toggle {
   cursor: pointer;
   height: 80px;
   width: 80px;
-  margin: 2em;
+  margin: 1em;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
   z-index: 999
@@ -78,26 +103,21 @@ div.dark-mode-toggle {
   background-color: transparent;
   box-shadow: inset -18px -16px 1px 1px #fff;
 }
-nav {
-  display: flex;
-  flex-direction: row;
-}
 
 span.pipe {
     color: #e81cda;
-    transform: rotate(-25deg) !important;
     display: inline-block;
     font-weight: bold;
     margin: 0.25em
 }
 img.me {
-  width: 50%;
+  width: 70%;
   margin: 0 auto 2em auto;
   display: block;
 }
 @media (orientation: landscape) {
   img.me {
-    width: 15%;
+    width: 350px;
   }
 }
 h2 a {
@@ -124,6 +144,6 @@ h2 span.projects a {
 h2 span.publications a {
   color: #19b099 !important;
 }
-h2 span.writing a, span.writing a {
+h2 span.writing a {
   color: #7b65e8 !important;
 }
