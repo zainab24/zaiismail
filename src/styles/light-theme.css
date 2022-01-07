@@ -1,5 +1,6 @@
 html[data-theme="light"] {
   --font-color: #111;
-  --link-color: #111;
-  --body-bg: fixed linear-gradient(honeydew, #f9f6e2)
+  --link-color: #FA00FF;
+  --body-bg: fixed linear-gradient(#D6D9F5 40%, #7DDACF);
+  --header-bg: #D6D9F5
 }

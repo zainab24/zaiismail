@@ -32,11 +32,19 @@ export default function Home() {
   return (
     <Router hook={useHashLocation}>
       <Seo />
+      <div className="header">
+
+      <div className="header_content">
+      <h1><Link href="/">Zainab Ismail</Link></h1>
+
+      <h2><span className="projects"><Link href="projects">Projects</Link></span>   <span className="publications"><Link href="publications">Publications</Link></span>   <span className="writing"><Link href="writing">Writing</Link></span></h2>
+      </div>
+
       <ThemeToggle/>
+      </div>
       <main role="main" className="wrapper">
 
   <div className="page">
-      <div className="home"><h1><Link href="/">zainab ismail</Link></h1><h2><span className="projects"><Link href="projects">Projects</Link></span>  <span className="pipe"> | </span>  <span className="publications"><Link href="publications">Publications</Link></span>  <span className="pipe"> | </span>  <span className="writing"><Link href="writing">Writing</Link></span></h2></div>
      
 <PageRouter/>
 </div>
