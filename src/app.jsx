@@ -1,5 +1,8 @@
 import React from "react";
 import { Router } from "wouter";
+
+import {Link} from 'wouter';
+
 /**
  * This code defines the react app
  *
@@ -31,9 +34,12 @@ export default function Home() {
       <Seo />
       <ThemeToggle/>
       <main role="main" className="wrapper">
-    
-<PageRouter/>
 
+  <div className="page">
+      <div className="home"><h1><Link href="/">zainab ismail</Link></h1><h2><span className="projects"><Link href="projects">Projects</Link></span>  <span className="pipe"> | </span>  <span className="publications"><Link href="publications">Publications</Link></span>  <span className="pipe"> | </span>  <span className="writing"><Link href="writing">Writing</Link></span></h2></div>
+     
+<PageRouter/>
+</div>
       </main>
     </Router>
   );

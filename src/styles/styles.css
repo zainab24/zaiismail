@@ -8,15 +8,23 @@ html, body {
   font-family: 'Courier Prime' !important;
   background: var(--body-bg) !important;
   color: var(--font-color) !important;
+  margin-bottom: 3% !important
+}
+@media (min-width: 768px) and (orientation: landscape) {
+  div.page {
+    width: 60% !important;
+    margin: auto
+  }
 }
 p {
   font-family: 'Courier Prime';
 }
-h1, h1 a {
-  font-family: 'Karla';
+div.home h1 a {
+  font-family: 'Karla' !important;
   font-size: calc(2.375rem + 1.5vw) !important;
   font-weight: bold !important;
   color: var(--link-color) !important;
+  letter-spacing: normal !important
 }
 [hidden] {
   display: none !important;
@@ -98,7 +106,7 @@ h2 a {
   font-weight: normal !important;
 }
 div.home {
-  text-align: center
+  text-align: center;
 }
 div.page {
   width: 95%;
@@ -116,6 +124,6 @@ h2 span.projects a {
 h2 span.publications a {
   color: #19b099 !important;
 }
-h2 span.writing a {
+h2 span.writing a, span.writing a {
   color: #7b65e8 !important;
 }
