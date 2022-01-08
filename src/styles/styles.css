@@ -16,10 +16,10 @@ div.page {
 @media (orientation: landscape) {
   div.page {
     width: 60% !important;
-    margin: auto; padding-top: 22vh
+    margin: auto; padding-top: 20vh
   }
-  .header {height: 22vh !important}
-  .header_content {display: flex; flex-direction: row}
+  .header {height: 20vh !important}
+  .header_content {padding-top: 2em; display: flex; flex-direction: row}
   .header h1 a { margin-right: 1em}
 }
 p {
