@@ -11,14 +11,14 @@ html, body {
   margin-bottom: 3% !important
 }
 div.page {
-  padding-top: 13em
+  padding-top: 15em
 }
 @media (orientation: landscape) {
   div.page {
     width: 60% !important;
-    margin: auto; padding-top: 20vh
+    margin: auto; padding-top: 0em !important
   }
-  .header {height: 20vh !important}
+  .header {height: 22vh !important; position: static !important}
   .header_content {padding-top: 2em; display: flex; flex-direction: row}
   .header h1 a { margin-right: 1em}
   p.intro {font-size: 1.5em}
@@ -26,13 +26,6 @@ div.page {
 p {
   font-family: 'Courier Prime';
   letter-spacing: 0.5px;
-}
-div.home h1 a {
-  font-family: 'Karla' !important;
-  font-size: calc(2.375rem + 1.5vw) !important;
-  font-weight: bold !important;
-  color: var(--font-color) !important;
-  letter-spacing: normal !important
 }
 [hidden] {
   display: none !important;
@@ -66,13 +59,14 @@ a:hover {
   top: 0;
   width: 100vw;
   background: var(--header-bg);
-  height: 13em;
+  height: 15em;
   padding: 2em 1em 1em 3em;
 }
 .header h1 a {
   font-family: Pacifico !important;
   color: var(--font-color)  !important;
-  font-weight: normal !important
+  font-weight: normal !important;
+  font-size: 2.25em !important
 }
 .header h2 a {
   margin-right: 1em;
