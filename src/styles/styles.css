@@ -13,10 +13,10 @@ html, body {
 div.page {
   padding-top: 15em
 }
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
   div.page {
     width: 60% !important;
-    margin: auto; padding-top: 0em !important
+    margin: auto; padding-top: 5em !important
   }
   .header {height: 22vh !important; position: static !important}
   .header_content {padding-top: 2em; display: flex; flex-direction: row}
