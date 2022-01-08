@@ -10,13 +10,16 @@ html, body {
   color: var(--font-color) !important;
   margin-bottom: 3% !important
 }
+h1, h2 {
+  opacity: 0.75
+}
 div.page {
   padding-top: 15em
 }
 @media screen and (orientation: landscape) {
   div.page {
     width: 60% !important;
-    margin: auto; padding-top: 5em !important
+    margin: auto; padding-top: 5.5em !important
   }
   .header {height: 22vh !important; position: static !important}
   .header_content {padding-top: 2em; display: flex; flex-direction: row}
@@ -50,7 +53,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  opacity: 0.8
+  opacity: 0.75
 }
 .header {
   display: flex;
