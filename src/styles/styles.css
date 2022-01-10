@@ -31,7 +31,7 @@ div.page {
 @media screen and (min-width: 473px) and (max-width: 778px) {
   .header_content h2 {display: flex; flex-direction: column;}
 }
-@media screen and (max-width: 1005px) and (orientation: landscape){
+@media screen and (max-width: 1050px) and (orientation: landscape){
   .header_content h2 {display: flex; flex-direction: row;}
   .header_content {display: flex; flex-direction: column}
   div.page {
