@@ -10,9 +10,6 @@ html, body {
   color: var(--font-color) !important;
   margin-bottom: 3% !important
 }
-h1, h2 {
-  opacity: 0.75
-}
 div.page {
   padding-top: 15em;
   margin: auto; 
