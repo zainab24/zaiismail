@@ -2,5 +2,5 @@ html[data-theme="dark"] {
   --font-color: #fff;
   --link-color: #FA00FF;
   --body-bg: fixed linear-gradient(#1c1949 40%, #111);
-  --header-bg: #1c1949
+  --header-bg: transparent
 }

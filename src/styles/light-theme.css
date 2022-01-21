@@ -2,5 +2,5 @@ html[data-theme="light"] {
   --font-color: #111;
   --link-color: #e81cda;
   --body-bg: fixed linear-gradient(honeydew 40%, #b9c0f8);
-  --header-bg: honeydew
+  --header-bg: transparent
 }
