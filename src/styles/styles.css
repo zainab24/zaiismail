@@ -144,7 +144,7 @@ h2 span.writing a {
     outline: inherit;
     font-size: 1.75em;
     text-decoration: none !important;
-    color: var(--body-bg);
+    color: #fff;
     font-family: 'Yuji Syuku';
     letter-spacing: -0.1em;
 }
