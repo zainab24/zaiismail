@@ -1,6 +1,7 @@
 html[data-theme="dark"] {
   --font-color: #fff;
   --link-color: #FA00FF;
-  --body-bg: fixed linear-gradient(#1c1949 40%, #111);
-  --header-bg: transparent
+  --body-bg: fixed linear-gradient(#1c1949 40%, #404040);
+  --header-bg: transparent;
+  --btn-close-filter: invert(91%) sepia(82%) saturate(4273%) hue-rotate(183deg) brightness(123%) contrast(100%);
 }

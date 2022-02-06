@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Router } from "wouter";
 
 import {Link} from 'wouter';
@@ -24,24 +24,54 @@ import useHashLocation from "./hooks/wouter-hash";
 import Seo from "./components/seo.jsx";
 
 import { ThemeToggle } from "./components/theme-toggle";
+
+import Offcanvas from "react-bootstrap/Offcanvas";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Home function that is reflected across the site
 export default function Home() {
 
+  function Nav() {
+    const [show, setShow] = useState(false);
+  
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+  
+    return (
+      <>
+        <div className="mobile-button"><button onClick={handleShow}>
+        ☰
+        </button></div>
+  
+        <Offcanvas show={show} onHide={handleClose}>
+          <Offcanvas.Header closeButton>
+          </Offcanvas.Header>
+          
+          <Offcanvas.Body>
+          <h2><span className="projects"><Link href="projects" onClick={() => setShow(false)}>Projects</Link></span>   <span className="publications" onClick={() => setShow(false)}><Link href="publications" onClick={() => setShow(false)}>Publications</Link></span>   <span className="writing" onClick={() => setShow(false)}><Link href="writing">Writing</Link></span></h2>
+          </Offcanvas.Body>
+        </Offcanvas>
+      </>
+    );
+  }
+
   return (
     <Router hook={useHashLocation}>
       <Seo />
-      <div className="header">
 
-      <div className="header_content">
-      <h1><Link href="/">zainab</Link></h1>
+  <Nav/>
 
-      <h2><span className="projects"><Link href="projects">Projects</Link></span>   <span className="publications"><Link href="publications">Publications</Link></span>   <span className="writing"><Link href="writing">Writing</Link></span></h2>
-      </div>
 
-      <ThemeToggle/>
-      </div>
+  <ThemeToggle/>
+
+  <h1><Link href="/">zainab ismail</Link></h1>
+
+
+
+    <div className="landscape-nav">
+     <h2><span className="projects"><Link href="projects">Projects</Link></span>   <span className="publications"><Link href="publications">Publications</Link></span>   <span className="writing"><Link href="writing">Writing</Link></span></h2>
+     </div>
+
       <main role="main" className="wrapper">
 
   <div className="page">
