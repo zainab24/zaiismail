@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla&family=Pacifico&family=Courier+Prime");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Courier+Prime");
 
 /* General rules */
 * {
@@ -35,7 +35,7 @@ img {
 a {
     color: var(--link-color) !important;
     text-decoration: none !important;
-    font-family: Karla !important;
+    font-family: 'Courier Prime' !important;
     font-weight: bold !important
 }
 a:hover, button:hover, button:focus {
@@ -150,7 +150,8 @@ h2 span.writing a, h2 span.writing {
     display: block !important;
     font-weight: bold;
     line-height: 1.2em !important;
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-family: 'Courier Prime' !important;
 }
 @media screen and (orientation: portrait) {
   .mobile-button {
@@ -162,10 +163,11 @@ h2 span.writing a, h2 span.writing {
   .mobile-h2 {
       display: block !important;
       margin-top: 1em;
-    font-family: Karla !important;
+    font-family: 'Courier Prime' !important;
     font-weight: bold !important;
     font-size: 2em !important;
-    text-transform: uppercase
+    text-transform: uppercase;
+    text-align: center
   }
 }
 @media screen and (orientation: landscape) {
@@ -183,7 +185,8 @@ h2 span.writing a, h2 span.writing {
   .landscape-nav {
       width: 60%;
       margin: auto;
-      text-align: center
+      text-align: center;
+    font-family: 'Courier Prime' !important;
   }
   div.page {
       width: 60% !important;
