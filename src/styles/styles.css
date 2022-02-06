@@ -66,7 +66,7 @@ h1 a {
 div.dark-mode-toggle {
     display: flex;
     flex-direction: row;
-    margin-top: -3.5em
+    margin-top: 0.5em;
 }
 #theme-toggle {
     visibility: hidden;
@@ -76,8 +76,8 @@ div.dark-mode-toggle {
     content: "";
     display: inline-block;
     cursor: pointer;
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
     margin: 1em;
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
@@ -125,9 +125,13 @@ h2 span.writing a {
     color: #7b65e8 !important;
 }
 .mobile-button {
-    padding: 1em 0 0 1em;
-    position: relative;
-    z-index: 1000;
+  padding: 1em 0 0 1em;
+  z-index: 1000;
+  position: fixed;
+  background: #7b65e8;
+  width: 100%;
+  height: 10vh;
+  line-height: 5vh;
 }
 .mobile-button span {
   margin-right: 0.25em
@@ -140,7 +144,7 @@ h2 span.writing a {
     outline: inherit;
     font-size: 1.75em;
     text-decoration: none !important;
-    color: var(--font-color) !important;
+    color: var(--body-bg);
     font-family: 'Yuji Syuku';
     letter-spacing: -0.1em;
 }
@@ -166,8 +170,15 @@ h2 span.writing a {
   .mobile-button {
       display: block
   }
+  h1 a { padding-top: 2.5em;}
   .landscape-nav {
       display: none
+  }
+  .dark-mode-toggle {
+  position: fixed;
+  z-index: 1001;
+  width: fit-content;
+  right: 1em
   }
 }
 @media screen and (orientation: landscape) {
