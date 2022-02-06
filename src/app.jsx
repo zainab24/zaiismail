@@ -40,7 +40,7 @@ export default function Home() {
     return (
       <>
         <div className="mobile-button"><button onClick={handleShow}>
-        ☰
+        ☰ menu
         </button></div>
   
         <Offcanvas show={show} onHide={handleClose}>
