@@ -31,7 +31,7 @@ img {
     font-family: 'Yuji Syuku' !important;
     font-size: 2em !important;
     letter-spacing: -0.1em;
-  font-weight: bold}
+}
 /* Links */
 a {
     color: var(--link-color) !important;
