@@ -112,6 +112,11 @@ h2 span.projects a, h2 span.projects {
     font-family: Karla !important;
     font-weight: bold !important
 }
+h2 span.home {
+  color: var(--link-color) !important;
+  font-family: Karla !important;
+  font-weight: bold !important
+}
 h2 span.publications a, h2 span.publications {
     color: #19b099 !important;
     font-family: Karla !important;
@@ -133,7 +138,7 @@ h2 span.writing a, h2 span.writing {
     border: none;
     cursor: pointer;
     outline: inherit;
-    font-size: 2em;
+    font-size: 1.75em;
     text-decoration: none !important;
     font-weight: bold !important;
     color: var(--font-color) !important;

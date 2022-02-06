@@ -48,7 +48,7 @@ export default function Home() {
           </Offcanvas.Header>
           
           <Offcanvas.Body>
-          <h2><span className="projects"><Link href="projects" onClick={() => setShow(false)}>Projects</Link></span>   <span className="publications" onClick={() => setShow(false)}><Link href="publications" onClick={() => setShow(false)}>Publications</Link></span>   <span className="writing" onClick={() => setShow(false)}><Link href="writing">Writing</Link></span></h2>
+          <h2><span className="home"><Link href="/" onClick={() => setShow(false)}>Home</Link></span> <span className="projects"><Link href="projects" onClick={() => setShow(false)}>Projects</Link></span>   <span className="publications" onClick={() => setShow(false)}><Link href="publications" onClick={() => setShow(false)}>Publications</Link></span>   <span className="writing" onClick={() => setShow(false)}><Link href="writing">Writing</Link></span></h2>
           </Offcanvas.Body>
         </Offcanvas>
       </>
