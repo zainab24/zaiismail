@@ -146,10 +146,11 @@ h2 span.writing a, h2 span.writing {
     justify-content: right !important
 }
 .offcanvas h2 span a {
-    font-size: 1.2em !important;
+    font-size: 1.5em !important;
     display: block !important;
     font-weight: bold;
-    line-height: 1.2em !important
+    line-height: 1.2em !important;
+    text-transform: uppercase
 }
 @media screen and (orientation: portrait) {
   .mobile-button {
@@ -163,7 +164,8 @@ h2 span.writing a, h2 span.writing {
       margin-top: 1em;
     font-family: Karla !important;
     font-weight: bold !important;
-    text-align: center
+    font-size: 2em !important;
+    text-transform: uppercase
   }
 }
 @media screen and (orientation: landscape) {
