@@ -6,9 +6,8 @@ import anthologies from "../data/anthologies.js";
 
 export default function Publications() {
   return (
-    <>
-    <h2 className="mobile-h2"><span className="publications">Publications</span></h2>
-      <div className="box">
+    <>      
+    <div className="box">
         <h2>collections</h2>
         {collections.map((item, i) => {
           return (
@@ -72,5 +71,6 @@ export default function Publications() {
         })}
       </div>
       </>
+
   );
 }

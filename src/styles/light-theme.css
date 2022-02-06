@@ -1,7 +1,6 @@
 html[data-theme="light"] {
   --font-color: #404040;
   --link-color: #e81cda;
-  --body-bg: fixed linear-gradient(honeydew 40%, #b9c0f8);
-  --header-bg: transparent;
+  --body-bg: honeydew;
   --btn-close-filter: none
 }

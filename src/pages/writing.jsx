@@ -3,7 +3,6 @@ import React from "react";
 export default function Writing() {
   return (
 <>
-    <h2 className="mobile-h2"><span className="writing">Writing</span></h2>
 <div className="box">
         <h2>on earth</h2>
         <p>The rain reminds me of my roots on Earth.<br/>A holy hush settles absolute on Earth.</p>
@@ -68,8 +67,7 @@ texting you in a fit of repeating rain.</p>
 sketch some kind of sanctuary for me in the dark.</p>
       </div>
       
-      <p><span className="writing"><a href="http://instagram.com/zai._i">read more on instagram</a></span></p>
-      </>
-
+      <p><span className="writing"><a href="http://instagram.com/zai._i">more on instagram</a></span></p>
+</>
   );
 }
