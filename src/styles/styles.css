@@ -162,7 +162,8 @@ h2 span.writing a, h2 span.writing {
       display: none
   }
   .mobile-h2 {
-      display: block !important
+      display: block !important;
+      margin-top: 1em
   }
 }
 @media screen and (orientation: landscape) {
