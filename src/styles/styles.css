@@ -109,23 +109,15 @@ div.home {
 }
 h2 span.projects a, h2 span.projects {
     color: #fa5a16 !important;
-    font-family: Karla !important;
-    font-weight: bold !important
 }
 h2 span.home {
   color: var(--link-color) !important;
-  font-family: Karla !important;
-  font-weight: bold !important
 }
 h2 span.publications a, h2 span.publications {
     color: #19b099 !important;
-    font-family: Karla !important;
-    font-weight: bold !important
 }
 h2 span.writing a, h2 span.writing {
     color: #7b65e8 !important;
-    font-family: Karla !important;
-    font-weight: bold !important
 }
 .mobile-button {
     padding: 1em 0 0 1em;
@@ -168,7 +160,10 @@ h2 span.writing a, h2 span.writing {
   }
   .mobile-h2 {
       display: block !important;
-      margin-top: 1em
+      margin-top: 1em;
+    font-family: Karla !important;
+    font-weight: bold !important;
+    text-align: center
   }
 }
 @media screen and (orientation: landscape) {
