@@ -37,7 +37,8 @@ a {
     color: var(--link-color) !important;
     text-decoration: none !important;
     font-weight: 600;
-    letter-spacing: 0.75px
+    letter-spacing: 0.5px;
+    font-family: 'Yuji Syuku'
 }
 a:hover, button:hover, button:focus {
     text-decoration: none;
