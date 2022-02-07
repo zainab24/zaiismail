@@ -30,7 +30,8 @@ img {
   margin: 2.5em;
 }
 .box h2 {
-  font-family: "Lilita One" !important;
+  font-family: "Courier Prime" !important;
+  letter-spacing: -0.05em;
 }
 /* Links */
 a {
@@ -39,6 +40,7 @@ a {
   font-weight: normal !important;
   letter-spacing: 0.5px;
   font-family: "Lilita One";
+  font-size: 1.2em
 }
 a:hover,
 button:hover,
@@ -195,6 +197,7 @@ h1 a {
   }
   div.dark-mode-toggle {
     padding: 1.5em;
+    background: #8e65ab
   }
   .mobile-h2 {
     display: none;
