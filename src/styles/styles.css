@@ -178,7 +178,8 @@ h2 span.writing a {
   font-family: "Yuji Syuku" !important;
   letter-spacing: -0.05em;
 }
-@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait),
+screen and (orientation: landscape) and (min-width: 423px) and (max-width: 653px) {
   .mobile-button {
     display: block;
   }
