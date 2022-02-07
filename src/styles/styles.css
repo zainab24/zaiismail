@@ -147,7 +147,7 @@ h2 span.writing a {
   font-family: "Lilita One";
 }
 .btn-close {
-  filter: var(--btn-close-filter) !important;
+  filter: invert(84%) sepia(2%) saturate(555%) hue-rotate(314deg) brightness(111%) contrast(111%) !important;
   opacity: 1 !important;
 }
 .offcanvas {
