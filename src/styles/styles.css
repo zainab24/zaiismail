@@ -31,8 +31,6 @@ img {
 }
 .box h2 {
   font-family: "Lilita One" !important;
-  font-size: 2em !important;
-  position: relative;
 }
 /* Links */
 a {
@@ -92,7 +90,7 @@ div.dark-mode-toggle {
 }
 
 span.pipe {
-  color: #e81cda;
+  color: #F37BF5;
   display: inline-block;
   font-weight: bold;
   margin: 0.25em;
@@ -125,7 +123,7 @@ h2 span.writing a {
   color: #59b8f3 !important;
 }
 .mobile-button {
-  z-index: 1000;
+  z-index: 1045;
   width: 100vw;
   padding: 1em;
   position: fixed;
@@ -151,7 +149,7 @@ h2 span.writing a {
   opacity: 1 !important;
 }
 .offcanvas {
-  background: #9472ab;
+  background: #8e65ab !important;
 }
 .offcanvas-header {
   justify-content: right !important;
@@ -164,7 +162,7 @@ h2 span.writing a {
   font-family: "Lilita One" !important;
 }
 div.title {
-  background: #9472ab;
+  background: #8e65ab;
   padding: 1em;
 }
 h1 a {
