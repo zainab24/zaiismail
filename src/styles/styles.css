@@ -88,7 +88,7 @@ div.dark-mode-toggle {
 }
 #theme-toggle:checked + label {
   background-color: transparent;
-  box-shadow: inset -18px -16px 1px 1px #fff;
+  box-shadow: inset -18px -16px 1px 1px #fffafa;
 }
 
 span.pipe {
@@ -143,7 +143,7 @@ h2 span.writing a {
   outline: inherit;
   font-size: 1.75em;
   text-decoration: none !important;
-  color: #fff;
+  color: #fffafa;
   font-family: "Lilita One";
 }
 .btn-close {
@@ -168,7 +168,7 @@ div.title {
   padding: 1em;
 }
 h1 a {
-  color: #fff !important;
+  color: #fffafa !important;
 }
 @media screen and (orientation: portrait) {
   .mobile-button {

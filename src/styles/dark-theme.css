@@ -2,5 +2,5 @@ html[data-theme="dark"] {
   --font-color: #fffafa;
   --link-color: #fa00ff;
   --body-bg: #111;
-  --btn-close-filter: invert(91%) sepia(82%) saturate(4273%) hue-rotate(183deg) brightness(123%) contrast(100%);
+  --btn-close-filter: invert(84%) sepia(2%) saturate(555%) hue-rotate(314deg) brightness(111%) contrast(111%);
 }
