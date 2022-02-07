@@ -1,6 +1,6 @@
 html[data-theme="light"] {
   --font-color: #404040;
-  --link-color: #e81cda;
-  --body-bg: honeydew;
+  --link-color: #fa00ff;
+  --body-bg: #dffff8;
   --btn-close-filter: none;
 }

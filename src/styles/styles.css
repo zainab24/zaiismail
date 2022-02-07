@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=Courier+Prime");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Courier+Prime");
 
 /* General rules */
 * {
@@ -30,17 +30,17 @@ img {
   margin: 2.5em;
 }
 .box h2 {
-  font-family: "Yuji Syuku" !important;
+  font-family: "Lilita One" !important;
   font-size: 2em !important;
-  letter-spacing: -0.1em;
+  position: relative;
 }
 /* Links */
 a {
   color: var(--link-color) !important;
   text-decoration: none !important;
-  font-weight: 600;
+  font-weight: normal !important;
   letter-spacing: 0.5px;
-  font-family: "Yuji Syuku";
+  font-family: "Lilita One";
 }
 a:hover,
 button:hover,
@@ -50,28 +50,23 @@ button:focus {
 }
 .landscape-nav {
   text-align: center;
-  margin: -25vh 0 0 -2em;
-  font-family: "Yuji Syuku" !important;
-  letter-spacing: -0.1em;
-  transform: rotate(5deg);
+  font-family: "Lilita One" !important;
 }
 .landscape-nav a {
   margin-left: 2em;
 }
 h1 a {
-  font-family: "Yuji Syuku" !important;
+  font-family: "Lilita One" !important;
   color: var(--font-color) !important;
   font-weight: normal !important;
   font-size: 2em !important;
   text-align: center;
   display: block;
-  letter-spacing: -0.1em;
 }
 /* Dark mode toggle */
 div.dark-mode-toggle {
   display: flex;
   flex-direction: row;
-  margin-top: 0.25em;
 }
 #theme-toggle {
   visibility: hidden;
@@ -118,31 +113,23 @@ div.home {
   margin: 2rem 0;
 }
 h2 span.projects a {
-  color: #fa5a16 !important;
+  color: #f79267 !important;
 }
 h2 span.home {
   color: var(--link-color) !important;
 }
 h2 span.publications a {
-  color: #19b099 !important;
+  color: #33cdb6!important
 }
 h2 span.writing a {
-  color: #7b65e8 !important;
+  color: #59b8f3 !important;
 }
 .mobile-button {
-  padding: 7.5em 0 0 5em;
   z-index: 1000;
+  width: 100vw;
+  padding: 1em;
   position: fixed;
-  background: #7b65e8;
-  width: 120%;
-  height: 28vh;
-  line-height: 5vh;
-  transform: rotate(10deg);
-  left: -10%;
-  top: -10%;
-}
-.mobile-button button {
-  transform: rotate(-10deg);
+  background: url('/images/glitter.gif') repeat;
 }
 .mobile-button span {
   margin-right: 0.25em;
@@ -157,15 +144,14 @@ h2 span.writing a {
   font-size: 1.75em;
   text-decoration: none !important;
   color: #fff;
-  font-family: "Yuji Syuku";
-  letter-spacing: -0.1em;
+  font-family: "Lilita One";
 }
 .btn-close {
   filter: var(--btn-close-filter) !important;
   opacity: 1 !important;
 }
 .offcanvas {
-  background: var(--body-bg) !important;
+  background: url('/images/glitter.gif') repeat;
 }
 .offcanvas-header {
   justify-content: right !important;
@@ -175,11 +161,16 @@ h2 span.writing a {
   display: block !important;
   line-height: 1.2em !important;
   text-transform: uppercase;
-  font-family: "Yuji Syuku" !important;
-  letter-spacing: -0.05em;
+  font-family: "Lilita One" !important;
 }
-@media screen and (orientation: portrait),
-screen and (orientation: landscape) and (min-width: 423px) and (max-width: 653px) {
+div.title {
+  background: url('/images/glitter.gif') repeat;
+  padding: 1em;
+}
+h1 a {
+  color: #fff !important;
+}
+@media screen and (orientation: portrait) {
   .mobile-button {
     display: block;
   }
@@ -190,40 +181,22 @@ screen and (orientation: landscape) and (min-width: 423px) and (max-width: 653px
     display: none;
   }
   .dark-mode-toggle {
-    position: fixed;
-    z-index: 1001;
+    z-index: 1044;
     width: fit-content;
+    position: absolute;
     right: 1em;
+    top: 5em;
   }
 }
 @media screen and (orientation: landscape) {
-  img.me {
-    width: 350px;
-  }
-  html,
-  body {
-    overflow-x: hidden;
-  }
   div.title {
-    background: #7b65e8;
-    transform: rotate(5deg);
-    top: -30vh;
-    position: relative;
-    height: 35vh;
-    width: 110vw;
-    left: -5vh;
-    line-height: 35vh;
+    margin-bottom: 2em
   }
-  h1 a {
-    transform: rotate(-5deg);
-    line-height: 40vh;
-    color: #fff !important;
+  img.me {
+    width: 350px
   }
-}
-@media screen and (orientation: landscape) and (min-width: 654px) {
   div.dark-mode-toggle {
     padding: 1.5em;
-    margin: 0;
   }
   .mobile-h2 {
     display: none;
