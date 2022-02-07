@@ -116,7 +116,7 @@ h2 span.projects a {
   color: #f79267 !important;
 }
 h2 span.home {
-  color: var(--link-color) !important;
+  color: var(--link-color)!important;
 }
 h2 span.publications a {
   color: #33cdb6!important
@@ -129,7 +129,7 @@ h2 span.writing a {
   width: 100vw;
   padding: 1em;
   position: fixed;
-  background: url('/images/glitter.gif') repeat;
+  background: #9472ab;
 }
 .mobile-button span {
   margin-right: 0.25em;
@@ -151,7 +151,7 @@ h2 span.writing a {
   opacity: 1 !important;
 }
 .offcanvas {
-  background: url('/images/glitter.gif') repeat;
+  background: #9472ab;
 }
 .offcanvas-header {
   justify-content: right !important;
@@ -164,7 +164,7 @@ h2 span.writing a {
   font-family: "Lilita One" !important;
 }
 div.title {
-  background: url('/images/glitter.gif') repeat;
+  background: #9472ab;
   padding: 1em;
 }
 h1 a {
