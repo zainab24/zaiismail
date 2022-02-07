@@ -50,16 +50,17 @@ button:focus {
 }
 .landscape-nav {
   text-align: center;
-  margin-left: -2em;
+  margin: -25vh 0 0 -2em;
   font-family: "Yuji Syuku" !important;
   letter-spacing: -0.1em;
+  transform: rotate(5deg);
 }
 .landscape-nav a {
   margin-left: 2em;
 }
 h1 a {
   font-family: "Yuji Syuku" !important;
-  color: var(--font-color) !important;
+  color: #fff !important;
   font-weight: normal !important;
   font-size: 2em !important;
   text-align: center;
@@ -129,16 +130,16 @@ h2 span.writing a {
   color: #7b65e8 !important;
 }
 .mobile-button {
-  padding: 5em 0 0 5em;
+  padding: 7.5em 0 0 5em;
   z-index: 1000;
   position: fixed;
   background: #7b65e8;
   width: 120%;
-  height: 22vh;
+  height: 28vh;
   line-height: 5vh;
   transform: rotate(10deg);
   left: -10%;
-  top: -5%;
+  top: -10%;
 }
 .mobile-button button {
   transform: rotate(-10deg);
@@ -198,12 +199,26 @@ h2 span.writing a {
   img.me {
     width: 350px;
   }
-}
-@media screen and (orientation: landscape) and (min-width: 488px) {
-  h1 a {
-    margin-top: -1em;
-    padding-bottom: 0.5em;
+  html,
+  body {
+    overflow-x: hidden;
   }
+  div.title {
+    background: #7b65e8;
+    transform: rotate(5deg);
+    top: -30vh;
+    position: relative;
+    height: 35vh;
+    width: 110vw;
+    left: -5vh;
+    line-height: 35vh;
+  }
+  h1 a {
+    transform: rotate(-5deg);
+    line-height: 40vh;
+  }
+}
+@media screen and (orientation: landscape) and (min-width: 654px) {
   div.dark-mode-toggle {
     padding: 1.5em;
     margin: 0;

@@ -64,7 +64,7 @@ export default function Home() {
 
   <ThemeToggle/>
 
-  <h1><Link href="/">zainab ismail</Link></h1>
+  <div className="title"><h1><Link href="/">zainab ismail</Link></h1></div>
 
 
 
