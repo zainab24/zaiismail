@@ -60,7 +60,7 @@ button:focus {
 }
 h1 a {
   font-family: "Yuji Syuku" !important;
-  color: #fff !important;
+  color: var(--font-color) !important;
   font-weight: normal !important;
   font-size: 2em !important;
   text-align: center;
@@ -216,6 +216,7 @@ h2 span.writing a {
   h1 a {
     transform: rotate(-5deg);
     line-height: 40vh;
+    color: #fff !important;
   }
 }
 @media screen and (orientation: landscape) and (min-width: 654px) {
