@@ -53,6 +53,8 @@ button:focus {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 1em;
+  background: #8e65ab url('/images/glitter.gif') repeat !important;
 }
 .landscape-nav a {
   padding: 0.5em
@@ -191,9 +193,6 @@ h1 a {
   }
 }
 @media screen and (orientation: landscape) {
-  div.title {
-    margin-bottom: 2em
-  }
   img.me {
     width: 350px
   }
