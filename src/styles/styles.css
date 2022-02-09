@@ -81,8 +81,8 @@ div.dark-mode-toggle {
   content: "";
   display: inline-block;
   cursor: pointer;
-  height: 90px;
-  width: 90px;
+  height: 4em;
+  width: 4em;
   margin: 1em;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
@@ -93,7 +93,7 @@ div.dark-mode-toggle {
 }
 #theme-toggle:checked + label {
   background-color: transparent;
-  box-shadow: inset -18px -16px 1px 1px #fffafa;
+  box-shadow: -0.8em -0.75em 0.01em 0.01em #fffafa;
 }
 
 span.pipe {
