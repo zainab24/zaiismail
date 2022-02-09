@@ -131,7 +131,7 @@ h2 span.writing a {
   width: 100vw;
   padding: 1em;
   position: fixed;
-  background: #8e65ab;
+  background: #8e65ab url('/images/glitter.gif') repeat;
 }
 .mobile-button span {
   margin-right: 0.25em;
@@ -153,7 +153,7 @@ h2 span.writing a {
   opacity: 1 !important;
 }
 .offcanvas {
-  background: #8e65ab !important;
+  background: #8e65ab url('/images/glitter.gif') repeat !important;
 }
 .offcanvas-header {
   justify-content: right !important;
