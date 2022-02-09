@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Courier+Prime");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Courier+Prime&family=EB+Garamond:ital@1");
 
 /* General rules */
 * {
@@ -30,8 +30,7 @@ img {
   margin: 2.5em;
 }
 .box h2 {
-  font-family: "Courier Prime" !important;
-  letter-spacing: -0.05em;
+  font-family: "EB Garamond" !important;
 }
 /* Links */
 a {

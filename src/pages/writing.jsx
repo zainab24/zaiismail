@@ -4,7 +4,7 @@ export default function Writing() {
   return (
 <>
 <div className="box">
-        <h2>on earth</h2>
+        <h2>on earth (ghazal)</h2>
         <p>The rain reminds me of my roots on Earth.<br/>A holy hush settles absolute on Earth.</p>
 
         <p>Clouds heave in their heavenly bellies<br/>mute rain destined to shoot on Earth.</p>
