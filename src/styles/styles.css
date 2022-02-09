@@ -55,7 +55,7 @@ button:focus {
   justify-content: space-around;
   padding: 1em;
   background: #8e65ab url('/images/glitter.gif') repeat !important;
-  background-size: 125px 125px
+  background-size: 125px 125px !important
 }
 .landscape-nav a {
   padding: 0.5em
@@ -135,7 +135,7 @@ h2 span.writing a {
   padding: 1em;
   position: fixed;
   background: #8e65ab url('/images/glitter.gif') repeat;
-  background-size: 125px 125px
+  background-size: 125px 125px !important
 }
 .mobile-button span {
   margin-right: 0.25em;
@@ -158,7 +158,7 @@ h2 span.writing a {
 }
 .offcanvas {
   background: #8e65ab url('/images/glitter.gif') repeat !important;
-  background-size: 125px 125px
+  background-size: 125px 125px !important
 }
 .offcanvas-header {
   justify-content: right !important;
