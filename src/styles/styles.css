@@ -18,6 +18,7 @@ div.page {
 }
 p {
   font-family: "Courier Prime";
+  line-height: 1.6em !important
 }
 [hidden] {
   display: none !important;
