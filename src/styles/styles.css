@@ -128,16 +128,16 @@ div.home {
 .box {
   margin: 2rem 0;
 }
-h2 span.projects a {
+h2 span.projects a, .box.projects h2 {
   color: #f79267 !important;
 }
 h2 span.home {
   color: var(--link-color)!important;
 }
-h2 span.publications a {
+h2 span.publications a, .box.publications h2 {
   color: #33cdb6!important
 }
-h2 span.writing a {
+h2 span.writing a, .box.writing h2 {
   color: #59b8f3 !important;
 }
 .mobile-button {

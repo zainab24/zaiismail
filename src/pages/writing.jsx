@@ -3,7 +3,7 @@ import React from "react";
 export default function Writing() {
   return (
 <>
-<div className="box">
+<div className="box writing">
         <h2>on earth (ghazal)</h2>
         <p>The rain reminds me of my roots on Earth.<br/>A holy hush settles absolute on Earth.</p>
 
@@ -15,7 +15,7 @@ export default function Writing() {
 
         <p>A round cradle sustains me. The rain reins me<br/>back to this perfect truth on Earth.</p>
 </div>
-<div className="box">
+<div className="box writing">
 <h2>train in the rain / departure</h2>
 
 
@@ -46,7 +46,7 @@ rooted in failure.</p>
 <p>Autumn<br/>
 leaves.</p>
 </div>
-<div className="box">
+<div className="box writing">
         <h2>musings standing at a station</h2>
 
         <p>Light and shade, colours overlapping until the end of time when
