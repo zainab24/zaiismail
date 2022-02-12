@@ -32,6 +32,7 @@ img {
 }
 .box h2 {
   font-family: "EB Garamond" !important;
+  font-weight: bold !important
 }
 /* Links */
 a {
