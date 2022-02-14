@@ -137,6 +137,9 @@ h2 span.home {
 h2 span.publications a {
   color: #e7ffe3 !important
 }
+h2 span.home a {
+  color: #fff0de !important
+}
 h2 span.writing a {
   color: #ddfffc !important;
 }
