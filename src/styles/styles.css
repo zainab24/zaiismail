@@ -32,7 +32,6 @@ img {
 }
 .box h2 {
   font-family: "EB Garamond" !important;
-  font-weight: bold !important
 }
 /* Links */
 a {
@@ -56,7 +55,7 @@ button:focus {
   flex-direction: row;
   justify-content: space-around;
   padding: 1em;
-  background: #8e65ab url('/images/glitter.gif') repeat !important;
+  background: #cbaae2 url('/images/glitter.gif') repeat !important;
   background-size: 125px 125px !important
 }
 .landscape-nav a {
@@ -102,7 +101,7 @@ div.dark-mode-toggle {
   content: "";
   width: 3.75em;
   position: absolute;
-  background: #8e65ab;
+  background: #cbaae2;
   left: -0.5em;
   border-radius: 50%;
   top: -1em;
@@ -129,24 +128,24 @@ div.home {
 .box {
   margin: 2rem 0;
 }
-h2 span.projects a, .box.projects h2 {
-  color: #f79267 !important;
+h2 span.projects a {
+  color: #ffdef2 !important;
 }
 h2 span.home {
   color: var(--link-color)!important;
 }
-h2 span.publications a, .box.publications h2 {
-  color: #33cdb6!important
+h2 span.publications a {
+  color: #e7ffe3 !important
 }
-h2 span.writing a, .box.writing h2 {
-  color: #59b8f3 !important;
+h2 span.writing a {
+  color: #ddfffc !important;
 }
 .mobile-button {
   z-index: 1045;
   width: 100vw;
   padding: 1em;
   position: fixed;
-  background: #8e65ab url('/images/glitter.gif') repeat;
+  background: #cbaae2 url('/images/glitter.gif') repeat;
   background-size: 125px 125px !important
 }
 .mobile-button span {
@@ -169,7 +168,7 @@ h2 span.writing a, .box.writing h2 {
   opacity: 1 !important;
 }
 .offcanvas {
-  background: #8e65ab url('/images/glitter.gif') repeat !important;
+  background: #cbaae2 url('/images/glitter.gif') repeat !important;
   background-size: 125px 125px !important
 }
 .offcanvas-header {
@@ -183,7 +182,7 @@ h2 span.writing a, .box.writing h2 {
   font-family: "Lilita One" !important;
 }
 div.title {
-  background: #8e65ab;
+  background: #cbaae2;
   padding: 1em;
 }
 h1 a {
@@ -213,7 +212,7 @@ h1 a {
   }
   div.dark-mode-toggle {
     padding: 1.5em;
-    background: #8e65ab
+    background: #cbaae2
   }
   .mobile-h2 {
     display: none;
