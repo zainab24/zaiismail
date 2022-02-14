@@ -1,5 +1,5 @@
 html[data-theme="dark"] {
-  --font-color: #111;
+  --font-color: #fffafa;
   --link-color: #e8a6e9;
-  --body-bg: #111;
+  --body-bg: #404040;
 }
