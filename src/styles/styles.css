@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Courier+Prime&family=EB+Garamond:ital@1");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Ubuntu+Mono&family=EB+Garamond:ital@1");
 
 /* General rules */
 * {
@@ -7,7 +7,7 @@
 }
 html,
 body {
-  font-family: "Courier Prime" !important;
+  font-family: "Ubuntu Mono" !important;
   background: var(--body-bg) !important;
   color: var(--font-color) !important;
   margin-bottom: 3% !important;
@@ -17,7 +17,7 @@ div.page {
   width: 90%;
 }
 p {
-  font-family: "Courier Prime";
+  font-family: "Ubuntu Mono";
   line-height: 1.6em !important
 }
 [hidden] {
