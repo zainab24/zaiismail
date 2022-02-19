@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Ubuntu+Mono&family=EB+Garamond:ital@1");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=EB+Garamond:ital@1");
 
 /* General rules */
 
@@ -13,7 +13,7 @@
 }
 html,
 body {
-  font-family: "Ubuntu Mono" !important;
+  font-family: Poppins !important;
   background: var(--body-bg) !important;
   color: var(--font-color) !important;
   margin-bottom: 3% !important;
@@ -23,8 +23,7 @@ div.page {
   width: 90%;
 }
 p {
-  font-family: "Ubuntu Mono";
-  line-height: 1.6em !important
+  font-family: Poppins;
 }
 [hidden] {
   display: none !important;
@@ -43,10 +42,8 @@ img {
 a {
   color: var(--link-color) !important;
   text-decoration: none !important;
-  font-weight: normal !important;
+  font-weight: bold !important;
   letter-spacing: 0.5px;
-  font-family: "Lilita One";
-  font-size: 1.2em
 }
 a:hover,
 button:hover,
