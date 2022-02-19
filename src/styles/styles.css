@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Ubuntu+Mono&family=EB+Garamond:ital@1");
 
 /* General rules */
+
+@font-face {
+  font-family: 'Albra Semi';
+  src: url("/fonts/AlbraSemi.otf");
+  font-weight: 500
+}
 * {
   box-sizing: border-box;
   letter-spacing: 0.5px;
@@ -50,7 +56,6 @@ button:focus {
 }
 .landscape-nav {
   text-align: center;
-  font-family: "Lilita One" !important;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -59,11 +64,12 @@ button:focus {
   background-size: 125px 125px !important
 }
 .landscape-nav a {
-  padding: 0.5em
+  padding: 0.5em;
+  font-family: "Albra Semi" !important;
 }
 h1 a {
-  font-family: "Lilita One" !important;
-  color: var(--font-color) !important;
+  font-family: "Albra Semi" !important;
+  color: #fffafa !important;
   font-weight: normal !important;
   font-size: 2em !important;
   text-align: center;
@@ -164,7 +170,7 @@ h2 span.writing a {
   font-size: 1.75em;
   text-decoration: none !important;
   color: #fffafa;
-  font-family: "Lilita One";
+  font-family: 'Albra Semi' !important
 }
 .btn-close {
   filter: invert(84%) sepia(2%) saturate(555%) hue-rotate(314deg) brightness(111%) contrast(111%) !important;
@@ -182,14 +188,11 @@ h2 span.writing a {
   display: block !important;
   line-height: 1.2em !important;
   text-transform: uppercase;
-  font-family: "Lilita One" !important;
+  font-family: "Albra Semi" !important;
 }
 div.title {
   background: #cbaae2;
   padding: 1em;
-}
-h1 a {
-  color: #fffafa !important;
 }
 @media screen and (orientation: portrait) {
   .mobile-button {
