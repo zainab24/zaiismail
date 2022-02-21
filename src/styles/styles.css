@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=EB+Garamond:ital@1");
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=EB+Garamond:ital@1");
 
 /* General rules */
 
@@ -13,7 +13,7 @@
 }
 html,
 body {
-  font-family: Poppins !important;
+  font-family: Karla !important;
   background: var(--body-bg) !important;
   color: var(--font-color) !important;
   margin-bottom: 3% !important;
@@ -23,7 +23,7 @@ div.page {
   width: 90%;
 }
 p {
-  font-family: Poppins;
+  font-family: Karla;
 }
 [hidden] {
   display: none !important;
