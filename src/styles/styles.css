@@ -9,7 +9,6 @@
 }
 * {
   box-sizing: border-box;
-  letter-spacing: 0.5px;
 }
 html,
 body {
@@ -43,7 +42,6 @@ a {
   color: var(--link-color) !important;
   text-decoration: none !important;
   font-weight: bold !important;
-  letter-spacing: 0.5px;
 }
 a:hover,
 button:hover,
