@@ -24,6 +24,7 @@ body {
 div.page {
   margin: auto;
   width: 90%;
+  padding-top: 25% !important;
 }
 p {
   font-family: Karla;
@@ -58,7 +59,6 @@ button:focus {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background: #eacdba;
 }
 .landscape-nav a {
   padding: 0.5em;
@@ -106,7 +106,7 @@ div.dark-mode-toggle {
   content: "";
   width: 3.75em;
   position: absolute;
-  background: #eacdba;
+  background: var(--body-bg);
   left: -0.5em;
   border-radius: 50%;
   top: -1em;
@@ -151,9 +151,12 @@ h2 span.writing a {
 .mobile-button {
   z-index: 1045;
   width: 100vw;
-  padding: 1em;
+  padding-left: 1em;
   position: fixed;
-  background: #eacdba;
+  top: 0;
+  height: 6em;
+  background: var(--body-bg);
+  line-height: 6em;
 }
 .mobile-button span {
   margin-right: 0.25em;
@@ -165,7 +168,7 @@ h2 span.writing a {
   border: none;
   cursor: pointer;
   outline: inherit;
-  font-size: 1.5em;
+  font-size: 2em;
   text-decoration: none !important;
   color: #d8689c;
   font-family: 'Albra Semi' !important
@@ -175,7 +178,7 @@ h2 span.writing a {
   opacity: 1 !important;
 }
 .offcanvas {
-  background: #eacdba !important;
+  background: var(--body-bg) !important;
 }
 .offcanvas-header {
   justify-content: right !important;
@@ -213,7 +216,6 @@ div.title {
     width: 350px
   }
   div.dark-mode-toggle {
-    background: #eacdba;
     padding: 0.5em
   }
   .mobile-h2 {

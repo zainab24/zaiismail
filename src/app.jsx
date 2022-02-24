@@ -64,12 +64,10 @@ export default function Home() {
 
   <ThemeToggle/>
 
-  <div className="title"><h1><Link href="/">Zainab Ismail</Link></h1></div>
-
 
 
     <div className="landscape-nav">
-     <h2><span className="projects"><Link href="projects">PROJECTS</Link></span>   <span className="publications"><Link href="publications">PUBLICATIONS</Link></span>   <span className="writing"><Link href="writing">WRITING</Link></span></h2>
+     <h2><span className="home"><Link href="/">HOME</Link></span> <span className="projects"><Link href="projects">PROJECTS</Link></span>   <span className="publications"><Link href="publications">PUBLICATIONS</Link></span>   <span className="writing"><Link href="writing">WRITING</Link></span></h2>
      </div>
 
       <main role="main" className="wrapper">
