@@ -40,7 +40,7 @@ export default function Home() {
     return (
       <>
         <div className="mobile-button"><button onClick={handleShow}>
-        <span>☰</span> menu
+        <span>☰</span> MENU
         </button></div>
   
         <Offcanvas show={show} onHide={handleClose}>
@@ -64,7 +64,7 @@ export default function Home() {
 
   <ThemeToggle/>
 
-  <div className="title"><h1><Link href="/">zainab ismail</Link></h1></div>
+  <div className="title"><h1><Link href="/">Zainab Ismail</Link></h1></div>
 
 
 

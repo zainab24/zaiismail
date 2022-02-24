@@ -10,6 +10,10 @@
 * {
   box-sizing: border-box;
 }
+h1 {
+  margin-block-end: 0 !important;
+  margin-bottom: 0 !important
+}
 html,
 body {
   font-family: Karla !important;
@@ -54,9 +58,7 @@ button:focus {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 1em;
-  background: #cbaae2 url('/images/glitter.gif') repeat !important;
-  background-size: 125px 125px !important
+  background: #eacdba;
 }
 .landscape-nav a {
   padding: 0.5em;
@@ -66,9 +68,10 @@ h1 a {
   font-family: "Albra Semi" !important;
   color: #fffafa !important;
   font-weight: normal !important;
-  font-size: 2em !important;
+  font-size: 1.75em !important;
   text-align: center;
   display: block;
+  color:#d8689c !important
 }
 /* Dark mode toggle */
 div.dark-mode-toggle {
@@ -102,14 +105,14 @@ div.dark-mode-toggle {
   content: "";
   width: 3.75em;
   position: absolute;
-  background: #cbaae2;
+  background: #eacdba;
   left: -0.5em;
   border-radius: 50%;
   top: -1em;
   height: 4.25em;
 }
 span.pipe {
-  color: #F37BF5;
+  color: var(--link-color);
   display: inline-block;
   font-weight: bold;
   margin: 0.25em;
@@ -130,27 +133,26 @@ div.home {
   margin: 2rem 0;
 }
 h2 span.projects a {
-  color: #ffdef2 !important;
+  color: #d8689c !important;
 }
 h2 span.home {
   color: var(--link-color)!important;
 }
 h2 span.publications a {
-  color: #e7ffe3 !important
+  color: #d8689c !important
 }
 h2 span.home a {
-  color: #fff0de !important
+  color: #d8689c !important
 }
 h2 span.writing a {
-  color: #ddfffc !important;
+  color: #d8689c !important;
 }
 .mobile-button {
   z-index: 1045;
   width: 100vw;
   padding: 1em;
   position: fixed;
-  background: #cbaae2 url('/images/glitter.gif') repeat;
-  background-size: 125px 125px !important
+  background: #eacdba;
 }
 .mobile-button span {
   margin-right: 0.25em;
@@ -162,18 +164,17 @@ h2 span.writing a {
   border: none;
   cursor: pointer;
   outline: inherit;
-  font-size: 1.75em;
+  font-size: 1.5em;
   text-decoration: none !important;
-  color: #fffafa;
+  color: #d8689c;
   font-family: 'Albra Semi' !important
 }
 .btn-close {
-  filter: invert(84%) sepia(2%) saturate(555%) hue-rotate(314deg) brightness(111%) contrast(111%) !important;
+  filter: invert(59%) sepia(98%) saturate(799%) hue-rotate(293deg) brightness(87%) contrast(93%) !important;
   opacity: 1 !important;
 }
 .offcanvas {
-  background: #cbaae2 url('/images/glitter.gif') repeat !important;
-  background-size: 125px 125px !important
+  background: #eacdba !important;
 }
 .offcanvas-header {
   justify-content: right !important;
@@ -186,25 +187,24 @@ h2 span.writing a {
   font-family: "Albra Semi" !important;
 }
 div.title {
-  background: #cbaae2;
-  padding: 1em;
+  background: #eacdba;
 }
 @media screen and (orientation: portrait) {
   .mobile-button {
     display: block;
   }
   h1 a {
-    padding-top: 3.5em;
+    padding-top: 2.5em;
   }
   .landscape-nav {
     display: none;
   }
   .dark-mode-toggle {
-    z-index: 1044;
+    z-index: 1045;
     width: fit-content;
     position: absolute;
     right: 1em;
-    top: 5em;
+    top: 1em;
   }
 }
 @media screen and (orientation: landscape) {
@@ -212,8 +212,8 @@ div.title {
     width: 350px
   }
   div.dark-mode-toggle {
-    padding: 1.5em;
-    background: #cbaae2
+    background: #eacdba;
+    padding: 0.5em
   }
   .mobile-h2 {
     display: none;
