@@ -197,6 +197,9 @@ div.title {
   .mobile-button {
     display: block;
   }
+  div.home {
+    padding-top: 15%;
+  }
   h1 a {
     padding-top: 2.5em;
   }
