@@ -71,7 +71,8 @@ h1 a {
   font-size: 1.75em !important;
   text-align: center;
   display: block;
-  color:#d8689c !important
+  color:#d8689c !important;
+  padding-bottom: 0.5em
 }
 /* Dark mode toggle */
 div.dark-mode-toggle {
