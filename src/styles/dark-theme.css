@@ -1,5 +1,6 @@
 html[data-theme="dark"] {
   --font-color: #fffafa;
-  --link-color: #08b7cf;
-  --body-bg: #404040;
+  --link-color: #f074fe;
+  --body-bg: #122273;
+  --btn-filter: invert(73%) sepia(38%) saturate(6722%) hue-rotate(239deg) brightness(101%) contrast(99%);
 }

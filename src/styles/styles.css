@@ -3,16 +3,16 @@
 /* General rules */
 
 @font-face {
-  font-family: 'Albra Semi';
+  font-family: "Albra Semi";
   src: url("/fonts/AlbraSemi.otf");
-  font-weight: 500
+  font-weight: 500;
 }
 * {
   box-sizing: border-box;
 }
 h1 {
   margin-block-end: 0 !important;
-  margin-bottom: 0 !important
+  margin-bottom: 0 !important;
 }
 html,
 body {
@@ -64,16 +64,6 @@ button:focus {
   padding: 0.5em;
   font-family: "Albra Semi" !important;
 }
-h1 a {
-  font-family: "Albra Semi" !important;
-  color: #fffafa !important;
-  font-weight: normal !important;
-  font-size: 1.75em !important;
-  text-align: center;
-  display: block;
-  color:#d8689c !important;
-  padding-bottom: 0.5em
-}
 /* Dark mode toggle */
 div.dark-mode-toggle {
   display: flex;
@@ -94,13 +84,15 @@ div.dark-mode-toggle {
   border-radius: 50%;
 }
 #theme-toggle:not(:checked) + label {
-  background: url('/images/sun.gif') repeat;
+  background: url("/images/sun.gif") repeat;
   background-size: 125px 125px !important;
+  border: 1px dotted gold;
 }
 #theme-toggle:checked + label {
-  background: url('/images/moon.gif') repeat;
+  background: url("/images/moon.gif") repeat;
   background-size: 125px 125px !important;
   position: relative;
+  border: 1px dotted silver;
 }
 #theme-toggle:checked + label:after {
   content: "";
@@ -133,20 +125,8 @@ div.home {
 .box {
   margin: 2rem 0;
 }
-h2 span.projects a {
-  color: #d8689c !important;
-}
-h2 span.home {
-  color: var(--link-color)!important;
-}
-h2 span.publications a {
-  color: #d8689c !important
-}
-h2 span.home a {
-  color: #d8689c !important
-}
-h2 span.writing a {
-  color: #d8689c !important;
+h2 span a {
+  color: var(--link-color) !important;
 }
 .mobile-button {
   z-index: 1045;
@@ -170,11 +150,11 @@ h2 span.writing a {
   outline: inherit;
   font-size: 2em;
   text-decoration: none !important;
-  color: #d8689c;
-  font-family: 'Albra Semi' !important
+  color: var(--link-color);
+  font-family: "Albra Semi" !important;
 }
 .btn-close {
-  filter: invert(59%) sepia(98%) saturate(799%) hue-rotate(293deg) brightness(87%) contrast(93%) !important;
+  filter: var(--btn-filter);
   opacity: 1 !important;
 }
 .offcanvas {
@@ -189,9 +169,6 @@ h2 span.writing a {
   line-height: 1.2em !important;
   text-transform: uppercase;
   font-family: "Albra Semi" !important;
-}
-div.title {
-  background: #eacdba;
 }
 @media screen and (orientation: portrait) {
   .mobile-button {
@@ -216,10 +193,10 @@ div.title {
 }
 @media screen and (orientation: landscape) {
   img.me {
-    width: 350px
+    width: 350px;
   }
   div.dark-mode-toggle {
-    padding: 0.5em
+    padding: 0.5em;
   }
   .mobile-h2 {
     display: none;
