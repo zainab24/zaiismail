@@ -223,5 +223,6 @@ div.title img {
     margin: auto;
 }
 div.title img:hover {
-  cursor: pointer
+  cursor: pointer;
+  opacity: 0.75;
 }
