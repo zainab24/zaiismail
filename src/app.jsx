@@ -65,7 +65,7 @@ export default function Home() {
   <ThemeToggle/>
 
   <div className="title">
-<a href="/"><img src="/images/zainabismail.png" alt="zainab ismail"/></a>
+<Link href="/"><img src="/images/zainabismail.png" alt="zainab ismail"/></Link>
 </div>
 
     <div className="landscape-nav">
