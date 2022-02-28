@@ -222,3 +222,6 @@ div.title img {
     display: block;
     margin: auto;
 }
+div.title img:hover {
+  cursor: pointer
+}
