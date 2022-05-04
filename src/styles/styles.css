@@ -90,15 +90,11 @@ div.dark-mode-toggle {
   border-radius: 50%;
 }
 #theme-toggle:not(:checked) + label {
-  background: url("/images/sun.gif") repeat;
-  background-size: 125px 125px !important;
-  border: 1px dotted gold;
+  background: gold;
 }
 #theme-toggle:checked + label {
-  background: url("/images/moon.gif") repeat;
-  background-size: 125px 125px !important;
   position: relative;
-  border: 1px dotted silver;
+  background: silver;
 }
 #theme-toggle:checked + label:after {
   content: "";

@@ -1,6 +1,6 @@
 html[data-theme="light"] {
   --font-color: #404040;
   --link-color: #092FB4;
-  --body-bg: #bac5ee;
+  --body-bg: rgb(203, 228, 254);
   --btn-filter: invert(13%) sepia(86%) saturate(3073%) hue-rotate(226deg) brightness(102%) contrast(112%);
 }
