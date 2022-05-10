@@ -90,13 +90,11 @@ div.dark-mode-toggle {
   border-radius: 50%;
 }
 #theme-toggle:not(:checked) + label {
-  background: #f3ba98;
-  opacity: 0.8
+  background: linear-gradient(to bottom, #f3ba98, #e39275);
 }
 #theme-toggle:checked + label {
   position: relative;
-  background: silver;
-  opacity: 0.8
+  background: linear-gradient(to bottom, #ffffec, silver);
 }
 #theme-toggle:checked + label:after {
   content: "";
