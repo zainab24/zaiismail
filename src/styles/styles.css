@@ -91,10 +91,12 @@ div.dark-mode-toggle {
 }
 #theme-toggle:not(:checked) + label {
   background: #f3ba98;
+  opacity: 0.8
 }
 #theme-toggle:checked + label {
   position: relative;
   background: silver;
+  opacity: 0.8
 }
 #theme-toggle:checked + label:after {
   content: "";
