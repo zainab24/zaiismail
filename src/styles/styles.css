@@ -90,7 +90,7 @@ div.dark-mode-toggle {
   border-radius: 50%;
 }
 #theme-toggle:not(:checked) + label {
-  background: #ee9662;
+  background: #f3ba98;
 }
 #theme-toggle:checked + label {
   position: relative;
