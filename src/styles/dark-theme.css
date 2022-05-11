@@ -3,4 +3,5 @@ html[data-theme="dark"] {
   --link-color: #f074fe;
   --body-bg: #2f3f7b;
   --btn-filter: invert(73%) sepia(38%) saturate(6722%) hue-rotate(239deg) brightness(101%) contrast(99%);
+  --colourise-title: none;
 }
