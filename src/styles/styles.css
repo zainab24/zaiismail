@@ -1,11 +1,6 @@
 /* General rules */
 
 @font-face {
-  font-family: "Albra Semi";
-  src: url("/fonts/AlbraSemi.otf");
-  font-weight: 500;
-}
-@font-face {
   font-family: "Circular";
   src: url("/fonts/CircularStd-Book.otf");
 }
@@ -68,7 +63,7 @@ button:focus {
 }
 .landscape-nav a {
   padding: 0.5em;
-  font-family: "Albra Semi" !important;
+  font-family: "Circular" !important;
 }
 /* Dark mode toggle */
 div.dark-mode-toggle {
@@ -139,6 +134,7 @@ h2 span a {
   height: 6em;
   background: var(--body-bg);
   line-height: 6em;
+  font-weight: bold
 }
 .mobile-button span {
   margin-right: 0.25em;
@@ -153,7 +149,8 @@ h2 span a {
   font-size: 2em;
   text-decoration: none !important;
   color: var(--link-color);
-  font-family: "Albra Semi" !important;
+  font-family: "Circular" !important;
+  font-weight: 700;
 }
 .btn-close {
   filter: var(--btn-filter);
@@ -170,7 +167,7 @@ h2 span a {
   display: block !important;
   line-height: 1.2em !important;
   text-transform: uppercase;
-  font-family: "Albra Semi" !important;
+  font-family: "Circular" !important;
 }
 @media screen and (orientation: portrait) {
   div.title {

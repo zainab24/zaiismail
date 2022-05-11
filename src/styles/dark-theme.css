@@ -1,7 +1,7 @@
 html[data-theme="dark"] {
   --font-color: #fffafa;
-  --link-color: #f074fe;
-  --body-bg: #2f3f7b;
+  --link-color: #e88af3;
+  --body-bg: #1f2e66;
   --btn-filter: invert(73%) sepia(38%) saturate(6722%) hue-rotate(239deg) brightness(101%) contrast(99%);
   --colourise-title: none;
 }
