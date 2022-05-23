@@ -85,11 +85,11 @@ div.dark-mode-toggle {
   border-radius: 50%;
 }
 #theme-toggle:not(:checked) + label {
-  background: linear-gradient(to bottom, #f3ba98, #e39275);
+  background: #f3ba98;
 }
 #theme-toggle:checked + label {
   position: relative;
-  background: linear-gradient(to bottom, #ffffec, silver);
+  background: silver;
 }
 #theme-toggle:checked + label:after {
   content: "";
