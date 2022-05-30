@@ -68,11 +68,11 @@ export default function Home() {
 <Link href="/"><img src="/images/zainabismail.png" alt="zainab ismail"/></Link>
 </div>
 
+<main role="main" className="wrapper">
+
     <div className="landscape-nav">
      <h2><span className="home"><Link href="/">HOME</Link></span> <span className="projects"><Link href="projects">PROJECTS</Link></span>   <span className="publications"><Link href="publications">PUBLICATIONS</Link></span>   <span className="writing"><Link href="writing">WRITING</Link></span></h2>
      </div>
-      <main role="main" className="wrapper">
-
   <div className="page">
      
 <PageRouter/>

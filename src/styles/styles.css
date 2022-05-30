@@ -23,10 +23,6 @@ body {
   color: var(--font-color) !important;
   margin-bottom: 3% !important;
 }
-div.page {
-  margin: auto;
-  width: 90%;
-}
 p {
   font-family: Circular;
 }
@@ -191,6 +187,10 @@ h2 span a {
     right: 1em;
     top: 1em;
   }
+  main {
+    width: 90%;
+    margin: auto
+  }  
 }
 @media screen and (orientation: landscape) {
   div.title {
@@ -210,11 +210,15 @@ h2 span a {
     display: none;
   }
   div.page {
-    width: 60% !important;
     padding-top: 10vh !important;
+    margin: 0 6% 0 6%
   }
   .mobile-button {
     display: none;
+  }
+  main {
+    width: 850px;
+    margin: auto
   }
 }
 div.title img {
