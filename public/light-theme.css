@@ -1,7 +1,0 @@
-html[data-theme="light"] {
-  --font-color: #404040;
-  --link-color: #3d9197;
-  --body-bg: #cae1e1;
-  --btn-filter: invert(0.5) invert(47%) sepia(8%) saturate(3722%) hue-rotate(136deg) brightness(84%) contrast(78%);
-  --colourise-title: invert(0.5) invert(47%) sepia(8%) saturate(3722%) hue-rotate(136deg) brightness(84%) contrast(78%);
-}
