@@ -1,23 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export default function Contact() {
-
-    const [success, setSuccess] = useState(false);
-
-useEffect(() => {
-    if ( window.location.search.includes('success') ) {
-    setSuccess(true);
-    }
-}, []);
 
     return ( 
 
     <div className="form">
-        {success && ( <p> Thanks for your message! </p> )}
 <form name="contact" method="POST" data-netlify="true" action="success.html">
 
 <input type="hidden" name="form-name" value="contact" />
-  <p><b>Send a quick note</b></p>
+  <p>Send a quick note</p>
   <p>
     <label><span>Name</span> <input type="text" name="name" /></label>
   </p>
