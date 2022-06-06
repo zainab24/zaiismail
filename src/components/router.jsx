@@ -4,7 +4,6 @@ import Home from "../pages/home";
 import Publications from "../pages/publications";
 import Projects from "../pages/projects";
 import Writing from "../pages/writing";
-import Success from "../pages/success";
 
 /**
  * The router is imported in app.jsx
@@ -20,6 +19,5 @@ export default () => (
     <Route path="publications" component={Publications} />
     <Route path="projects" component={Projects} />
     <Route path="writing" component={Writing} />
-    <Route path="success" component={Success} />
   </Switch>
 );

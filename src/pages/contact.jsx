@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
-const [success, setSuccess] = useState(false);
+export default function Contact() {
+
+    const [success, setSuccess] = useState(false);
 
 useEffect(() => {
     if ( window.location.search.includes('success=true') ) {
     setSuccess(true);
     }
 }, []);
-
-export default function Contact() {
 
     return ( 
 
@@ -17,7 +17,7 @@ export default function Contact() {
 <form name="contact" method="POST" data-netlify="true">
 
 <input type="hidden" name="form-name" value="contact" />
-  <p><b>Send me a quick note</b></p>
+  <p><b>Send a quick note</b></p>
   <p>
     <label><span>Name</span> <input type="text" name="name" /></label>
   </p>
@@ -34,4 +34,3 @@ export default function Contact() {
 </div>
     );
   }
-
