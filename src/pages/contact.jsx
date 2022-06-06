@@ -10,7 +10,7 @@ export default function Contact() {
     return ( 
 
     <div className="form">
-<form name="contact" method="POST" data-netlify="true" onSubmit={e => onSubmit(e, setSuccess)}>
+<form name="contact" method="POST" data-netlify="true">
 
 <input type="hidden" name="form-name" value="contact" />
   <p>{ success ? 'Thanks for your message!' : 'Send a quick note' }</p>
