@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+
+const onSubmit = async (event, setSuccess) => {
+  event.preventDefault();
+    setSuccess(true);
+};
 
 export default function Contact() {
-
+    const [success, setSuccess] = useState(false);
     return ( 
 
     <div className="form">
-<form name="contact" method="POST" data-netlify="true" action="success.html">
+<form name="contact" method="POST" data-netlify="true" onSubmit={e => onSubmit(e, setSuccess)}>
 
 <input type="hidden" name="form-name" value="contact" />
-  <p>Send a quick note</p>
+  <p>{ success ? 'Thanks for your message!' : 'Send a quick note' }</p>
   <p>
     <label><span>Name</span> <input type="text" name="name" /></label>
   </p>
