@@ -1,9 +1,19 @@
-import * as React from "react";
+import React, { useEffect } from "react";
+
+const [success, setSuccess] = useState(false);
+
+useEffect(() => {
+    if ( window.location.search.includes('success=true') ) {
+    setSuccess(true);
+    }
+}, []);
 
 export default function Contact() {
-  return (
 
-<div className="form">
+    return ( 
+
+    <div className="form">
+        {success && ( <p> Thanks for your message! </p> )}
 <form name="contact" method="POST" data-netlify="true">
 
 <input type="hidden" name="form-name" value="contact" />
@@ -22,5 +32,6 @@ export default function Contact() {
   </p>
 </form>
 </div>
-  );
-}
+    );
+  }
+
