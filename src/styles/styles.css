@@ -63,10 +63,7 @@ button:focus {
   font-family: "Circular" !important;
 }
 /* Dark mode toggle */
-div.dark-mode-toggle {
-  display: flex;
-  flex-direction: row;
-}
+
 #theme-toggle {
   visibility: hidden;
   margin-left: auto;
@@ -77,15 +74,16 @@ div.dark-mode-toggle {
   cursor: pointer;
   height: 4em;
   width: 4em;
-  margin: 1em;
-  z-index: 999;
+  top: 1.5em;
+  right: 1.5em;
+  z-index: 1046;
   border-radius: 50%;
+  position: absolute;
 }
 #theme-toggle:not(:checked) + label {
   background: #f3ba98;
 }
 #theme-toggle:checked + label {
-  position: relative;
   background: silver;
 }
 #theme-toggle:checked + label:after {
@@ -123,7 +121,7 @@ h2 span a {
   color: var(--link-color) !important;
 }
 .mobile-button {
-  z-index: 1044;
+  z-index: 1046;
   width: 150vw;
   position: fixed;
   top: 0;
@@ -174,7 +172,7 @@ h2 span a {
   div.title {
     width: 90vw !important;
     margin: auto;
-    padding-top: 20vh;
+    padding-top: 15vh;
   }
   .mobile-button {
     display: block;
@@ -200,16 +198,14 @@ h2 span a {
 @media screen and (orientation: landscape) {
   div.title {
     width: 500px;
-    margin: auto
+    margin: auto;
+    padding-top: 10vh;
   }
   div.home {
     margin-top: -7.5vh;
   }
   img.me {
     width: 350px;
-  }
-  div.dark-mode-toggle {
-    padding: 0.5em;
   }
   .mobile-h2 {
     display: none;
@@ -240,9 +236,6 @@ h2 span a {
   img.me {
     width: 350px;
   }
-  div.dark-mode-toggle {
-    padding: 0.5em;
-  }
   .mobile-h2 {
     display: none;
   }
@@ -266,9 +259,6 @@ h2 span a {
   }
   img.me {
     width: 350px;
-  }
-  div.dark-mode-toggle {
-    padding: 0.5em;
   }
   .mobile-h2 {
     display: none;
