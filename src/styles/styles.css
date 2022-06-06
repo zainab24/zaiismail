@@ -22,6 +22,7 @@ body {
   background: var(--body-bg) !important;
   color: var(--font-color) !important;
   margin-bottom: 3% !important;
+  overflow-x: hidden
 }
 p {
   font-family: Circular;
@@ -230,4 +231,37 @@ div.title img {
 div.title img:hover {
   cursor: pointer;
   opacity: 0.75;
+}
+div.page {
+  height: 100vh;
+}
+div.form {
+  background: linear-gradient(to bottom, var(--body-bg) 5%, #f3cff3);
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  position: absolute;
+}
+input, button {
+  height: 2em;
+  width: 20em;
+}
+textarea {
+  height: 5em;
+  width: 20em;
+}
+input, button, textarea {
+  border: 2px solid #000;
+  background: #fff;
+}
+form {
+  transform: translateY(-50%) translateX(-50%);;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin: auto;
+  width: fit-content
+}
+label span {
+  display: block
 }
