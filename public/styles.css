@@ -1,5 +1,10 @@
 /* General rules */
 
+@font-face {
+  font-family: "Circular";
+  src: url("/fonts/CircularStd-Book.otf");
+}
+
 p {
   transform: translateY(-50%) translateX(-50%);;
   top: 50%;
