@@ -3,8 +3,7 @@ import React, { useState } from "react";
 export default function Contact() {
     const [success, setSuccess] = useState(false);
     const onSubmit = async (event, setSuccess) => {
-        event.preventDefault();
-          setSuccess(true);
+        setSuccess(true);
       };
       
     return ( 
