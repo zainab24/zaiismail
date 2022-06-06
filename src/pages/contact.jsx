@@ -5,7 +5,7 @@ export default function Contact() {
     const [success, setSuccess] = useState(false);
 
 useEffect(() => {
-    if ( window.location.search.includes('success=true') ) {
+    if ( window.location.search.includes('success') ) {
     setSuccess(true);
     }
 }, []);
@@ -14,7 +14,7 @@ useEffect(() => {
 
     <div className="form">
         {success && ( <p> Thanks for your message! </p> )}
-<form name="contact" method="POST" data-netlify="true">
+<form name="contact" method="POST" data-netlify="true" action="success.html">
 
 <input type="hidden" name="form-name" value="contact" />
   <p><b>Send a quick note</b></p>
