@@ -5,7 +5,6 @@ export default function Contact() {
 
 <div className="form">
 <form name="contact" method="POST" data-netlify="true">
-  <p><b>Send a quick note</b></p>
   <p>
     <label><span>Name</span> <input type="text" name="name" /></label>
   </p>
@@ -16,7 +15,7 @@ export default function Contact() {
     <label><span>Message</span> <textarea name="message"></textarea></label>
   </p>
   <p>
-    <button type="submit">Contact</button>
+    <button type="submit">Contact me</button>
   </p>
 </form>
 </div>
