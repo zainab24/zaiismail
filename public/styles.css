@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, var(--body-bg) 5%, #f3cff3);
+  background: linear-gradient(to bottom, #cae1e1 5%, #f3cff3);
 }
 p {
   transform: translateY(-50%) translateX(-50%);;
