@@ -5,7 +5,9 @@ export default function Contact() {
 
 <div className="form">
 <form name="contact" method="POST" data-netlify="true" 
-  action="/pages/success">
+  action="success">
+
+<input type="hidden" name="form-name" value="contact" />
   <p><b>Send me a quick note</b></p>
   <p>
     <label><span>Name</span> <input type="text" name="name" /></label>
