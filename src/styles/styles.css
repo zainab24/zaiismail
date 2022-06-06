@@ -124,8 +124,9 @@ h2 span a {
 }
 .mobile-button {
   z-index: 1045;
-  width: 100vw;
-  padding-left: 1em;
+  left: -50vw;
+  padding-left: 2em;
+  width: 200vw;
   position: fixed;
   top: 0;
   height: 6em;
