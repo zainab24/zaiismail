@@ -5,7 +5,7 @@ export default function Contact() {
     const [success, setSuccess] = useState(false);
 
 useEffect(() => {
-    if ( window.location.search.includes('success=true') ) {
+    if ( window.location.search.includes('success') ) {
     setSuccess(true);
     }
 }, []);

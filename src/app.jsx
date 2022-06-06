@@ -24,7 +24,6 @@ import useHashLocation from "./hooks/wouter-hash";
 import Seo from "./components/seo.jsx";
 
 import { ThemeToggle } from "./components/theme-toggle";
-import Contact from "./pages/contact";
 
 import Offcanvas from "react-bootstrap/Offcanvas";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -78,7 +77,6 @@ export default function Home() {
      
 <PageRouter/>
 </div>
-<Contact/>
       </main>
     </Router>
   );
