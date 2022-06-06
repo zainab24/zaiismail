@@ -1,13 +1,5 @@
 /* General rules */
 
-@font-face {
-  font-family: "Circular";
-  src: url("/fonts/CircularStd-Book.otf");
-}
-
-body {
-  background: linear-gradient(to bottom, #cae1e1 5%, #f3cff3);
-}
 p {
   transform: translateY(-50%) translateX(-50%);;
   top: 50%;
@@ -19,6 +11,6 @@ p {
 }
 a {
   font-family: Circular;
-  color: #000;
+  color: #f3cff3;
   text-decoration: none
 }
