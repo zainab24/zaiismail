@@ -124,9 +124,7 @@ h2 span a {
 }
 .mobile-button {
   z-index: 1045;
-  left: -50vw;
-  padding-left: 2em;
-  width: 200vw;
+  width: 150vw;
   position: fixed;
   top: 0;
   height: 6em;
@@ -136,6 +134,10 @@ h2 span a {
 }
 .mobile-button span {
   margin-right: 0.25em;
+}
+.mobile-button button {
+  text-align: left;
+  padding-left: 1em;
 }
 .mobile-button button,
 .btn-close {
@@ -195,6 +197,65 @@ h2 span a {
   }  
 }
 @media screen and (orientation: landscape) {
+  div.title {
+    width: 500px;
+    margin: auto
+  }
+  div.home {
+    margin-top: -7.5vh;
+  }
+  img.me {
+    width: 350px;
+  }
+  div.dark-mode-toggle {
+    padding: 0.5em;
+  }
+  .mobile-h2 {
+    display: none;
+  }
+  div.page {
+    padding-top: 10vh !important;
+    margin: 0 6% 0 6%
+  }
+  .mobile-button {
+    display: none;
+  }
+  main {
+    width: 850px;
+    margin: auto
+  }
+}
+@media screen and (min-device-width: 767px) and (min-device-height: 1023px) and (orientation: portrait) {
+  div.title {
+    width: 500px;
+    margin: auto
+  }
+  .landscape-nav {
+    display: block
+  }
+  div.home {
+    margin-top: -7.5vh;
+  }
+  img.me {
+    width: 350px;
+  }
+  div.dark-mode-toggle {
+    padding: 0.5em;
+  }
+  .mobile-h2 {
+    display: none;
+  }
+  div.page {
+    padding-top: 10vh !important;
+    margin: 0 6% 0 6%
+  }
+  .mobile-button {
+    display: none 
+  }
+  main {
+    width: 850px;
+    margin: auto
+  }
   div.title {
     width: 500px;
     margin: auto
