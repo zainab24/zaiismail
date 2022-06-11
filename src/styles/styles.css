@@ -218,6 +218,7 @@ h2 span a {
     display: none;
   }
   main {
+    width: 850px;
     margin: auto
   }
 }
@@ -286,8 +287,6 @@ div.title img:hover {
 }
 div.page {
   height: 100vh;
-  width: 850px;
-  margin: auto
 }
 div.form {
   background: linear-gradient(to bottom, var(--body-bg) 5%, #f3cff3);
