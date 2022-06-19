@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
   <div className="intro"><p className="center"><img src="/images/portrait.png" alt="me" className="me"/></p><p>Hey, I’m Zainab Ismail, a London-based software engineer and poet.</p>
-  <p className="center"><a href="http://instagram.com/zai._i"><img src="/images/social/insta.png" alt="instagram" className="social"/></a> <a href="https://www.linkedin.com/in/zainabismail"><img src="/images/social/linkedin.png" alt="linkedin" className="social"/></a></p></div>
+  <p className="center"><a href="http://instagram.com/floralverses"><img src="/images/social/insta.png" alt="instagram" className="social"/></a> <a href="https://www.linkedin.com/in/zainabismail"><img src="/images/social/linkedin.png" alt="linkedin" className="social"/></a></p></div>
   
 <Contact/>
 </>
