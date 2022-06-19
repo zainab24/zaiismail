@@ -98,12 +98,15 @@ button:focus {
   width: 30vw !important;
   height: 40vh !important
   }
+  .accordion-button {
+    width: 70%;
+    margin: auto
+  }
 }
 .body {
   position: absolute;
   border-radius: 50% 50% 30% 30%;
   border: 2px solid #000;
-  box-shadow: inset 0px 0px 2em rgba(0, 0, 0, 0.5);
   background: $random-colour;
 }
 
