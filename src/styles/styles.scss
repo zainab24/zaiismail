@@ -65,7 +65,7 @@ img {
 }
 
 /* Links */
-a, button {
+a {
   color: $random-colour !important;
   text-decoration: none !important;
   font-weight: bold !important;
@@ -107,7 +107,6 @@ button:focus {
   position: absolute;
   border-radius: 50% 50% 30% 30%;
   border: 2px solid #000;
-  background: $random-colour;
 }
 
 .line {
@@ -133,6 +132,7 @@ button:focus {
   height: 78%;
   bottom: 0%;
   left: 0%;
+  background: $random-colour;
 }
 
 #body2 {
@@ -142,6 +142,7 @@ button:focus {
   left: 35%;
   animation: visibleAnimation 0s 1s forwards;
   visibility: hidden;
+  background: rgb(156, 136, 220);
 }
 
 #body3 {
@@ -151,6 +152,7 @@ button:focus {
   left: 65%;
   animation: visibleAnimation 0s 2s forwards;
   visibility: hidden;
+  background: rgb(136, 196, 220)
 }
 
 #body4 {
@@ -160,8 +162,8 @@ button:focus {
   left: 86%;
   animation: visibleAnimation 0s 3s forwards;
   visibility: hidden;
+  background: rgb(179, 220, 136)
 }
-
 @keyframes visibleAnimation {
   to {
     visibility: visible;
@@ -323,15 +325,15 @@ button:focus {
 }
 
 #body2 .face {
-  background: #f1c27d;
+  background: #efddbb;
 }
 
 #body3 .face {
-  background: rgb(245, 212, 212);
+  background: #f5d4d4;
 }
 
 #body4 .face {
-  background: #e0ac69;
+  background: #f1c27d;
 }
 
 /* Contact form */
@@ -350,8 +352,8 @@ textarea {
 input,
 button,
 textarea {
-  border: 2px solid $random-colour;
-  color: $random-colour;
+  border: 2px solid #404040;
+  color: #404040;
   background: #FFF;
 }
 
@@ -370,6 +372,8 @@ label span {
   font-size: calc(2em + 0.5vw);
   font-family: 'EB Garamond';
   display: block;
+  color: $random-colour;
+  font-weight: bold
 }
 
 .accordion-button span {
