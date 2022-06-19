@@ -90,8 +90,13 @@ button:focus {
   position: relative;
   margin: auto;
   display: block;
-  width: 40vw;
+  width: 90vw;
   height: 50vh;
+}
+@media screen and (orientation: landscape) {
+  #dolls {
+  width: 90vw !important
+  }
 }
 .body {
   position: absolute;
