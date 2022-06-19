@@ -369,6 +369,10 @@ label span {
   display: block;
 }
 
+.accordion-button span {
+  font-family: Circular;
+}
+
 .accordion-button:focus {
   z-index: 3;
   border-color: none !important;

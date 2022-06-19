@@ -54,7 +54,7 @@ export default class Home extends React.Component {
           <Seo />
           <Accordion flush>
             <Accordion.Item eventKey="0">
-              <Accordion.Header>☰ zai ismail</Accordion.Header>
+              <Accordion.Header><span>☰</span> zai ismail</Accordion.Header>
               <Accordion.Body>
                 <Link href="/">home</Link>
                 <Link href="projects">projects</Link>
