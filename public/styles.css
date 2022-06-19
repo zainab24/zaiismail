@@ -16,7 +16,7 @@ p {
 }
 a {
   font-family: Circular;
-  color: #000;
+  color: rgb(220,136,137);
   text-decoration: none
 }
 a:hover {
