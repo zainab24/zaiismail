@@ -1,0 +1,377 @@
+$random-colour: rgb(random(255), random(255), random(255));
+
+/* General rules */
+
+@font-face {
+  font-family: "Circular";
+  src: url("/fonts/CircularStd-Book.otf");
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("/fonts/EBGaramond-Italic-VariableFont_wght.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-block-end: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+main.wrapper {
+  margin: auto;
+  width: 70%;
+}
+
+div.intro {
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+html,
+body {
+  font-family: Circular !important;
+  color: #404040 !important;
+}
+
+p {
+
+  font-family: Circular;
+}
+
+.page {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+ol,
+ul {
+  padding-left: 0 !important;
+}
+
+img {
+  margin: 2.5em;
+}
+
+.box h2 {
+  font-family: "EB Garamond" !important;
+}
+
+/* Links */
+a, button {
+  color: $random-colour !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+}
+
+a:hover,
+button:hover,
+button:focus {
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+/* splash */
+#splash {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#dolls {
+  position: relative;
+  margin: auto;
+  display: block;
+  width: 75vh;
+  height: 50vh;
+}
+.body {
+  position: absolute;
+  border-radius: 50% 50% 30% 30%;
+  border: 2px solid #000;
+  box-shadow: inset 0px 0px 2em rgba(0, 0, 0, 0.5);
+  background: $random-colour;
+}
+
+.line {
+  position: absolute;
+  border-top: 2px solid #000;
+  width: 100%;
+  height: 1%;
+  top: 60%;
+}
+
+.face {
+  position: absolute;
+  width: 55%;
+  height: 30%;
+  border-radius: 50%;
+  top: 15%;
+  left: 22%;
+  border: 2px solid #000;
+}
+
+#body1 {
+  width: 27%;
+  height: 78%;
+  bottom: 0%;
+  left: 0%;
+}
+
+#body2 {
+  width: 23%;
+  height: 65%;
+  bottom: 0%;
+  left: 35%;
+  animation: visibleAnimation 0s 1s forwards;
+  visibility: hidden;
+}
+
+#body3 {
+  width: 15%;
+  height: 40%;
+  bottom: 0%;
+  left: 65%;
+  animation: visibleAnimation 0s 2s forwards;
+  visibility: hidden;
+}
+
+#body4 {
+  width: 7.5%;
+  height: 20%;
+  bottom: 0%;
+  left: 86%;
+  animation: visibleAnimation 0s 3s forwards;
+  visibility: hidden;
+}
+
+@keyframes visibleAnimation {
+  to {
+    visibility: visible;
+  }
+}
+
+.closed-eye {
+  top: 40%;
+  background: #000000;
+  height: 4%;
+  position: absolute;
+  width: 25%;
+}
+
+.closed-eye1 {
+  left: 17%;
+  transform: rotate(15deg);
+}
+
+.closed-eye2 {
+  left: 57%;
+  transform: rotate(-15deg);
+}
+
+.rosycheek {
+  background: #ff99cc;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  width: 23%;
+  height: 23%;
+  filter: drop-shadow(0 0 0.75rem #ff99cc);
+  opacity: 0.5;
+}
+
+.rosycheek1 {
+  left: 12%;
+}
+
+.rosycheek2 {
+  right: 12%;
+}
+
+.lips {
+  background: #cd5c5c;
+  border-radius: 50%;
+  position: absolute;
+  top: 70%;
+  width: 20%;
+  height: 14%;
+  z-index: 0;
+  left: 50%;
+  margin-left: -10%;
+}
+
+.lips .separator {
+  width: 100%;
+  border-top: 2px solid #000;
+  height: 1%;
+  position: absolute;
+  top: 36%;
+  left: 0%;
+}
+
+.fringe {
+  position: absolute;
+  top: -3%;
+  left: 50%;
+  margin-left: -38%;
+  width: 76%;
+  height: 23%;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background: radial-gradient(
+      circle at 100% 50%,
+      transparent 20%,
+      #90503a 21%,
+      #90503a 34%,
+      transparent 35%,
+      transparent
+    ),
+    radial-gradient(
+        circle at 0% 50%,
+        transparent 20%,
+        #90503a 21%,
+        #90503a 34%,
+        transparent 35%,
+        transparent
+      )
+      0 -7.5px;
+  background-color: #5e0808;
+  background-size: 10px 15px;
+}
+
+.flower {
+  top: 65%;
+  width: 50%;
+  height: 40%;
+  left: 30%;
+  position: absolute;
+}
+
+.flower .petal {
+  background: #ffff33;
+  border-radius: 100px 0px;
+  height: 18%;
+  width: 40%;
+  position: absolute;
+}
+
+.petal1 {
+  left: 0%;
+  transform: rotate(90deg);
+}
+
+.petal2 {
+  left: 40%;
+  transform: rotate(-190deg);
+}
+
+.petal3 {
+  left: 0%;
+  top: 23%;
+  transform: rotate(-190deg);
+}
+
+.petal4 {
+  left: 40%;
+  top: 23%;
+  transform: rotate(90deg);
+}
+
+.petal5 {
+  left: -10%;
+  top: 12%;
+  transform: rotate(-150deg) scale(0.75);
+}
+
+.petal6 {
+  left: 50%;
+  top: 12%;
+  transform: rotate(-130deg) scale(0.75);
+}
+
+.petal7 {
+  left: 21%;
+  top: -6%;
+  transform: rotate(-45deg) scale(0.75);
+}
+
+.petal8 {
+  left: 19%;
+  top: 30%;
+  transform: rotate(-45deg) scale(0.75);
+}
+
+#body1 .face {
+  background: #8d5524;
+}
+
+#body2 .face {
+  background: #f1c27d;
+}
+
+#body3 .face {
+  background: rgb(245, 212, 212);
+}
+
+#body4 .face {
+  background: #e0ac69;
+}
+
+/* Contact form */
+
+input,
+button {
+  height: 2em;
+  width: 300px;
+}
+
+textarea {
+  height: 5em;
+  width: 300px;
+}
+
+input,
+button,
+textarea {
+  border: 2px solid $random-colour;
+  color: $random-colour;
+  background: #FFF;
+}
+
+form {
+  margin: auto;
+  width: 300px;
+}
+
+label span {
+  display: block;
+}
+
+/* Accordion */
+
+.accordion-button, .accordion-body a {
+  font-size: calc(2em + 0.5vw);
+  font-family: 'EB Garamond';
+  display: block;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: $random-colour !important;
+  background-color: #FFF !important;
+  box-shadow: none !important;
+}

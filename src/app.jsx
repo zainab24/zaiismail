@@ -1,7 +1,5 @@
-import React, {useState} from "react";
-import { Router } from "wouter";
-
-import {Link} from 'wouter';
+import React from "react";
+import { Link, Router } from "wouter";
 
 /**
  * This code defines the react app
@@ -14,7 +12,10 @@ import {Link} from 'wouter';
  */
 
 // Import and apply CSS stylesheet
-import "./styles/styles.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles/styles.scss";
+
+import Accordion from "react-bootstrap/Accordion";
 
 // Where all of our pages come from
 import PageRouter from "./components/router.jsx";
@@ -23,61 +24,52 @@ import useHashLocation from "./hooks/wouter-hash";
 // The component that adds our Meta tags to the page
 import Seo from "./components/seo.jsx";
 
-import { ThemeToggle } from "./components/theme-toggle";
-
-import Offcanvas from "react-bootstrap/Offcanvas";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Splash from "./components/splash.jsx";
 
 // Home function that is reflected across the site
-export default function Home() {
-
-  function Nav() {
-    const [show, setShow] = useState(false);
-  
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-  
-    return (
-      <>
-        <div className="mobile-button"><button onClick={handleShow}>
-        <span>☰</span> MENU
-        </button></div>
-  
-        <Offcanvas show={show} onHide={handleClose}>
-          <Offcanvas.Header closeButton>
-          </Offcanvas.Header>
-          
-          <Offcanvas.Body>
-          <h2><span className="home"><Link href="/" onClick={() => setShow(false)}>Home</Link></span> <span className="projects"><Link href="projects" onClick={() => setShow(false)}>Projects</Link></span>   <span className="publications" onClick={() => setShow(false)}><Link href="publications" onClick={() => setShow(false)}>Publications</Link></span>   <span className="writing" onClick={() => setShow(false)}><Link href="writing">Writing</Link></span></h2>
-          </Offcanvas.Body>
-        </Offcanvas>
-      </>
-    );
+export default class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      timePassed: false,
+    };
   }
 
-  return (
-    <Router hook={useHashLocation}>
-      <Seo />
+  componentDidMount() {
+    setTimeout(() => {
+      this.setTimePassed();
+    }, 4000);
+  }
 
-  <Nav/>
+  setTimePassed() {
+    this.setState({ timePassed: true });
+  }
 
-
-  <ThemeToggle/>
-
-  <div className="title">
-<Link href="/"><img src="/images/zainabismail.png" alt="zainab ismail"/></Link>
-</div>
-
-<main role="main" className="wrapper">
-
-    <div className="landscape-nav">
-     <h2><span className="home"><Link href="/">HOME</Link></span> <span className="projects"><Link href="projects">PROJECTS</Link></span>   <span className="publications"><Link href="publications">PUBLICATIONS</Link></span>   <span className="writing"><Link href="writing">WRITING</Link></span></h2>
-     </div>
-  <div className="page">
-     
-<PageRouter/>
-</div>
-      </main>
-    </Router>
-  );
+  render() {
+    if (!this.state.timePassed) {
+      return <Splash />;
+    } else {
+      return (
+        <Router hook={useHashLocation}>
+          <Seo />
+          <Accordion flush>
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>☰ zai ismail</Accordion.Header>
+              <Accordion.Body>
+                <Link href="/">home</Link>
+                <Link href="projects">projects</Link>
+                <Link href="publications">publications</Link>
+                <Link href="writing">writing</Link>
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+          <main className="wrapper">
+            <div className="page">
+              <PageRouter />
+            </div>
+          </main>
+        </Router>
+      );
+    }
+  }
 }
