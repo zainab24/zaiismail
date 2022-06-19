@@ -28,7 +28,6 @@ main.wrapper {
 
 div.intro {
   margin-bottom: 10%;
-  text-align: center;
 }
 
 html,
@@ -101,6 +100,9 @@ button:focus {
   .accordion-button, .accordion-body {
     width: 70%;
     margin: auto
+  }
+  div.intro {
+    text-align: center;
   }
 }
 .body {
@@ -337,7 +339,7 @@ button:focus {
 }
 
 #body1 .fringe {
-  background-color: #c0a2a2;
+  background-color: #967c7c;
 }
 
 #body2 .fringe {
