@@ -38,7 +38,7 @@ export default class Home extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setTimePassed();
-    }, 1000000);
+    }, 4500);
   }
 
   setTimePassed() {
