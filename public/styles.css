@@ -1,10 +1,10 @@
-/* General rules */
-
 @font-face {
   font-family: "Circular";
   src: url("/fonts/CircularStd-Book.otf");
 }
-
+body {
+  background: #e4dff0
+}
 p {
   transform: translateY(-50%) translateX(-50%);;
   top: 50%;
@@ -16,7 +16,7 @@ p {
 }
 a {
   font-family: Circular;
-  color: rgb(220,136,137);
+  color: #dc8889;
   text-decoration: none
 }
 a:hover {
