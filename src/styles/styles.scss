@@ -89,6 +89,14 @@ button:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: background linear 4s;
+  background: #b3dc88;
+}
+@keyframes background { 
+  0%, 25% { background-color: $random-colour; }
+  26%, 50% { background-color: #9c88dc; }
+  51%, 75% { background-color:#88c4dc; } 
+  76%, 100% { background-color:#b3dc88; } 
 }
 #dolls {
   position: relative;
