@@ -98,6 +98,32 @@ button:focus {
   51%, 75% { background-color:#88c4dc; } 
   76%, 100% { background-color:#b3dc88; } 
 }
+
+
+@keyframes shake-horizontal {
+  0%,
+  100% {
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+            transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60% {
+            transform: translateX(5px);
+  }
+  80% {
+            transform: translateX(4px);
+  }
+  90% {
+            transform: translateX(-4px);
+  }
+}
+
 #dolls {
   position: relative;
   margin: auto;
@@ -154,6 +180,7 @@ button:focus {
   bottom: 0%;
   left: 0%;
   background: $random-colour;
+  animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 #body2 {
@@ -161,7 +188,7 @@ button:focus {
   height: 65%;
   bottom: 0%;
   left: 35%;
-  animation: visibleAnimation 0s 1s forwards;
+  animation: visibleAnimation 0s 1s forwards, shake-horizontal 0.8s 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
   visibility: hidden;
   background: #9c88dc;
 }
@@ -171,7 +198,7 @@ button:focus {
   height: 40%;
   bottom: 0%;
   left: 65%;
-  animation: visibleAnimation 0s 2s forwards;
+  animation: visibleAnimation 0s 2s forwards, shake-horizontal 0.8s 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
   visibility: hidden;
   background: #88c4dc
 }
@@ -181,7 +208,7 @@ button:focus {
   height: 20%;
   bottom: 0%;
   left: 86%;
-  animation: visibleAnimation 0s 3s forwards;
+  animation: visibleAnimation 0s 3s forwards, shake-horizontal 0.8s 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
   visibility: hidden;
   background: #b3dc88
 }
@@ -410,7 +437,7 @@ label span {
   font-family: 'EB Garamond';
   display: block;
   color: $random-colour;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .accordion-button span {
