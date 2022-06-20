@@ -67,7 +67,7 @@ texting you in a fit of repeating rain.</p>
 sketch some kind of sanctuary for me in the dark.</p>
       </div>
       
-      <p><span className="writing"><a href="http://instagram.com/zai._i">more on instagram</a></span></p>
+      <p><span className="writing"><a href="http://instagram.com/floralverses">more on instagram</a></span></p>
 </>
   );
 }
