@@ -1,4 +1,7 @@
-$random-colour: #dc8889; 
+$salmon: #dc8889; 
+$lilac: #9c88dc; 
+$blue: #88c4dc; 
+$green: #b3dc88; 
 
 /* General rules */
 
@@ -70,7 +73,7 @@ ul {
 
 /* Links */
 a {
-  color: $random-colour !important;
+  color: $salmon !important;
   text-decoration: none !important;
   font-weight: bold !important;
 }
@@ -90,13 +93,13 @@ button:focus {
   justify-content: center;
   align-items: center;
   animation: background linear 4s;
-  background: #b3dc88;
+  background: $green;
 }
 @keyframes background { 
-  0%, 25% { background-color: $random-colour; }
-  26%, 50% { background-color: #9c88dc; }
-  51%, 75% { background-color:#88c4dc; } 
-  76%, 100% { background-color:#b3dc88; } 
+  0%, 25% { background-color: $salmon; }
+  26%, 50% { background-color: $lilac; }
+  51%, 75% { background-color:$blue; } 
+  76%, 100% { background-color:$green; } 
 }
 
 
@@ -179,7 +182,7 @@ button:focus {
   height: 78%;
   bottom: 0%;
   left: 0%;
-  background: $random-colour;
+  background: $salmon;
   animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
@@ -190,7 +193,7 @@ button:focus {
   left: 35%;
   animation: visibleAnimation 0s 1s forwards, shake-horizontal 0.8s 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
   visibility: hidden;
-  background: #9c88dc;
+  background: $lilac;
 }
 
 #body3 {
@@ -200,7 +203,7 @@ button:focus {
   left: 65%;
   animation: visibleAnimation 0s 2s forwards, shake-horizontal 0.8s 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
   visibility: hidden;
-  background: #88c4dc
+  background: $blue
 }
 
 #body4 {
@@ -210,7 +213,7 @@ button:focus {
   left: 86%;
   animation: visibleAnimation 0s 3s forwards, shake-horizontal 0.8s 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
   visibility: hidden;
-  background: #b3dc88
+  background: $green
 }
 @keyframes visibleAnimation {
   to {
@@ -389,15 +392,15 @@ button:focus {
 }
 
 #body2 .fringe {
-  background-color: #b1368e;
-}
-
-#body3 .fringe {
   background-color: #c6ab25;
 }
 
+#body3 .fringe {
+  background-color: #b1368e;
+}
+
 #body4 .fringe {
-  background-color: #c9740c;
+  background-color: #e88710;
 }
 
 /* Contact form */
@@ -436,8 +439,8 @@ label span {
   font-size: calc(2em + 0.5vw);
   font-family: 'EB Garamond';
   display: block;
-  color: $random-colour;
   font-weight: bold;
+  color: $salmon 
 }
 
 .accordion-button span {
@@ -452,7 +455,7 @@ label span {
 }
 
 .accordion-button:not(.collapsed) {
-  color: $random-colour !important;
+  color: $salmon !important;
   background-color: #FFF !important;
   box-shadow: none !important;
 }

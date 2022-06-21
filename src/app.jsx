@@ -56,10 +56,10 @@ export default class Home extends React.Component {
             <Accordion.Item eventKey="0">
               <Accordion.Header><span>☰</span> zai ismail</Accordion.Header>
               <Accordion.Body>
-                <Link href="/">home</Link>
-                <Link href="projects">projects</Link>
-                <Link href="publications">publications</Link>
-                <Link href="writing">writing</Link>
+                <Link href="/"><a className="home">home</a></Link>
+                <Link href="projects"><a className="projects">projects</a></Link>
+                <Link href="publications"><a className="publications">publications</a></Link>
+                <Link href="writing"><a className="writing">writing</a></Link>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
