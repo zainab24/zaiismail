@@ -28,14 +28,9 @@ import Doll from "./components/doll.jsx";
 
 // Home function that is reflected across the site
 export default function App() {
-  const [activeEventKey, setActiveEventKey] = useState("");
   const page = useRef(null);
 
-  const handleClickToggle = (eventKey) => {
-    if (eventKey === activeEventKey) {
-      setActiveEventKey("");
-    } else {
-      setActiveEventKey(eventKey);
+  const handleClickToggle = () => {
       //Handle Scroll here when opening
         page.current.scrollIntoView({
           behavior: "smooth",
@@ -43,18 +38,17 @@ export default function App() {
           inline: "nearest"
         });
     }
-  };
       return (
         <Router hook={useHashLocation}>
           <Seo />
           <Accordion flush>
-            <Accordion.Item activeKey={activeEventKey}>
+            <Accordion.Item eventKey="0">
               <Accordion.Header><span>☰</span> zai ismail</Accordion.Header>
               <Accordion.Body>
-                <div><Link href="/"><Doll id="body1"/><a className="home" onClick={() => handleClickToggle("0")}>home</a></Link></div>
-                <div><Link href="projects"><Doll id="body2"/><a className="projects" onClick={() => handleClickToggle("0")}>projects</a></Link></div>
-                <div><Link href="publications"><Doll id="body3"/><a className="publications" onClick={() => handleClickToggle("0")}>publications</a></Link></div>
-                <div><Link href="writing"><Doll id="body4"/><a className="writing" onClick={() => handleClickToggle("0")}>writing</a></Link></div>
+                <div><Link href="/"><Doll id="body1"/><a className="home" onClick={() => handleClickToggle()}>home</a></Link></div>
+                <div><Link href="projects"><Doll id="body2"/><a className="projects" onClick={() => handleClickToggle()}>projects</a></Link></div>
+                <div><Link href="publications"><Doll id="body3"/><a className="publications" onClick={() => handleClickToggle()}>publications</a></Link></div>
+                <div><Link href="writing"><Doll id="body4"/><a className="writing" onClick={() => handleClickToggle()}>writing</a></Link></div>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
