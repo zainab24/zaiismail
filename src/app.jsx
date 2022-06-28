@@ -55,6 +55,8 @@ export default function App() {
           <main className="wrapper">
             <div className="page" ref={page}>
               <PageRouter />
+
+              <div><a onClick={() => handleClickToggle()}>back to top</a></div>
             </div>
           </main>
         </Router>
