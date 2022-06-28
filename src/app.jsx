@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, forwardRef, useRef } from "react";
 import { Link, Router } from "wouter";
 
 /**
@@ -24,35 +24,45 @@ import useHashLocation from "./hooks/wouter-hash";
 // The component that adds our Meta tags to the page
 import Seo from "./components/seo.jsx";
 
-import Splash from "./components/splash.jsx";
+import Doll from "./components/doll.jsx";
 
 // Home function that is reflected across the site
-export default class Home extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+export default function App() {
+  const [activeEventKey, setActiveEventKey] = useState("");
+  const page = useRef(null);
 
-  render() {
+  const handleClickToggle = (eventKey) => {
+    if (eventKey === activeEventKey) {
+      setActiveEventKey("");
+    } else {
+      setActiveEventKey(eventKey);
+      //Handle Scroll here when opening
+        page.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest"
+        });
+    }
+  };
       return (
         <Router hook={useHashLocation}>
           <Seo />
           <Accordion flush>
-            <Accordion.Item eventKey="0">
+            <Accordion.Item activeKey={activeEventKey}>
               <Accordion.Header><span>☰</span> zai ismail</Accordion.Header>
               <Accordion.Body>
-                <Link href="/"><a className="home">home</a></Link>
-                <Link href="projects"><a className="projects">projects</a></Link>
-                <Link href="publications"><a className="publications">publications</a></Link>
-                <Link href="writing"><a className="writing">writing</a></Link>
+                <div><Link href="/"><Doll id="body1"/><a className="home" onClick={() => handleClickToggle("0")}>home</a></Link></div>
+                <div><Link href="projects"><Doll id="body2"/><a className="projects" onClick={() => handleClickToggle("0")}>projects</a></Link></div>
+                <div><Link href="publications"><Doll id="body3"/><a className="publications" onClick={() => handleClickToggle("0")}>publications</a></Link></div>
+                <div><Link href="writing"><Doll id="body4"/><a className="writing" onClick={() => handleClickToggle("0")}>writing</a></Link></div>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
           <main className="wrapper">
-            <div className="page">
+            <div className="page" ref={page}>
               <PageRouter />
             </div>
           </main>
         </Router>
       );
   }
-}

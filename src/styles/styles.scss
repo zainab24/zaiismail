@@ -85,35 +85,7 @@ button:focus {
   opacity: 0.75;
 }
 
-/* splash */
-#splash {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation: background linear 4s;
-  background: $green;
-}
-@keyframes background { 
-  0%, 25% { background-color: $salmon; }
-  26%, 50% { background-color: $lilac; }
-  51%, 75% { background-color:$blue; } 
-  76%, 100% { background-color:$green; } 
-}
-
-#dolls {
-  position: relative;
-  margin: auto;
-  display: block;
-  width: 90vw;
-  height: 30vh;
-}
 @media screen and (orientation: landscape) {
-  #dolls {
-  width: 600px;
-  height: 420px
-  }
   .accordion-button, .accordion-body {
     width: 70%;
     margin: auto
@@ -128,6 +100,14 @@ button:focus {
     width: 70%;
   }
 }
+.doll {
+  display: inline-block;
+  height: 100px;
+  width: 70px;
+  position: relative;
+  margin-right: 0.5em;
+}
+
 .body {
   position: absolute;
   border-radius: 50% 50% 30% 30%;
@@ -153,46 +133,32 @@ button:focus {
 }
 
 #body1 {
-  width: 27%;
-  height: 78%;
-  bottom: 0%;
-  left: 0%;
+  width: 80%;
+  height: 100%;
   background: $salmon;
 }
 
 #body2 {
-  width: 23%;
-  height: 65%;
-  bottom: 0%;
-  left: 35%;
-  animation: visibleAnimation 0s 1s forwards;
-  visibility: hidden;
+  width: 60%;
+  height: 75%;
+  top: 20%;
   background: $lilac;
 }
 
 #body3 {
-  width: 15%;
-  height: 40%;
-  bottom: 0%;
-  left: 65%;
-  animation: visibleAnimation 0s 2s forwards;
-  visibility: hidden;
+  width: 40%;
+  height: 50%;
+  top: 35%;
+  left: 10%;
   background: $blue
 }
 
 #body4 {
-  width: 7.5%;
-  height: 20%;
-  bottom: 0%;
-  left: 86%;
-  animation: visibleAnimation 0s 3s forwards;
-  visibility: hidden;
+  width: 25%;
+  top: 40%;
+  left: 15%;
+  height: 35%;
   background: $green
-}
-@keyframes visibleAnimation {
-  to {
-    visibility: visible;
-  }
 }
 
 .closed-eye {
@@ -412,13 +378,23 @@ label span {
 .accordion-button, .accordion-body a {
   font-size: calc(2em + 0.5vw);
   font-family: 'EB Garamond';
-  display: block;
   font-weight: bold;
   color: $salmon 
 }
 
+.accordion-body {
+  padding-top: 2em
+}
+
+.accordion-body a {
+  font-size: 1.5em;
+  position: relative;
+  top: -30px;
+}
+
 .accordion-button span {
   font-family: Circular;
+  margin-right: 0.5em
 }
 
 .accordion-button:focus {
@@ -432,4 +408,10 @@ label span {
   color: $salmon !important;
   background-color: #FFF !important;
   box-shadow: none !important;
+}
+.accordion-button:not(.collapsed):after {
+  background-image: none !important
+}
+.accordion-button:after {
+  background-image: none !important
 }
