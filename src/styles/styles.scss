@@ -158,7 +158,7 @@ button:focus {
 #body4 {
   width: 30%;
   top: 40%;
-  left: 17%;
+  left: 19%;
   height: 35%;
   background: $green
 }
@@ -385,13 +385,17 @@ label span {
 }
 
 .accordion-body {
-  padding-top: 2em
+  padding: 1.5rem 0 1.5rem 0 !important
 }
 
 .accordion-body a {
   font-size: 1.5em;
   position: relative;
   top: -30px;
+}
+
+.accordion-body div.nav-link {
+  height: 82.5px
 }
 
 .accordion-button span {

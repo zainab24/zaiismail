@@ -1,4 +1,4 @@
-import React, { useState, forwardRef, useRef } from "react";
+import React, { useRef } from "react";
 import { Link, Router } from "wouter";
 
 /**
@@ -45,10 +45,10 @@ export default function App() {
             <Accordion.Item eventKey="0">
               <Accordion.Header><span>☰</span> zai ismail</Accordion.Header>
               <Accordion.Body>
-                <div><Link href="/"><Doll id="body1"/><a className="home" onClick={() => handleClickToggle()}>home</a></Link></div>
-                <div><Link href="projects"><Doll id="body2"/><a className="projects" onClick={() => handleClickToggle()}>projects</a></Link></div>
-                <div><Link href="publications"><Doll id="body3"/><a className="publications" onClick={() => handleClickToggle()}>publications</a></Link></div>
-                <div><Link href="writing"><Doll id="body4"/><a className="writing" onClick={() => handleClickToggle()}>writing</a></Link></div>
+                <div className="nav-link"><Link href="/"><Doll id="body1"/><a className="home" onClick={() => handleClickToggle()}>home</a></Link></div>
+                <div className="nav-link"><Link href="projects"><Doll id="body2"/><a className="projects" onClick={() => handleClickToggle()}>projects</a></Link></div>
+                <div className="nav-link"><Link href="publications"><Doll id="body3"/><a className="publications" onClick={() => handleClickToggle()}>publications</a></Link></div>
+                <div className="nav-link"><Link href="writing"><Doll id="body4"/><a className="writing" onClick={() => handleClickToggle()}>writing</a></Link></div>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
