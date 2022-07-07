@@ -134,8 +134,9 @@ button:focus {
 }
 
 #body1 {
-  width: 80%;
-  height: 100%;
+  width: 75%;
+  height: 90%;
+  left: 5%;
   background: $salmon;
 }
 
@@ -143,7 +144,7 @@ button:focus {
   width: 60%;
   height: 75%;
   top: 20%;
-  left: 8%;
+  left: 10%;
   background: $lilac;
 }
 
@@ -151,14 +152,14 @@ button:focus {
   width: 40%;
   height: 50%;
   top: 35%;
-  left: 16%;
+  left: 20%;
   background: $blue
 }
 
 #body4 {
   width: 30%;
   top: 40%;
-  left: 19%;
+  left: 25%;
   height: 35%;
   background: $green
 }
